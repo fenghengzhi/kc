@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    
+    <link rel="icon" href="../images/logo.ico"/>
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/demo.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/datarea.js"></script>
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/demo.js"></script>
+</head>
+<body>
+<div id="content">
+
+    <div class="singleSelect">
+        需求类型：
+        <label for="singleSelect1" class="hu-radio">
+            <input type="radio" id="singleSelect1" name="radio">
+            <span>angangang</span>
+        </label>
+        <label for="singleSelect2" class="hu-radio">
+            <input type="radio" id="singleSelect2" name="radio">
+            <span>昂昂昂1</span>
+        </label>
+        <label for="singleSelect3" class="hu-radio">
+            <input type="radio" id="singleSelect3" name="radio">
+            <span>昂昂昂2</span>
+        </label>
+        <label for="singleSelect4" class="hu-radio">
+            <input type="radio" id="singleSelect4" name="radio">
+            <span>昂昂昂3</span>
+        </label>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="main-tradingProcess">
+        <div class="tradingProcess-title">
+            交易流程
+        </div>
+        <div class="tradingProcess">
+            <div class="tradingProcess-top"></div>
+            <div class="tradingProcess-bottom">
+                <div><span>01</span>发布需求</div>
+                <div><span>02</span>申请竞标资格</div>
+                <div><span>03</span>雇主筛选竞标者</div>
+                <div><span>04</span>服务商投标</div>
+                <div><span>05</span>雇主选标</div>
+                <div><span>06</span>交流公式</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+         hu-data-change="commonService.provincechange" name="provinceId">
+        <span>省市</span>
+        <ul class="hu-select-dropdown">
+        </ul>
+    </div>
+
+    <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+         hu-data-change="commonService.citychange" name="cityId">
+        <span>市</span>
+        <ul class="hu-select-dropdown">
+        </ul>
+    </div>
+
+    <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="county">
+        <span>区/县</span>
+        <ul class="hu-select-dropdown">
+        </ul>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div id="domainSelect">
+        <div class="domainAdd1">
+            <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+                 hu-data-change="commonService.domain1change" name="domain1">
+                <span hu-data-value=""></span>
+                <ul class="hu-select-dropdown">
+                </ul>
+            </div>
+            <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+                 hu-data-change="commonService.domain2change" name="domain2">
+                <span hu-data-value=""></span>
+                <ul class="hu-select-dropdown">
+                </ul>
+            </div>
+            <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+                 hu-data-change="commonService.domain3change" name="domain3">
+                <span hu-data-value=""></span>
+                <ul class="hu-select-dropdown">
+                </ul>
+            </div>
+            <div class="hu-select select-md" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="domain4">
+                <span hu-data-value=""></span>
+                <ul class="hu-select-dropdown">
+                </ul>
+            </div>
+            <button id="addDomain" class="hu-btn btn-primary-outline">添加</button>
+            <button id="otherDomain" class="hu-btn btn-primary-outline">其他领域</button>
+        </div>
+        <div class="domainAdd2 hide">
+            <input type="text" class="hu-input input-primary" name="domain5" placeholder="">
+            <button id="addDomain2" class="hu-btn btn-primary-outline">添加</button>
+            <button id="backToDomain" class="hu-btn btn-primary-outline">返回</button>
+        </div>
+
+
+        <div id="tag">
+            <div class="hu-tag tag-primary tag-action" hu-data-model hu-data-type="array" hu-data-container name="tag">
+                <span hu-data-item></span><i class="close"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="time">
+        <input name="startTime" type="date">
+    </div>
+    <button id="getDateVal" class="hu-btn btn-primary-outline">getDateVal</button>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h4>富文本编辑器</h4>
+    <link rel="stylesheet" href="../common/src/less/quill.snow.css">
+    <script src="../common/src/js/quill.min.js"></script>
+
+    <div style="width: 800px;height: 500px;margin: auto">
+        <div id="richTextEdit">
+
+        </div>
+        <button id="getEditData" class="hu-btn btn-primary-outline">getData</button>
+    </div>
+
+    <script>
+        var toolbarOptions = [
+            ['bold', 'italic', 'underline'],
+
+            [{'header': 1}, {'header': 2}],               // custom button values
+            [{'list': 'ordered'}, {'list': 'bullet'}],
+            [{'indent': '-1'}, {'indent': '+1'}],          // outdent/indent
+
+            [{'size': ['small', false, 'large', 'huge']}],  // custom dropdown
+
+            [{'color': []}],          // dropdown with defaults from theme
+            [{'font': []}],
+            [{'align': []}],
+
+            ['link', 'image']                                         // remove formatting button
+        ];
+        var options = {
+            modules: {
+                toolbar: toolbarOptions
+            },
+            placeholder: '请输入会议正文',
+            theme: 'snow'
+        };
+        var quill = new Quill('#richTextEdit', options);
+        $('#getEditData').on('click', function () {
+            var data = $('#richTextEdit').find('.ql-editor').html();
+            console.log(data);
+        })
+    </script>
+
+
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <button id="demo1" class="hu-btn btn-primary-outline">弹框</button>
+    <script>
+        $('#demo1').click(function () {
+            var a = {
+                content: $('.singleSelect'),
+//                area: ['360px', '360px']
+            };
+            toastr.box(a)
+        })
+
+    </script>
+
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h1>数据校验</h1>
+    <div class="test5">
+        无校验<input type="text" class="hu-input input-primary" name="input1" placeholder="input-single"><br><br>
+        必填<input musthave type="text" class="hu-input input-primary" name="input2" placeholder="input-single"><br><br>
+        邮箱<input email type="text" class="hu-input input-primary" name="input3" placeholder="input-single"><br><br>
+        邮箱、必填<input musthave email type="text" class="hu-input input-primary" name="input3"
+                    placeholder="input-single"><br><br>
+        手机<input phone type="text" class="hu-input input-primary" name="input4" placeholder="input-single"><br><br>
+        手机、必填<input musthave phone type="text" class="hu-input input-primary" name="input4"
+                    placeholder="input-single"><br><br>
+        身份证<input idc type="text" class="hu-input input-primary" name="input5" placeholder="input-single"><br><br>
+        身份证、必填<input musthave idc type="text" class="hu-input input-primary" name="input5"
+                     placeholder="input-single"><br><br>
+        组织机构代码<input orgCode type="text" class="hu-input input-primary" name="input6"
+                     placeholder="input-single"><br><br>
+        组织机构代码、必填<input musthave orgCode type="text" class="hu-input input-primary" name="input6"
+                        placeholder="input-single"><br><br>
+        统一社会信用代码<input creditCode type="text" class="hu-input input-primary" name="input7"
+                       placeholder="input-single"><br><br>
+        统一社会信用代码、必填<input musthave creditCode type="text" class="hu-input input-primary" name="input7"
+                          placeholder="input-single"><br><br>
+        二选一<input oneof2 type="text" class="hu-input input-primary" name="input8" placeholder="input-single"><br><br>
+        二选一<input oneof2 type="text" class="hu-input input-primary" name="input9" placeholder="input-single"><br><br>
+        多行文本必填<textarea musthave name="brief" class="hu-textarea" placeholder=""></textarea>
+
+        <h5><em>*</em>机构地址：</h5>
+        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+             hu-data-change="commonService.provincechange" name="provinceId">
+            <span hu-data-value="">省市</span>
+            <ul class="hu-select-dropdown">
+            </ul>
+        </div>
+
+        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+             hu-data-change="commonService.citychange" name="cityId">
+            <span hu-data-value="">市</span>
+            <ul class="hu-select-dropdown">
+            </ul>
+        </div>
+
+        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get"
+             name="county">
+            <span musthave hu-data-value="">区/县</span>
+            <ul class="hu-select-dropdown">
+            </ul>
+        </div>
+
+        <div>
+            <label musthave for="formId111" class="hu-radio">
+                <input type="radio" id="formId111" name="radio" value="0">
+                <span>radio1</span>
+            </label>
+            <label for="formId1111" class="hu-radio">
+                <input type="radio" id="formId1111" name="radio" value="1">
+                <span>radio22222</span>
+            </label>
+        </div>
+
+        <div>
+            <label musthave for="formId222" class="hu-checkbox">
+                <input type="checkbox" id="formId222" name="checkbox1" value="0">
+                <span>checkbox1</span>
+            </label>
+            <label for="formId2222" class="hu-checkbox">
+                <input type="checkbox" id="formId2222" name="checkbox1" value="1">
+                <span>checkbox2</span>
+            </label>
+            <label for="formId22222" class="hu-checkbox">
+                <input type="checkbox" id="formId22222" name="checkbox1" value="2">
+                <span>checkbox3</span>
+            </label>
+        </div>
+
+
+        <link rel="stylesheet" href="../lib/flatpickr.min.css">
+        <script src="../lib/flatpickr.min.js"></script>
+        <script src="../lib/zh.js"></script>
+
+        <input musthave id="timer" type="text" class="hu-input input-primary" placeholder="起始/结束时间">
+        <input hidden type="text" id="startTime" name="startTime">
+        <input hidden type="text" id="endTime" name="endTime">
+
+        <script>
+            flatpickr("#timer", {
+                minDate: "today",
+                locale: "zh", mode: 'range', onChange: function (selectedDates, dateStr, instance) {
+                    $('#startTime').val(instance.maxRangeDate.valueOf());
+                    $('#endTime').val(instance.minRangeDate.valueOf());
+                }
+            });
+        </script>
+
+    </div>
+    <p>--------------------------------------------------------------------------------------------------</p>
+    必填<input musthave type="text" class="hu-input input-primary" name="input2" placeholder="input-single"><br><br>
+
+
+    <button id="test5" class="hu-btn btn-primary">checkData</button>
+    <script>
+        $('#test5').click(function () {
+            var a = commonService.checkData($('.test5'));
+            console.log(a);
+            if (a) {
+                var data = huForm.getFormData($('.test5'));
+                console.log(data);
+                alert(JSON.stringify(data));
+            }
+        })
+
+
+        //使用说明。在提交或下一页按钮事件中添加commonService.checkData($('.test5'));
+    </script>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h1>待确认的框</h1>
+
+    <button id="test6" class="hu-btn btn-primary">带确认的框</button>
+
+    <script>
+        $('#test6').click(function () {
+            var op = {
+                content: '<div style="margin: auto;line-height: 102px;text-align: center;font-style: 20px">确定？</div>',
+                area: ['360px', '200px'],
+                btn: ['确定', '取消'],
+                yes: function (index, layero) {
+                    layer.close(index);
+                    console.log(1);
+                }
+                , btn2: function (index, layero) {
+                    layer.close(index);
+                    console.log(2);
+                }
+            };
+            toastr.box(op)
+        })
+
+    </script>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <div id="page"></div>
+
+    <script>
+        function gentPage(current) {
+            var config = {
+                data: {
+                    id: 1
+                },
+                selector: '#page',
+                total: 17,
+                showNum: 5,
+                current: current,
+                prevNextEnable: false,
+                prevNextMultiEnable: true,
+                startEndEnable: true,
+                callback: function (event, pageNo, data) {
+                    gentPage(pageNo);
+                    console.log(data.id);
+                }
+            };
+            new huPagination(config);
+        }
+        $(function () {
+            gentPage(1);
+        })
+    </script>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div class="filterBox">
+        <div class="filter">
+            <div class="filter-line line1">
+                <div class="filter-con">
+                    <div class="filter-name">昂昂昂1</div>
+                    <ul>
+                        <li class="selected">选项选项选项1</li>
+                        <li>选项选项选项2</li>
+                        <li>选项选项选项3</li>
+                        <li>选项选项选项4</li>
+                        <li>选项选项选项5</li>
+                        <li>选项选项选项6</li>
+                        <li>选项选项选项7</li>
+                        <li>选项选项选项8</li>
+                        <li>选项选项选项9</li>
+                        <li>选项选项选项10</li>
+                        <li>选项选项选项11</li>
+                        <li>选项选项选项12</li>
+                        <li>选项选项选项13</li>
+                        <li>选项选项选项14</li>
+                        <li>选项选项选项15</li>
+                        <li>选项选项选项16</li>
+                        <li>选项选项选项17</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-line line2">
+                <div class="filter-con">
+                    <div class="filter-name">昂昂昂2</div>
+                    <ul>
+                        <li class="selected">选项选项1</li>
+                        <li>选项选项选项2</li>
+                        <li>选项选项选项3</li>
+                        <li>选项选项选项4</li>
+                        <li>选项选项选项5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-line line3">
+                <div class="filter-con">
+                    <div class="filter-name">昂昂昂3</div>
+                    <ul>
+                        <li class="selected">选项选项选项1</li>
+                        <li>选项选项选项2</li>
+                        <li>选项选项选项3</li>
+                        <li>选项选项选项4</li>
+                        <li>选项选项选项5</li>
+                        <li>选项选项选项6</li>
+                        <li>选项选项选项7</li>
+                        <li>选项选项选项8</li>
+                        <li>选项选项选项9</li>
+                        <li>选项选项选项10</li>
+                        <li>选项选项选项11</li>
+                        <li>选项选项选项12</li>
+                        <li>选项选项选项13</li>
+                        <li>选项选项选项14</li>
+                        <li>选项选项选项15</li>
+                        <li>选项选项选项16</li>
+                        <li>选项选项选项17</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-line line4">
+                <div class="filter-con">
+                    <div class="filter-name">昂昂昂4</div>
+                    <ul>
+                        <li class="selected">选项选项1</li>
+                        <li>选项项2</li>
+                        <li>选项选项选项3</li>
+                        <li>选项选项选项4</li>
+                        <li>选项选项选项5</li>
+                        <li>选项6</li>
+                        <li>选项选项选项7</li>
+                        <li>选项选项选项8</li>
+                        <li>选项选项选项9</li>
+                        <li>选项选项选项10</li>
+                        <li>选项选项选项11</li>
+                        <li>选项选项选项12</li>
+                        <li>选项选项选项13</li>
+                        <li>选项选项选项14</li>
+                        <li>选项项15</li>
+                        <li>选项选项选项16</li>
+                        <li>选项选项17</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function moreFilter () {
+            $('.filter-line').find('ul').each(function (i,e) {
+                if($(this).height()>30){
+                    $(this).closest('.filter-con').append('<div class="more-filter">更多<i class="icon more hufont ic-navigate-next"></i></div>')
+                }
+            })
+        }
+        $(function () {
+            moreFilter ();
+
+            $('.filter').on('click','li',function () {
+                $(this).addClass('selected').siblings('li').removeClass('selected');
+            });
+            $('.filter').on('click','.more-filter',function () {
+                if($(this).closest('.filter-line').height()>20){
+                    $(this).closest('.filter-line').animate({'height':'16px'},200)
+                    $(this).find("i").removeClass('rotate')
+                }else{
+                    var h=$(this).siblings('ul').eq(0).height();
+                    $(this).closest('.filter-line').animate({'height':h+'px'},200)
+                    $(this).find("i").addClass('rotate')
+                }
+            });
+        })
+    </script>
+
+</div>
+
+</body>
+</html>

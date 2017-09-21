@@ -1,0 +1,134 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  //.common()
+}
+.header-part3{
+  background: url("../../../images/outcomeTransformation-banner.png")center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+
+.main{
+  width: 1920px!important;
+  max-height: 1080px;
+  background-color: #0d1631;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bg{
+    width: 1390px;
+    height: 800px;
+    margin-right: 100px;
+    background: url("../../../images/check06.png") no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cont{
+
+      display: flex;
+      flex-direction: row;
+      //justify-content: center;
+      //align-items: center;
+      width: 1000px;
+      height: 500px;
+      flex-wrap: wrap;
+      div{
+        //width: 560px;
+        //height: 288px;
+        margin:-15px 34px 0 130px;
+        h2{
+          font-size: 24px;
+          font-weight: 500;
+        }
+        p{
+          font-size: 18px;
+          margin-left: 22px;
+          opacity: .8;
+          span{
+            i{
+              font-size: 26px;
+              color: orange;
+              margin: 0 5px;
+              font-style:normal;
+            }
+          }
+        }
+        ul{
+          margin-top: 12px;
+          li{
+            margin: 6px 0;
+            display: flex;
+            font-size: 18px;
+            position: relative;
+            opacity: .8;
+            i{
+              display: block;
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              position: relative;
+              margin:3px 10px 2px 0;
+              img{
+                width: 20px;
+
+              }
+            }
+          }
+          li:nth-of-type(2) i img{
+            position: absolute;
+            top: -35px;
+          }
+          li:nth-of-type(3) i{
+            width: 26px;
+            height: 28px;
+          }
+
+          li:nth-of-type(3) i img{
+            position: absolute;
+            top: -72px;
+          }
+        }
+      }
+      .three,.four{
+        margin-right: 9px;
+      }
+      .one,.two{
+        margin-top: 5px;
+      }
+      .four{
+        margin-left: 97px;
+      }
+      .two{
+        margin-left: 70px;;
+      }
+      div:nth-of-type(even){
+        //margin-left: 100px;
+      }
+      .one{
+
+
+      }
+    }
+
+  }
+  .close{
+    //margin: auto;
+    margin-top: -70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #44d7ec;
+    i{
+      font-size: 54px;
+      line-height: 70px;
+    }
+  }
+
+}

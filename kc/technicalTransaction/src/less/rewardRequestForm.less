@@ -1,0 +1,128 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/outcomeTransformation-banner.png")center no-repeat;
+}
+
+.main{
+  .hu-card{
+    margin: 50px auto;
+    .card-title{
+      width: 100px;
+      height: 30px;
+      background: @primary;
+      margin-left: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  .main-form{
+    width: 950px;
+    margin: 10px auto;
+    h5{
+      font-size: 14px;
+      display: inline-block;
+      width: 110px;
+      min-width: 120px;
+      text-align: right;
+      font-weight: normal;
+      em{
+        color: #f00;
+        font-style: normal;
+        font-size: 20px;
+      }
+    }
+    h6{
+      margin-left: 10px;
+      line-height: 40px;
+    }
+
+    .form-item{
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px;
+      textarea{
+        width: 570px;
+        height: 150px;
+      }
+      input{
+        width: 500px;
+      }
+      .timer{
+        width: 300px;
+      }
+      &.location{
+        div{
+          margin-right: 10px;
+        }
+        input{
+          width: 200px;
+        }
+      }
+      .line{
+        display: inline-block;
+        height: 3px;
+        width: 30px;
+        background: @font01;
+        margin: 20px 10px;
+      }
+      .developmentCycle{
+        width: 117px;
+      }
+    }
+    .main-form1-top{
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid @line01;
+      p{
+        font-size: 16px;
+        color: @font01;
+      }
+      div{
+        margin-top: 20px;
+        h5{
+          font-size: 14px;
+          color: @font02;
+          em{
+            font-style: normal;
+            color: #f00;
+          }
+        }
+        input{
+          margin-right: 40px;
+        }
+      }
+    }
+
+    #domainSelect{
+      .domainAdd1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div,button{
+          margin-right: 10px;
+        }
+      }
+    }
+    #domain{
+      div{
+        margin: 10px 10px 0 0;
+      }
+    }
+
+
+  }
+  .btn{
+    margin: 50px 50px 32px;
+    display: flex;
+    justify-content: flex-end;
+    button{
+      margin-left: 20px;
+    }
+  }
+
+}

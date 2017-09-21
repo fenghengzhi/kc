@@ -1,0 +1,67 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/outcomeTransformation-banner.png") center no-repeat;
+}
+
+.main {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 32px;
+  .card-title {
+    width: 95px;
+    height: 30px;
+    background: @primary;
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .hu-card-body {
+    padding-bottom: 32px;
+    textarea {
+      width: 560px;
+      height: 100px;
+      resize: none;
+      &::placeholder {
+        font-size: 14px;
+        color: @font02;
+
+      }
+    }
+    table {
+      margin-left: 120px;
+      span.required{
+        color:#ff2424;
+        //content:'* aswdfdas';
+        //content: 'asdasdadsafsd';
+      }
+      tr {
+        &.pad {
+          height: 16px;
+          content: ''
+        }
+        td {
+          &:first-child {
+            font-size: 14px;
+            color: @font01;
+            white-space: nowrap;
+            padding-right: 20px;
+            text-align:right;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  .common-title()
+}

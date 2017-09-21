@@ -1,0 +1,98 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/resourceSharing-banner.png")center no-repeat;
+}
+i.item-icon-1 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../../images/item-list-icon.png) no-repeat -10px 0;
+  margin-right:10px;
+  //position: relative;
+  //left: -8px;
+  //float: left;
+}
+
+.main {
+  width: 1024px;
+  .main-part1 {
+    margin: 24px 0;
+    text-align: center;
+    .main-part1-title{
+      font-size:28px;
+      line-height:28px;
+      font-weight:bold;
+      color:@font02;
+      margin-bottom:19px;
+    }
+    .main-part1-con{
+      font-size:12px;
+      line-height:normal;
+      margin-bottom:16px;
+      color:@font03;
+    }
+  }
+
+  .main-part3 {
+    & > .title {
+      .common-title();
+      margin-bottom:12px;
+    }
+    .items {
+      margin-bottom: 60px;
+      .item {
+        padding: 16px 0;
+        display: flex;
+        //flex-direction:column;
+        border-bottom: 1px solid @line01;
+        .item-left {
+          width: 260px;
+          height: 160px;
+          &>img{
+          width: 260px;
+          height: 160px;
+          }
+
+        }
+        .item-mid {
+          flex-grow: 1;
+          padding-left: 16px;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          .title {
+            font-size: 18px;
+            line-height: 18px;
+            color: @primary;
+            margin-bottom:15px;
+          }
+          .lines{
+            margin-bottom:-10px;
+            .line{
+              display:flex;
+              align-items:center;
+              margin-bottom:10px;
+              line-height:14px;
+              font-size:14px;
+            }
+          }
+        }
+        .item-right {
+          display: flex;
+          //justify-content: center;
+          align-items: center;
+          .view-details-btn {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+h2{
+  .common-title()
+}

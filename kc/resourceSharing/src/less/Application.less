@@ -1,0 +1,203 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/resourceSharing-banner.png") center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+
+
+.main {
+  .main-bg {
+    margin: 32px 0 72px;
+    border: 1px solid @line02;
+  }
+  .top-bg {
+    .one {
+      width: 95px;
+      height: 30px;
+      margin-left: 20px;
+      button {
+        cursor: auto;
+        &:hover {
+          color: #fff;
+          background: #5f8bc9;
+          border-color: #5f8bc9;
+        }
+      }
+    }
+    .line {
+      width: 140px;
+      height: 10px;
+      margin-top: -30px;
+      background-color: #dbdbdb;
+    }
+
+  }
+
+  .form {
+    margin: 75px 0 0 100px;
+    overflow: hidden;
+    text-align: center;
+    textarea {
+      resize: none;
+      width: 570px;
+      height: 150px;
+    }
+    .width {
+      width: 288px !important;
+    }
+
+    .organization {
+      display: block;
+      text-align: right;
+      width: 120px;
+      font-size: 16px;
+      color: @font01;
+      margin-bottom: 16px;
+    }
+    #txt {
+      width: 205px;
+    }
+    .xing {
+      color: red;
+      margin-right: 5px;
+    }
+    div {
+      //display: flex;
+      //align-items: center;
+      span {
+        display: block;
+        width: 120px;
+        text-align: right;
+        margin-right: 15px;
+        line-height: 26px;
+      }
+      .label {
+        margin: 16px 0 0;
+        display: flex;
+        //align-items: center;
+        font-size: 14px;
+        color: @font02;
+        .select-sm {
+          width: 120px;
+          span {
+            display: block;
+            width: 100px;
+            text-align: center;
+          }
+        }
+        #url {
+          width: 570px;
+        }
+        span {
+          display: block;
+          width: 120px;
+          text-align: right;
+          margin-right: 15px;
+        }
+        input {
+          width: 154px;
+          margin-right: 130px;
+        }
+        #capital {
+          margin-right: 10px;
+        }
+        #authcode {
+          width: 270px;
+          margin-right: 15px;
+        }
+        img {
+          width: 115px;
+          height: 36px;
+          background-color: #eed3d7;
+        }
+        #affirm {
+          width: 17px;
+          margin: 0 8px 0 115px;
+        }
+        pre {
+          height: 248px;
+          width: 480px;
+          white-space: normal;
+          line-height: 26px;
+          border: 1px solid @line01;
+          padding: 20px;
+          text-align: center;
+          overflow-y: scroll;
+          margin-left: 115px;
+          p {
+            color: #5f8bc9;
+          }
+        }
+      }
+    }
+
+    .line {
+      //padding: 0 0 0 80px;
+      margin: 16px 0;
+      display: flex;
+      //flex-direction: row;
+      position: relative;
+      img {
+        margin: 16px 0 0;
+      }
+
+      span {
+        display: block;
+        width: 120px;
+        text-align: right;
+        margin-right: 15px;
+      }
+      .form-file {
+        //padding-top: 106px;
+        //height: 170px;
+        input, button {
+          cursor: pointer;
+        }
+        input {
+          font-size: 0;
+          width: 71px;
+        }
+      }
+      .label, .form-file {
+        display: flex;
+        position: relative;
+      }
+      input[type=file] {
+        z-index: 99;
+        opacity: 0;
+        min-width: 72px;
+        height: 32px;
+        //margin: 0 0 0 20px;
+      }
+      #form-file, #licenceImage {
+        min-width: 71px;
+        //margin-top: 32px;
+        height: 32px;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        //left: 20px;
+      }
+    }
+
+    //button:nth-of-type(2) {
+    //  background-color: #999999;
+    //  border-color: #999999;
+    //  margin-left: 30px;
+    //}
+    .next-step {
+      //float: right;
+      margin: 50px 100px 32px 0;
+    }
+
+  }
+}

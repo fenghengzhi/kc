@@ -1,0 +1,70 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/popularSciencePlatform-banner.png")center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+.header-part2{
+  ul{
+    li{
+      a{
+        padding: 0 7px;
+      }
+    }
+  }
+}
+.main {
+  //margin: auto;
+  padding: 0;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right:-21px;
+    .bgImg {
+      //background-color: #eed3d7;
+      //margin-right:21px;
+      width: 480px;
+      height: 270px;
+      position: relative;
+      padding: 0;
+      margin-top: 30px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0,0,0,0);
+      &:hover{
+        border: 1px solid @font03;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      div {
+        width:100%;
+        height: 46px;
+        background: rgba(0, 0, 0, .5);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+        h4 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  #page{
+    text-align: center;
+    margin: 48px 0 70px;
+  }
+}

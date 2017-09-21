@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>法律信息</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/legalinformation.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/legalinformation.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">成果转化开放平台</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-topbg">
+            <div class="main-nav">
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="patentBaseInfo.html">
+                            <img src="../images/icon-outcome-basic.svg" alt="home">
+                            基本信息
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body ">
+                        <a href="claims.html">
+                            <img src="../images/icon-outcome-right.svg" alt="bid">
+                            权利要求
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="specification.html">
+                            <img src="../images/icon-outcome-book.svg" alt="reward">
+                            说明书
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card selected">
+                    <div class="hu-card-body">
+                        <a href="legalinformation.html">
+                            <img src="../images/icon-outcome-law.svg" alt="transact">
+                            法律信息
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="quote.html">
+                            <img src="../images/icon-outcome-reference.svg" alt="statistics">
+                            引用与被引
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="Patentfamily.html">
+                            <img src="../images/icon-outcome-family.svg" alt="statistics">
+                            专利家族
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-name">
+                <h3>一种大数据使用权交易系统与方法</h3>
+                <div class="main-name-left">
+                    <div class="left">
+                        <p>申请号 : <span>CN201610670879.X</span></p>
+                        <p>未授权 : <span>剩余18年11月</span></p>
+                    </div>
+                    <div class="cent">
+                        <p>综合评分 : <span>★★☆</span></p>
+                        <p>权利评分 : <span>★★☆</span></p>
+                    </div>
+                    <div class="right">
+                        <p>技术评分 : <span>★★</span></p>
+                        <p>市场评分 : <span>☆</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>当前法律信息</h3>
+            <div class="num">
+                <div class="left">
+                    <div><p>当前法律状态 : </p><span> 未授权</span></div>
+                    <div><p>申请日 : </p><span> 2016年08月15日</span></div>
+                    <div><p>首次公开日 : </p><span> 2017年01月04日</span></div>
+                </div>
+                <div class="right">
+                    <div><p>存活期 : </p><span> 1年1个月</span></div>
+                    <div><p>预期剩余寿命 : </p><span> 18年11个月</span></div>
+                    <div><p>预期失效日 : </p><span> 2036年08月15日</span></div>
+                </div>
+            </div>
+            <h3>公用公知状态</h3>
+            <div class="num">
+                <div class="left">
+                    <div><p>公用公知状态 : </p><span> 非公知公用（根据专利的相关信息判断，当前专利在中国不属于公知技术，未经权利人许可不得实施）</span></div>
+                </div>
+            </div>
+            <h3>法律状态变更历史</h3>
+            <div class="box-line">
+                <p><i class="icon hufont ic-access-time"></i>2016年08月15日</p>
+                <p class="con">申请
+                </p>
+            </div>
+            <div class="box-line">
+                <p><i class="icon hufont ic-access-time"></i>2017年01月04日</p>
+                <p class="con">首次公开
+                </p>
+            </div>
+
+            <h3>法律信息历史</h3>
+            <div class="box-line">
+                <p><i class="icon hufont ic-access-time"></i>2017年01月04日</p>
+                <p class="con">公开
+                </p>
+            </div>
+            <div class="box-line">
+                <p><i class="icon hufont ic-access-time"></i>2017年02月01日	</p>
+                <p class="con">实质审查
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

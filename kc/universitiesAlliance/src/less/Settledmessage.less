@@ -1,0 +1,185 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/universitiesAlliance-banner.png") center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+
+.main {
+  textarea {
+    resize: none;
+  }
+  #form {
+    margin-bottom: 72px;
+  }
+
+  .bg {
+    text-align: center;
+    box-shadow: 0 0 5px 1px #888888;
+    margin: 32px 0;
+    padding-bottom: 40px;
+    .tijiao {
+      margin: 80px 0 50px;
+    }
+    #myModal {
+      display: none;
+    }
+    .modal-dialog {
+      display: flex;
+      align-items: center;
+
+      justify-content: center;
+      height: 80%;
+      .modal-content {
+        width: 660px;
+        height: 300px;
+        border-radius: 0;
+        .modal-header {
+          border: none;
+        }
+        .modal-body {
+          display: flex;
+          height: 275px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 0 15px;
+          p:nth-of-type(1) {
+            font-size: 24px;
+            color: @primary;
+            display: flex;
+            line-height: 29px;
+          }
+          i {
+            margin-right: 20px;
+            background-color: @primary;
+            color: white;
+            font-size: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+          }
+          p {
+            font-size: 14px;
+            color: @font02;
+            margin-top: 12px;
+            a {
+              color: @btn02;
+            }
+          }
+        }
+      }
+
+    }
+    #form-website {
+      display: block;
+      width: 288px;
+    }
+
+    .top-message {
+      background-color: #5f8bc9;
+      width: 80px;
+      height: 30px;
+      margin: 0 30px 20px 32px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .line {
+      padding: 0 0 0 80px;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      .xing {
+        color: red;
+        margin-right: 5px;
+      }
+      img {
+        display: block;
+        width: 65px;
+        height: 65px;
+      }
+      p {
+        margin: 6px 0 0 10px;
+        line-height: 26px;
+        color: @font03;
+        display: flex;
+        .xing {
+          color: red;
+          margin-right: 0;
+          line-height: 26px;
+        }
+      }
+      .jy1 {
+        margin-top: 39px;
+      }
+      .form-file {
+        input, button {
+          cursor: pointer;
+
+        }
+        input{
+          font-size: 0;
+        }
+      }
+      span {
+        display: block;
+        width: 100px;
+        text-align: right;
+        margin-right: 20px;
+        font-size: 14px;
+        color: @font02;
+        font-weight: 500;
+        line-height: 30px;
+      }
+      textarea {
+        width: 560px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        height: 170px;
+      }
+      label, .form-file {
+        display: flex;
+        position: relative;
+      }
+      input[type=file] {
+        z-index: 99;
+        opacity: 0;
+        min-width: 72px;
+        height: 32px;
+        margin: 0 0 0 20px;
+      }
+      #form-file {
+        min-width: 71px;
+        margin-top: 32px;
+        height: 32px;
+      }
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+      }
+    }
+    .lastdate {
+      text-align: right;
+      margin-right: 30px;
+      p {
+        font-size: 14px;
+        color: @font03;
+        line-height: 20px;
+      }
+
+    }
+  }
+}

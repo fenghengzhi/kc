@@ -1,0 +1,138 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/popularSciencePlatform-banner.png")center no-repeat;
+}
+.header-part2{
+  ul{
+    li{
+      a{
+        padding: 0 7px;
+      }
+    }
+  }
+}
+.main{
+  .con-list{
+    display: flex;
+    h2{
+      .common-title();
+      margin: 15px 0 0;
+    }
+    .con-list-demand{
+      margin-right: 40px;
+      //padding-right: 40px;
+      .list-demand-1{
+        display: flex;
+        padding: 16px 40px 16px 0;
+        border-bottom: 1px dashed @line01;
+        a {
+          display: block;
+          cursor: pointer;
+          font-size: 16px;
+          color: @font02;
+          font-weight: bold;
+          &:hover{
+            color: #5f8bc9;
+          }
+        }
+        img{
+          display: inline-block;
+          width: 150px;
+          height: 150px;
+          //background-color: red;
+          margin-right: 24px;
+        }
+        .match{
+          width: 500px;
+          a{
+            display: inline;
+          }
+          h3{
+            color:@font01;
+            font-size: 18px;
+            margin:10px 0 20px;
+            span{
+              margin-left: 16px;
+              color:@primary;
+              font-size: 14px;
+            }
+          }
+          p:nth-of-type(1){
+            line-height: 20px;
+            color: @font03;
+            margin-top: 10px;
+          }
+          p{
+            font-size: 14px;
+            color: @font03;
+
+            span{
+              color:white;
+              margin: 3px auto;
+              display: inline-block;
+              text-align: center;
+              line-height: 19px;
+            }
+            .btn1{
+              background-color: @btn02;
+              width: 70px;
+              height: 20px;
+            }
+            .btn2{
+              background-color: @primary;
+              opacity: .5;
+              //width: 140px;
+              padding:0 8px;
+              height: 20px;
+            }
+          }
+        }
+      }
+      #page{
+        margin: 40px 0 70px;
+        float: right;
+        margin-right: 50px;
+      }
+      overflow: hidden;
+    }
+    .con-list-expert{
+      //margin-right: 40px;
+      //padding-right: 40px;
+      .list-expert-1{
+        display: flex;
+        padding: 16px 0;
+        border-bottom: 1px dashed @line01;
+        &:nth-last-child(1){
+          border: none;
+        }
+        img{
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          //background-color: red;
+          margin-right: 16px;
+        }
+        .hot{
+          h3{
+            font-size: 14px;
+            color: @font02;
+            line-height: 22px;
+          }
+          p{
+            color:@font03;
+            font-size: 12px;
+            line-height: 16px;
+            span{
+              color:@font02;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

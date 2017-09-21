@@ -1,0 +1,55 @@
+@import "../../../../common/src/less/define.less";
+.main-tab(){
+  .main-tab {
+    display: flex;
+    margin: 24px 0 24px;
+    & > a {
+      padding: 0 8px;
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid @line01;
+      margin-right: -1px;
+      width: 107px;
+      height: 40px;
+      & > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @bg04;
+        min-width:30px;
+        width: 30px;
+        max-width:30px;
+        min-height:30px;
+        height: 30px;
+        max-height:30px;
+        border-radius: 30px;
+        
+        margin-right: 6px;
+        & > div {
+          font-size: 24px;
+          line-height: 24px;
+          transform: scale(0.5, 0.5);
+          white-space: nowrap;
+          color: #fff;
+
+        }
+      }
+      & > div {
+        color: @font02;
+        font-size: 14px;
+        line-height: 14px;
+        white-space: nowrap;
+      }
+      &.active {
+        & > span {
+          background-color: @primary;
+        }
+        & > div {
+          color: @primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/outcomeTransformation-banner.png")center no-repeat;
+}
+
+.main {
+  width: 1400px !important;
+  margin-bottom: 32px!important;
+  .main-topbg {
+    background: url("../../../images/statistics.jpg") bottom center no-repeat;
+    background-size: 100% auto;
+  }
+  .main-nav {
+    width: @main-width;
+    margin: 24px auto 0;
+    display: flex;
+    .hu-card {
+      width: 25%;
+      text-align: center;
+      font-size: 16px;
+      height: 70px;
+      border-right: none;
+      border-radius: 0;
+      &:hover{
+            box-shadow: 0 0px 20px #ddd;
+      }
+      &:last-of-type {
+        border-right: 1px solid @line01;
+      }
+      .hu-card-body {
+        font-size: 16px;
+        cursor: pointer;
+        line-height: 70px;
+        width: 100%;
+        height: 100%;
+        a {
+          width: 100%;
+          height: 100%;
+          line-height: 70px;
+          display: block;
+          color: @font02;
+        }
+        img {
+          margin-right: 8px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .selected {
+          box-shadow: 0 0px 20px #ddd;
+      .hu-card-body {
+        a {
+          color: @primary;
+        }
+      }
+    }
+  }
+  .main-name {
+    width: @main-width;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .main-text {
+      padding: 24px;
+      margin-right: 44px;
+      p {
+        font-size: 32px;
+        color: @font02;
+        margin-bottom: 8px;
+      }
+      span {
+        font-size: 20px;
+        color: @font02;
+      }
+    }
+  }
+
+  .main-echarts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: @main-width;
+    margin: auto;
+
+    .hu-card{
+      width: 496px;
+      flex-shrink: 0;
+      height: 345px;
+      margin-top: 32px;
+      .hu-card-head{
+        padding: 12px 0 8px 16px;
+      }
+      .hu-card-body{
+        height: 298px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .main{
+    width: 100%!important;
+  }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家详情</title>
+    
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/expertdetail.css">
+    <link rel="icon" href="../images/logo.ico">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/expertdetail.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/baselist.html">科普基地</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/expert.html">科普专家</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/speciallist.html">科普专项</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/videolist.html">科普视频</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">科普专家</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="con">
+            <div class="detail">
+                <div class="con-list-demand">
+                    <h2>专家详情</h2>
+                    <div class="list-demand-1">
+                        <img src="http://placehold.it/180x180" alt="">
+                        <div class="match">
+                            <h3>龚惠兴 <span> &nbsp;研究员</span></h3>
+                            <div>
+                                <p>专业领域: <span> &nbsp;电子与信息技术</span></p>
+                                <p>所属机构: <span> &nbsp;技术咨询</span></p>
+                                <p>研究成果: <span> &nbsp;电光源与激光技术</span></p>
+                                <p>服务方式: <span> &nbsp;技术机构</span></p>
+                            </div>
+
+                            <button class="hu-btn btn-primary btn-sm">咨询</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                    <h2>专家简介</h2>
+                    <div id="description">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龚惠兴，男，汉族，1940年7月生，上海市人。1963年中国科学技术大学自动化系毕业，1967年中国科学院自动化所研究生毕业，1968年1月起在中国科学院上海技术物理研究所工作至今。现任中科院上海技术物理研究所总工程师，研究员，中国工程院院士，中国科学技术大学信息科学学院院长，全国政协常委，国家863计划航天航空技术领域专家委员会顾问，973某航天光学遥感项目专家组长，中国仪器仪表学会副
+                            理事长。
+                            这并不是一件容易的事。褚君浩说，科普有三个维度：第一个维度是科学知识本身；第二个维度是知识的由来；第三个维度是科学知识与社会、经济、产业、文化甚至哲学等等之间的联系。如果做科普可以把这三个维度都理解透，这对科研本身是很好的促进，科学家借此也可以实现自我提升。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这并不是一件容易的事。褚君浩说，科普有三个维度：第一个维度是科学知识本身；第二个维度是知识的由来；第三个维度是科学知识与社会、经济、产业、文化甚至哲学等等之间的联系。如果做科普可以把这三个维度都理解透，这对科研本身是很好的促进，科学家借此也可以实现自我提升。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;既是中科院研究员，又是华东师范大学教授，曾是第十、十一届全国人大代表和上海市政府参事，褚君浩常被问及：“这么多事情，你怎么忙得过来？”他说，割裂开来看，确实忙不过来；但如果在它们之间建立起一个良性循环，就可以同时做好，而科普就是他的法宝。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;褚君浩做科普总会坚持一点，那就是围绕自己的专业，适当拓展，以知识点的物理图景为中心，联系科学方法、科学精神、技术应用、社会价值、发展趋势，甚至联系到参政议政。例如，基于对光电技术及智慧城市、低碳城市的科普，在担任市政府参事期间，他提出“低碳世博”，完成的报告得到中央领导的批示。当全国人大代表时，他提出多项关于发展可再生能源的议案，都被采纳立项，作为立法或修改法规的依据。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;褚君浩经常说，科研只是科学家的一种能力，而科普则需要更多能力。在高端科普的实践中，可以得到更多学科交叉的机会。比如，在他倡导的浦江交叉学科论坛上，他就曾和中科院上海生科院的阮康成研究员交流出了一个课题，并得到国家863项目的立项——俗话说“隔行如隔山”，科普就是搬走大山的好方法。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“科普可以影响很多人。”褚君浩觉得，这种成就感是实验室里难以获得的。他有好几个优秀的博士生、博士后，就是听了他的科普讲座后，决定来报考的。天合光能是全球第二大太阳能光伏企业，“公司技术总监张眏斌在听了我的报告后，考了我的博士生，后来他带领团队创造出了多晶硅、单晶硅太阳能电池光电转换效率的世界最高纪录”。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con-list-expert">
+                <h2>热门专家</h2>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

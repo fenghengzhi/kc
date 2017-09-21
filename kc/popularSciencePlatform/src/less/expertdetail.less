@@ -1,0 +1,130 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/popularSciencePlatform-banner.png")center no-repeat;
+}
+.header-part2{
+  ul{
+    li{
+      a{
+        padding: 0 7px;
+      }
+    }
+  }
+}
+//h2{
+//  .common-title()
+//}
+.main{
+  min-height: 685px;
+  .con{
+    display: flex;
+    h2{
+      .common-title();
+      font-weight: bold;
+      margin: 24px 0;
+    }
+    .detail{
+      padding-right: 40px;
+      .con-list-demand{
+        margin-right: 40px;
+        .list-demand-1{
+          display: flex;
+          padding: 16px 40px 20px 0;
+          border-bottom: 1px dashed @line01;
+          img{
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            //background-color: red;
+            margin-right:32px;
+          }
+          .match{
+            width: 500px;
+            h3{
+              color:@font01;
+              font-size: 18px;
+              margin: 10px 0 32px 0;
+              span{
+                margin-left: 24px;
+                color:@font01;
+                font-size: 18px;
+              }
+            }
+            div{
+              height:82px;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              p{
+                font-size: 14px;
+                color: @font02;
+                margin: 4px 0;
+                span{
+                  color:@font02;
+                  margin: 3px auto;
+                  //display: inline-block;
+                  text-align: center;
+                  line-height: 19px;
+                }
+              }
+            }
+            button{
+              padding: 0 25px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      .intro{
+        //text-align: center;
+        margin-bottom: 80px;
+        p {
+          //width: 650px;
+          margin: 16px 0;
+          font-size: 16px;
+          line-height: 26px;
+          color: @font02;
+        }
+      }
+    }
+    .con-list-expert{
+      flex-shrink: 0;
+      margin-right: 40px;
+      //padding-right: 40px;
+      h2{
+        margin-bottom: 8px;
+      }
+      .list-expert-1{
+        display: flex;
+        padding: 16px 0;
+        border-bottom: 1px dashed @line01;
+        img{
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          //background-color: red;
+          margin-right: 16px;
+        }
+        .hot{
+          h3{
+            font-size: 14px;
+            color: @font02;
+            line-height: 22px;
+          }
+          p{
+            color:@font03;
+            font-size: 12px;
+            line-height: 16px;
+            span{
+              color:@font02;
+            }
+          }
+        }
+      }
+    }
+  }
+}

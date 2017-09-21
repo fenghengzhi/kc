@@ -1,0 +1,153 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common();
+  //.filter();
+}
+
+@import 'shared/bannerBackground.less';
+.banner-bg();
+
+//.filter {
+//  padding: 16px 0;
+//  text-align: center;
+//  background-color: @bg02;
+//  margin:24px 0;
+//
+//  .filter-line {
+//    margin: 0 auto;
+//    width: 1024px;
+//    height: 16px;
+//    overflow: hidden;
+//    display: flex;
+//    margin-bottom: 24px;
+//    position: relative;
+//    &:nth-last-child(1) {
+//      margin-bottom: 0;
+//    }
+//    .filter-con {
+//      overflow: hidden;
+//      .filter-name {
+//        margin-right: 30px;
+//        flex-shrink: 0;
+//        float: left;
+//      }
+//      ul {
+//        width: 800px;
+//        flex-shrink: 0;
+//        overflow: hidden;
+//        li {
+//          &:hover {
+//            color: @primary;
+//          }
+//          float: left;
+//          cursor: pointer;
+//          border-left: 1px solid @line01;
+//          padding-left: 16px;
+//          margin: 0 16px 16px 0;
+//        }
+//        .selected {
+//          color: @primary;
+//        }
+//      }
+//      .more-filter {
+//
+//        color: @primary;
+//        cursor: pointer;
+//        position: absolute;
+//        top: 0;
+//        right: 0;
+//      }
+//    }
+//  }
+//}
+@import "../../../common/src/less/filter";
+
+.main {
+  * {
+    //padding: 0;
+    //margin: 0;
+  }
+  table {
+    width: 100%;
+
+    margin-bottom: 60px;
+    thead {
+      tr {
+        th {
+          border-bottom: 1px solid @line01;
+          color: @font02;
+          font-size: 16px;
+          line-height: 16px;
+          padding-bottom: 16px;
+          white-space: nowrap;
+          &:nth-child(3) {
+            padding-right: 125px;
+            width: 1px;
+          }
+          &:nth-child(4) {
+            padding-right: 74px;
+            width: 1px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding-top: 32px;
+          &:nth-child(1) {
+            width: 236px;
+            padding-right: 30px;
+          }
+          &:nth-child(2) {
+            i {
+              width: 12px;
+              height: 12px;
+              background-size: 12px 12px;
+              margin-right: 8px;
+            }
+            .title {
+              font-size: 16px;
+              line-height: 16px;
+              color: @font01;
+              //margin-bottom: 16px;
+              font-weight: bold;
+            }
+            .line {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-top: 14px;
+              &:nth-last-child(1) {
+                margin-left: 20px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            color: @btn01;
+            font-size: 16px;
+          }
+          &:nth-child(4) {
+            padding-right: 74px;
+            text-align: center;
+            a {
+              color: @btn01;
+              font-size: 26px;
+              &:hover {
+                color: @btn02
+              }
+            }
+          }
+          &:nth-child(n+2) {
+            border-bottom: 1px solid @line01;
+          }
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  .common-title()
+}

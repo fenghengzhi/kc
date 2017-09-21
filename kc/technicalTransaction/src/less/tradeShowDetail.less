@@ -1,0 +1,326 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/outcomeTransformation-banner.png") center no-repeat;
+}
+
+.main {
+  width: 1400px !important;
+
+  .main-topbg {
+    background: url("../../../images/statistics.jpg") bottom center no-repeat;
+    background-size: 100% auto;
+  }
+
+  .main-nav {
+    width: @main-width;
+    margin: 24px auto 0;
+    display: flex;
+    .hu-card {
+      width: 25%;
+      text-align: center;
+      font-size: 16px;
+      height: 70px;
+      border-right: none;
+      border-radius: 0;
+      &:last-of-type {
+        border-right: 1px solid @line01;
+      }
+      .hu-card-body {
+        font-size: 16px;
+        cursor: pointer;
+        line-height: 70px;
+        width: 100%;
+        height: 100%;
+        a {
+          width: 100%;
+          height: 100%;
+          line-height: 70px;
+          display: block;
+          color: @font02;
+        }
+        img {
+          margin-right: 8px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .selected {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      .hu-card-body {
+        a {
+          color: @primary;
+        }
+      }
+    }
+  }
+
+  .main-name {
+    width: @main-width;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .main-text {
+      padding: 24px;
+      margin-right: 44px;
+      p {
+        font-size: 32px;
+        color: @font02;
+        margin-bottom: 8px;
+      }
+      span {
+        font-size: 20px;
+        color: @font02;
+      }
+    }
+  }
+
+  .main-info {
+    margin: 24px auto 0;
+    display: flex;
+    width: @main-width;
+    border: 1px solid @line01;
+    height: 256px;
+    box-sizing: border-box;
+
+    .info-serviceProvider {
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 134px;
+      border-right: 1px solid @line01;
+      img {
+        height: 70px;
+        width: 70px;
+      }
+      p {
+        margin-top: 17px;
+        font-size: 16px;
+        color: @font02;
+      }
+    }
+
+    .info-con {
+      flex-shrink: 0;
+      width: 570px;
+      display: flex;
+      flex-direction: column;
+      //align-items: center;
+      justify-content: center;
+      border-right: 1px solid @line01;
+      .info-con-title {
+        font-size: 22px;
+        color: @font01;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+      .info-con-imessage {
+        margin: 37px 0 34px;
+        display: flex;
+        //justify-content: space-between;
+        div {
+          text-align: center;
+          width: 100%;
+          p {
+            color: @orange;
+            font-size: 24px;
+            margin-bottom: 19px;
+            span {
+              font-size: 14px;
+              color: @orange;
+            }
+          }
+          span {
+            font-size: 14px;
+            color: @font02;
+          }
+        }
+      }
+      .info-con-btn {
+        margin-left: 45px;
+        font-size: 16px;
+      }
+    }
+
+    .info-describe {
+      padding: 30px 24px 0 24px;
+      div {
+        display: flex;
+        font-size: 14px;
+        color: @font02;
+        margin-bottom: 24px;
+        p {
+          min-width: 70px;
+        }
+      }
+      .info-describe-accessory {
+        p {
+          line-height: 40px;
+        }
+        button {
+          background: @btn03;
+          border-color: @btn03;
+          &:hover {
+            background: @btn04;
+            border-color: @btn04;
+          }
+        }
+      }
+    }
+  }
+
+  .main-tradingProcess {
+    width: @main-width;
+    margin: auto;
+    .tradingProcess-title {
+      .common-title();
+      margin: 24px auto;
+    }
+    .tradingProcess {
+      height: 140px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      .tradingProcess-top {
+        flex-grow: 0;
+        background: url("../../../images/transact-timeaxis.png");
+        background-position: 0 191px;
+        height: 16px;
+        overflow: hidden;
+      }
+
+      .tradingProcess-bottom {
+        display: flex;
+        height: 90px;
+        padding-top: 24px;
+        & > div {
+          width: 0;
+          flex-grow: 1;
+          font-size: 14px;
+          line-height: 14px;
+          color: @font02;
+          text-align: center;
+          //background-color: #0000ff;
+          position: relative;
+          &:after {
+            position: absolute;
+            background-image: url(../../../images/icon-right.svg);
+            @icon-right-size:25px;
+            width: @icon-right-size;
+            height: @icon-right-size;
+            content: '';
+            display: block;
+            right: 0;
+            top:0;
+            background-size:@icon-right-size;
+
+          }
+          &:nth-last-child(1):after {
+            content: none;
+          }
+          & > span {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 22px;
+            color: @font02;
+            margin-right: 6px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .main-tab {
+    width: @main-width;
+    margin: 0 auto 10px;
+    .tab-title {
+      border-bottom: 1px solid @line01;
+      position: relative;
+      padding-bottom: 12px;
+      span {
+        font-size: 16px;
+        color: @font02;
+        cursor: pointer;
+        margin-right: 24px;
+      }
+      p {
+        position: absolute;
+        height: 2px;
+        background: @primary;
+        width: 64px;
+        top: 27px;
+      }
+      .passAll {
+        float: right;
+        span {
+          margin: 0;
+        }
+      }
+    }
+    .tab-describe {
+      padding: 32px 0 70px;
+    }
+
+    .tab-list {
+      .list-box {
+        &:last-of-type {
+          border: none;
+        }
+        border-bottom: 1px dashed @line01;
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .list-box-info {
+          width: 80%;
+          .box-info-user {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            img {
+              width: 40px;
+              height: 40px;
+              margin-right: 16px;
+            }
+            span {
+              font-size: 16px;
+              color: @font01;
+              line-height: 40px;
+            }
+          }
+          .box-info {
+            margin-bottom: 16px;
+            display: flex;
+            span {
+              line-height: 1.5;
+              flex-shrink: 0;
+              font-size: 14px;
+              color: @font03;
+            }
+            p {
+              line-height: 1.5;
+              font-size: 14px;
+              color: @font02;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .main{
+    width: 100%!important;
+  }
+}

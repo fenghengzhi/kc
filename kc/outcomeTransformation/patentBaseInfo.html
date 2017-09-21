@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/patentBaseInfo.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/patentBaseInfo.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">成果转化平台</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-topbg">
+            <div class="main-nav">
+                <div class="hu-card selected">
+                    <div class="hu-card-body">
+                        <a href="#">
+                            <img src="../images/icon-outcome-basic.svg" alt="home">
+                            基本信息
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body ">
+                        <a href="claims.html">
+                            <img src="../images/icon-outcome-right.svg" alt="bid">
+                            权利要求
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="specification.html">
+                            <img src="../images/icon-outcome-book.svg" alt="reward">
+                            说明书
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="legalinformation.html">
+                            <img src="../images/icon-outcome-law.svg" alt="transact">
+                            法律信息
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="quote.html">
+                            <img src="../images/icon-outcome-reference.svg" alt="statistics">
+                            引用与被引
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="Patentfamily.html">
+                            <img src="../images/icon-outcome-family.svg" alt="statistics">
+                            专利家族
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-name">
+                <div class="main-name-one">
+                    <p>一种大数据使用权交易系统与方法</p>
+                </div>
+                <div class="main-name-two">
+                    <div class="appraise">
+                        <p>申请号 : <span>CN201610670879.X</span></p>
+                        <em>未授权 : <span>剩余18年11月</span></em>
+                    </div>
+                    <div class="appraise-first">
+                        <p>综合评分 : <span>★★★</span></p>
+                        <em>权利评分 : <span>★★☆</span></em>
+                    </div>
+                    <div class="appraise-first">
+                        <p>技术评分 : <span>★★</span></p>
+                        <em>市场评分 : <span>☆</span></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-con">
+            <h1>名称及摘要</h1>
+
+            <p>中</p>
+            <span>一种大数据使用权交易系统与方法</span>
+            <div class="word-int">
+                本发明公开了一种大数据使用权交易系统与
+                方法，该系统包括产业链生态大数据模型模块、大数据生态链应用模块、大数据生态链接口模块、
+                交易撮合模块、大数据生态链价值模型模块以及大数据交易平台模块。
+                该方法包括选取目标产业链完成大数据交易系统的构建等六步骤。
+                该大数据使用权交易方法按照产业生态体系大数据模型来直接实现大数据应用，
+                实现在大数据交易过程中的使用权交易，在交易中直接完成大数据价值应用。
+            </div>
+            <div class="addheight"></div>
+            <p>英</p>
+            <span>Big data use right transaction system and method</span>
+            <div class="word-int">
+                The invention discloses
+                a big data use right transaction system
+                and a method. The system comprises an
+                industry chain ecological big data model module,
+                a big data ecological chain port module,
+                a transaction matching module, a big data
+                ecological chain value model module and a
+                big data transaction platform module.
+                The method comprises six steps of selecting
+                a target industry chain to finish construction
+                of a big data transaction system, and the like. By use of the big data use right transaction system
+                method, big data application is directly achieved according to a big data model of an industrial
+                ecological system; use right transaction in a big data transaction process is achieved; and big data
+                value application
+                in the transaction is directly finished.
+            </div>
+        </div>
+        <div class="main-date">
+            <h1>号码及日期</h1>
+            <div class="detail-mes">
+                <ul>
+                    <li><p>申请号</p><span>CN201610670879.X</span></li>
+                    <li><p>申请日</p><span>2016年08月15日</span></li>
+                    <li><p>本阶段公开号</p><span>CN106296362A 20170104</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                </ul>
+            </div>
+            <div class="detail-mes">
+                <ul>
+                    <li><p>申请号</p><span>CN201610670879.X</span></li>
+                    <li><p>申请日</p><span>2016年08月15日</span></li>
+                    <li><p>本阶段公开号</p><span>CN106296362A 20170104</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                </ul>
+            </div>
+            <div class="detail-mes">
+                <ul>
+                    <li><p>申请号</p><span>CN201610670879.X</span></li>
+                    <li><p>申请日</p><span>2016年08月15日</span></li>
+                    <li><p>本阶段公开号</p><span>CN106296362A 20170104</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><p>其他形式申请的号</p><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                    <li><span>CN201610670879</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail-patent">
+            <p class="detail-patenter">
+                专利及归属
+            </p>
+            <div class="de-pa-litem">
+                <p class="de-pa-litem-p">本阶段申请人:</p>
+                <span class="detail-word">
+                            鼎天智（北京）大数据科技有限公司（中国/CN;北京市；石景山区）
+                            （企事单位）100041北京市石景山区实兴大街30号院7号楼1001-2
+                        </span>
+            </div>
+            <div class="de-pa-litem">
+                <p class="de-pa-litem-p">当前专利权人:</p>
+                <span class="detail-word">
+                            鼎天智（北京）大数据科技有限公司（中国/CN;北京市；石景山区）
+                            （企事单位）100041北京市石景山区实兴大街30号院7号楼1001-2
+                        </span></div>
+            <div class="de-pa-litem">
+                <p class="de-pa-litem-p">专利权人历史:</p>
+                <span class="detail-word">
+                            鼎天智（北京）大数据科技有限公司
+                        </span></div>
+            <div class="de-pa-litem">
+                <p class="de-pa-litem-p">本阶段发明人:</p>
+                <span class="detail-word">
+                     陈树铭  叶望
+                        </span></div>
+
+            <div class="de-pa-litem">
+
+                <p class="de-pa-litem-p">&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp; &nbsp;&nbsp; 审查员:</p>
+                <span class="detail-word">
+                 陈树铭    叶望
+                </span>
+            </div>
+        </div>
+        <div class="main-patent">
+            <p class="main-patent-p">专业分类</p>
+            <div class="main-patent-ipc">
+                <p class="main-ipc-title">
+                    IPC分类号：
+                </p>
+                <ul class="mata-code">
+                    <li class="mata-code-mes">
+                        <div class="for-block">
+                            <p class="num-code">G06Q30/06.</p>
+                            <span class="word-mes">
+                         购买、出售或租赁交易[2012.01]
+                        </span>
+                            <i class="icon hufont ic-control-point bt-ctr "></i>
+                        </div>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mata-code-mes">
+                        <p class="num-code">G06Q30/06.</p>
+                        <span class="word-mes">
+                         购买、出售或租赁交易
+                        </span>
+                        <i class="icon hufont ic-control-point bt-ctr  "></i>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mata-code-mes">
+                        <p class="num-code">G06Q30/06.</p>
+                        <span class="word-mes">
+                        行销，例如，市场研究与分析，调查，促销，广告，
+                 买方剖析研究，客户管理或奖励；价格评估或确定[2012.01]
+                        </span>
+                        <i class="icon hufont ic-control-point bt-ctr "></i>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mata-code-mes">
+                        <p class="num-code">G06Q30/06.</p>
+                        <span class="word-mes">
+                        涉及中立的第三方，例如认证机构，公证人或可信的
+                        第三方[TTP][2012.01]
+                        </span>
+                        <i class="icon hufont ic-control-point bt-ctr "></i>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mata-code-mes">
+                        <p class="num-code">G06Q30/06.</p>
+                        <span class="word-mes">
+                           专门适用于电子购物系统[2012.01]
+                        </span>
+                        <i class="icon hufont ic-control-point bt-ctr "></i>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mata-code-mes">
+                        <p class="num-code">G06Q30/06.</p>
+                        <span class="word-mes">
+                            授权，例如，审核客户或商店证书；
+                        支付人的审核和批准，例如，信用额度或拒绝清单的检查[2012.01]
+                        </span>
+                        <i class="icon hufont ic-control-point bt-ctr "></i>
+                        <div class="for-control">
+                            <ul class="G-detail">
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G</p>
+                                    <span class="detail-show-span">物理</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06</p>
+                                    <span class="detail-show-span">计算；推算；计数</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/00</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                                <li class="detail-show">
+                                    <p class="detail-show-p">G06Q40/04</p>
+                                    <span class="detail-show-span">专门用于行政，商业，金融，管理，监督或预测母的
+                                    的数据处理系统方法；其他类目不包含的专门适用</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="creater-patent">
+            <p class="for-not-change">发明人专利</p>
+            <div class="cre-patent">
+                <ul class="hu-tabs tabs-primary show-all">
+                    <li class="active"><a href="#tab-six-1" class="link-one">俞斌</a></li>
+                    <li><a href="#tab-six-2" class="link-one">李远松</a></li>
+                    <li><a href="#tab-six-3" class="link-one">罗亚娇</a></li>
+                    <li><a href="#tab-six-4" class="link-one">汪玉</a></li>
+                    <li><a href="#tab-six-5" class="link-one">李圆智</a></li>
+                    <li><a href="#tab-six-6" class="link-one">丁津津</a></li>
+                    <li><a href="#tab-six-7" class="link-one">高博</a></li>
+                    <li><a href="#tab-six-8" class="link-one">郑国强</a></li>
+                    <span>共<em>6</em>条</span>
+                </ul>
+
+            </div>
+            <div class="cre-patent-rect hu-tab-content">
+                <div class="tab-pane active" id="tab-six-1">
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-six-2">
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-six-3">
+                    <div>
+                        <div class="six">
+                            <span>智能变电站交换机网络性能评估方法</span>
+                            <ul>
+                                <li class="list-one">
+                                    <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                                </li>
+                                <li class="list-one">
+                                    <button class="hu-btn btn-primary btn-xs">交换机</button>
+                                </li>
+                                <li class="list-one">
+                                    <button class="hu-btn btn-primary btn-xs">交换机</button>
+                                </li>
+                                <li class="list-one">
+                                    <button class="hu-btn btn-primary btn-xs">交换机</button>
+                                </li>
+                            </ul>
+                            <div class="th-introd">
+                                <ul>
+                                    <li class="list-two">
+                                        <p class="patten">申请人：</p>
+                                        <span class="department">国网安徽省电力科学研究院</span>
+                                    </li>
+                                    <li class="list-two">
+                                        <p class="patten">发明人：</p>
+                                        <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                    </li>
+                                    <li class="list-two">
+                                        <p class="patten">专利申请：</p>
+                                        <span class="department">发明专利</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="six">
+                            <div></div>
+                        </div>
+                        <div class="six">
+                            <div></div>
+                        </div>
+                        <div class="six">
+                            <div></div>
+                        </div>
+                        <div class="six">
+                            <div></div>
+                        </div>
+                        <div class="six">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-six-4">
+                    <div></div>
+                </div>
+                <div class="tab-pane" id="tab-six-5">
+                    <div></div>
+                </div>
+                <div class="tab-pane" id="tab-six-6">
+                    <div></div>
+                </div>
+                <div class="tab-pane" id="tab-six-7">
+                    <div></div>
+                </div>
+                <div class="tab-pane" id="tab-six-8">
+                    <div></div>
+                </div>
+            </div>
+            <div class="showmore">
+                     <span class="load">
+                        <a href="">点击查看更多>></a>
+                    </span>
+            </div>
+
+        </div>
+        <div class="creater-patent">
+            <p class="for-not-change">同单位专利</p>
+            <div class="cre-patent">
+                <ul class="hu-tabs tabs-primary show-all">
+                    <li class="active"><a href="#tab-six-one">国家电网公司</a></li>
+                    <li><a href="#tab-six-two">国网安徽省电力公司电力科学研究院</a></li>
+                    <span>共<em>77324</em>条</span>
+                </ul>
+            </div>
+            <div class="cre-patent-rect hu-tab-content">
+                <div class="tab-pane active" id="tab-six-one">
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-six-two">
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <span>智能变电站交换机网络性能评估方法</span>
+                        <ul>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">集合</button>
+
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                            <li class="list-one">
+                                <button class="hu-btn btn-primary btn-xs">交换机</button>
+                            </li>
+                        </ul>
+                        <div class="th-introd">
+                            <ul>
+                                <li class="list-two">
+                                    <p class="patten">申请人：</p>
+                                    <span class="department">国网安徽省电力科学研究院</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">发明人：</p>
+                                    <span class="department">高博 丁津津 汪玉 李远松 罗亚桥</span>
+                                </li>
+                                <li class="list-two">
+                                    <p class="patten">专利申请：</p>
+                                    <span class="department">发明专利</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showmore">
+                     <span class="load">
+                        <a href="">点击查看更多>></a>
+                    </span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

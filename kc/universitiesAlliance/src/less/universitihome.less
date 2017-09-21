@@ -1,0 +1,243 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/universitiesAlliance-banner.png") center no-repeat;
+}
+
+.main {
+  .top {
+    text-align: center;
+    margin: 32px auto;
+    width: 800px;
+    p {
+      font-size: 14px;
+      color: @font03;
+      line-height: 19px;
+    }
+    button {
+      margin-top: 24px;
+    }
+  }
+  .content {
+    padding: 0 9px;
+    display: flex;
+    justify-content: space-between;
+    .classify {
+      //display: flex;
+      width: 476px;
+      .img-bg {
+        cursor: pointer;
+        width: 476px;
+        height: 326px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        //&:hover .hover-box {
+        //  display: block;
+        //}
+        .hover-box {
+          display: block;
+          position: absolute;
+          width: 476px;
+          height: 327px;
+          background: rgba(0, 0, 0, .3);
+          z-index: 1000;
+          padding-top: 70px;
+          font-size: 18px;
+          color: #fff;
+          h1 {
+            margin: 70px 145px 0;
+            font-size: 45px;
+            color: white;
+          }
+          div {
+            width: 50px;
+            height: 50px;
+            border-bottom: 70px solid orange;
+            border-left: 70px solid transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            span {
+              display: block;
+              margin-left: -38px;
+              margin-top: 42px;
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+
+      }
+
+      .universities {
+        
+        margin-top: 22px;
+        display: flex;
+        img {
+          display: block;
+          width: 70px;
+          height: 70px;
+          margin: 10px;
+          cursor: pointer;
+          flex-shrink: 0;
+          //background-color: red;
+        }
+        .meeting{
+                    display:flex;
+          flex-direction:column;
+          justify-content:space-between;
+          //padding-top:10px;
+          transform:translateY(5px);
+          padding:3px 0;
+        }
+        .cursor, .meeting {
+
+          margin-left: 5px;
+          width: 100%;
+          overflow: hidden;
+          h3 {
+            margin: 8px 0;
+            font-size: 16px;
+            color: @font01;
+            line-height: 24px;
+
+            &:hover {
+              color: @primary02;
+            }
+            span {
+              float: right;
+              font-size: 14px;
+              font-weight: 500;
+              color: @font02;
+            }
+          }
+          h4 {
+            &:hover {
+              color: @primary02;
+            }
+            padding: 5px 0 3px;
+            font-size: 16px;
+            font-weight: bold;
+            color: @font01;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          p {
+            &:hover {
+              //color: @primary02;
+            }
+            font-size: 14px;
+            color: @font03;
+            line-height: 18px;
+          }
+        }
+
+        .cursor {
+          //flex-shrink: 0;
+        }
+        .meeting {
+          //margin-left: 30px;
+          h3 {
+            margin: 12px 0;
+            font-size: 14px;
+            color: @font03;
+            line-height: 24px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            &:hover {
+              color: @primary02;
+            }
+            span {
+              float: right;
+              font-size: 14px;
+              font-weight: 500;
+              color: @font03;
+            }
+          }
+        }
+      }
+      .logo {
+        margin: 24px 0;
+        div {
+          padding: 16px 0;
+        }
+      }
+      .city-img {
+        img {
+          width: 100px;
+          height: 70px;
+        }
+        div {
+          width: 290px;
+        }
+      }
+    }
+
+  }
+  .content2 {
+    margin: 80px 0;
+    .universities {
+      margin-top:20px!important;
+      display: flex;
+      a{
+        margin-top:-6.5px!important;
+      }
+      h3 {
+        //margin: 8px 0;
+        font-size: 16px;
+        color: @font01;
+        line-height: 24px;
+        font-weight: 500;
+        &:hover {
+          color: @primary02;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: @font03;
+        line-height: 18px;
+      }
+
+    }
+  }
+  .recommend-meeting {
+    .city-img {
+      .meeting {
+        //margin-left: 0;
+        a {
+          font-size: 16px;
+          color: @font01;
+          line-height: 24px;
+          cursor: pointer;
+          &:hover {
+            color: #72ace3;
+          }
+        }
+      }
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.startup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: @font01;
+  cursor: default;
+  &:hover {
+    color: @font01;
+  }
+}

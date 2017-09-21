@@ -1,0 +1,192 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/resourceSharing-banner.png")center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+
+.main{
+  text-align: center;
+  height: 100%;
+  h2{
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: bold;
+    color: @font01;
+  }
+  .literature{
+    //border: 2px solid @line01;
+    box-shadow: 0 0 5px 1px #888888;
+    display: flex;
+    align-items: center;
+    margin:35px auto 0;
+    height: 52px;
+    width: 645px;
+    border-right: none;
+    .select1{
+      //padding: 0 10px 0 20px;
+      //width: 103px;
+      height: 100%;
+      font-size: 18px;
+      color: @font01;
+     span{
+       height: 100%;
+       border: none;
+       padding: 4px 0 0 3px;
+       margin-right: 8px;
+       background-color: white;
+     }
+    }
+
+    input{
+      padding-left: 20px;
+      height: 36px;
+      width: 100%;
+      border-bottom:none;
+      border-right: none;
+      border-top: none;
+      border-left:2px solid @line02 ;
+      &:focus{
+        outline: none;
+      }
+    }
+    .hu-btn.btn-primary{
+      height: 52px;
+      width: 120px;
+      font-size: 18px;
+      padding: 0;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        font-size: 18px;
+        margin-right: 3px;
+      }
+    }
+  }
+  .filter-con{
+    display: flex;
+    width: 645px;
+    margin:0 auto;
+    font-size: 16px;
+    color: @font02;
+    div{
+      margin:23px 0 0 20px;
+    }
+    ul{
+      display: flex;
+      li{
+        margin: 23px 8px;
+      }
+    }
+  }
+
+  .map{
+    //background: url("../../../images/WechatIMG39.png") no-repeat;
+    position: relative;
+    margin-top: 27px;
+    img{
+      width: 1024px;
+      height: 470px;
+    }
+    .box{
+      border: 2px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 7px #888888;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p,span{
+        color: white;
+        font-size: 30px;
+        line-height: 40px;
+        text-shadow: 3px 3px 1px #4d4dff;
+      }
+    }
+    .proprietary-technology{
+      position: absolute;
+      top:80px;
+      left: 100px;
+      width: 186px;
+      height: 186px;
+      background-color: #5da6b0;
+      p,span{
+        text-shadow: 3px 3px 1px #428c96;
+      }
+    }
+    .learned-periodical{
+      position: absolute;
+      top:10px;
+      left: 350px;
+      width: 198px;
+      height: 198px;
+      background-color: #5d8acc;
+      p,span{
+        text-shadow: 3px 3px 1px #3b67a6;
+      }
+    }
+    .academic-dissertation{
+      position: absolute;
+      top: 30px;
+      right: 200px;
+      width: 190px;
+      height: 190px;
+      background-color: #a986ab;
+      p,span{
+        text-shadow: 3px 3px 1px #5c63b1;
+      }
+    }
+    .conference-paper{
+      position: absolute;
+      top: 270px;
+      left: 250px;
+      width: 165px;
+      height: 165px;
+      background-color: #7a81c9;
+      p,span{
+        font-size: 26px;
+        text-shadow: 3px 3px 1px #996f9b;
+      }
+    }
+    .CSB{
+      position: absolute;
+      top: 245px;
+      left: 500px;
+      width: 161px;
+      height: 161px;
+      background-color: #b95e80;
+      p,span{
+        font-size: 26px;
+        text-shadow: 3px 3px 1px #a5476a;
+      }
+    }
+    .achievement{
+      position: absolute;
+      top: 200px;
+      right: 54px;
+      width: 160px;
+      height: 160px;
+      background-color: #bea148;
+      p,span{
+        font-size: 26px;
+        text-shadow: 3px 3px 1px #9b8337;
+      }
+    }
+  }
+}
+
+
+.hu-select-dropdown{
+  li{
+    text-align: center!important;
+  }
+
+}

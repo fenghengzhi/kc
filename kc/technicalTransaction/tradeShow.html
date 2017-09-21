@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>技术交易平台-交易展示</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/tradeShow.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/moment.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.history.js"></script>
+    <script type="text/javascript" src="../lib/uri.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/datarea.js"></script>
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/tradeShow.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">技术交易平台</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-topbg">
+            <div class="main-nav">
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="index.html">
+                            <img src="../images/home.svg" alt="home">
+                            首页
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body ">
+                        <a href="outcomeBidding.html">
+                            <img src="../images/bid.svg" alt="bid">
+                            成果竞价
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="demandReward.html">
+                            <img src="../images/reward.svg" alt="reward">
+                            需求悬赏
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card selected">
+                    <div class="hu-card-body">
+                        <a href="tradeShow.html">
+                            <img src="../images/transact.svg" alt="transact">
+                            交易展示
+                        </a>
+                    </div>
+                </div>
+                <div class="hu-card">
+                    <div class="hu-card-body">
+                        <a href="statisticalDisplay.html">
+                            <img src="../images/statistics.svg" alt="statistics">
+                            统计展示
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-name">
+                <div class="main-text">
+                    <p>交易展示</p>
+                    <span>在线交易成功案例展示</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-bg">
+            <div class="filter">
+                <div class="filter-line line2" name="province">
+                    <div class="filter-con">
+                        <div class="filter-name">地区</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li value="25">海南</li>
+                            <li value="1">北京</li>
+                            <li value="2">天津</li>
+                            <li value="3">上海</li>
+                            <li value="4">重庆</li>
+                            <li value="5">河北</li>
+                            <li value="6">山西</li>
+                            <li value="8">辽宁</li>
+                            <li value="9">吉林</li>
+                            <li value="10">黑龙江</li>
+                            <li value="11">江苏</li>
+                            <li value="12">浙江</li>
+                            <li value="13">安徽</li>
+                            <li value="14">福建</li>
+                            <li value="15">江西</li>
+                            <li value="16">山东</li>
+                            <li value="17">河南</li>
+                            <li value="18">湖北</li>
+                            <li value="19">湖南</li>
+                            <li value="20">广东</li>
+                            <li value="21">甘肃</li>
+                            <li value="22">四川</li>
+                            <li value="24">贵州</li>
+                            <li value="26">云南</li>
+                            <li value="27">青海</li>
+                            <li value="28">陕西</li>
+                            <li value="29">广西</li>
+                            <li value="30">西藏</li>
+                            <li value="31">宁夏</li>
+                            <li value="32">新疆</li>
+                            <li value="33">内蒙古</li>
+                            <li value="34">澳门</li>
+                            <li value="35">香港</li>
+                            <li value="36">台湾</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-line line3" name="budget">
+                    <div class="filter-con">
+                        <div class="filter-name">价格</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li>面议</li>
+                            <li>10万以下</li>
+                            <li>10-20万</li>
+                            <li>20-50万</li>
+                            <li>50-100万</li>
+                            <li>100-500万</li>
+                            <li>500万以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-line endTime" name="endTime" condition="range">
+                    <div class="filter-con">
+                        <div class="filter-name">截止时间</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li>5天内</li>
+                            <li>10天内</li>
+                            <li>1个月内</li>
+                            <li>3个月内</li>
+                            <li>3个月以上</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="requirementORoutcome">
+            <div id="require">
+                <span><i>需求</i></span>需求中心
+            </div>
+            <div id="achievement">
+                <span><i>成果</i></span>成果中心
+            </div>
+        </div>
+
+        <div class="main-con">
+
+        </div>
+
+        <div id="page"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

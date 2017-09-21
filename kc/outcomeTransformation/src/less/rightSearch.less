@@ -1,0 +1,205 @@
+@import url(../../../common/src/less/define.less);
+@import 'slick-theme-rightSearch';
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/outcomeTransformation-banner.png") center no-repeat;
+}
+
+#content {
+
+  .main {
+    user-select: none;
+    background: url("../../../images/search-banner.png") no-repeat;
+    height: 562px;
+    //width: @main-width;
+    width: 100%;
+
+    margin: auto;
+    position: relative;
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .search-box {
+      //box-shadow:0 0 20px #ddd;
+      z-index: 1000;
+      ///background-color:black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .shang {
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+        .title {
+          font-size: 32px;
+          margin-bottom: 14px;
+          margin-top: 136px;
+        }
+        .subtitle {
+          font-size: 16px;
+          margin-bottom: 42px + 5px;
+        }
+      }
+      .xia {
+        position: absolute;
+        left: 20px;
+        bottom: -23px;
+        transform: translateY(100%);
+        color: @font02;
+        font-size: 16px;
+      }
+      .search-form {
+        display: flex;
+        outline: rgba(255, 255, 255, 0.5) 5px solid;
+        height: 50px;
+        width: 595px;
+        & > input {
+          flex-grow: 1;
+          height: 50px;
+          border-radius: 0;
+        }
+        & > .search-btn {
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @size: 19px;
+          font-size: @size;
+          color: #fff;
+          width: 110px;
+          border-radius: 0;
+          & > i {
+            width: @size;
+            height: @size;
+            font-size: @size;
+            line-height: @size;
+            margin-right: 8px;
+          }
+        }
+      }
+
+    }
+  }
+  .main2 {
+    text-align: center;
+    .main2-title {
+      color: @primary;
+      font-size: 24px;
+      //font-weight:bold;
+      margin-bottom: 16px;
+    }
+    .main2-subtitle {
+      font-size: 14px;
+      color: @font03;
+      //font-weight:bold;
+      margin-bottom: 40px;
+    }
+
+  }
+  .carousel {
+    width: 1192px;
+    //overflow:visible;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    .carousel-item {
+      height: 185px + 14px;
+      text-align: center;
+      position: relative;
+      padding: 7px;
+      .item-inner {
+        box-shadow: 0 0 10px #b3d0f8;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        background-color: @primary;
+        .item-bg {
+          //box-shadow:0 0 20px #000;
+          width: 100%;
+          border-radius: 4px;
+          opacity: 0.8;
+        }
+        .item-title {
+          position: absolute;
+          color: white;
+          left: 22px;
+          bottom: 32px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .more-btn {
+    @color: black;
+    @height: 50px;
+    width: 200px;
+    height: @height;
+    color: @color;
+    border: 1px solid @color;
+    border-radius: @height;
+    line-height: @height;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.earth-map {
+  margin: 55px auto;
+  .one {
+    display:flex;
+    //align-items: center;
+    .one-right{
+      margin-left: 80px;
+      p{
+        font-size: 30px;
+        color: @font02;
+        font-weight: bold;
+        margin: 38px 0;
+        i{
+          font-style: normal;
+          color: #ffa906;
+        }
+      }
+    }
+
+  }
+  .one2{
+    .one-left{
+      margin:100px 0 0 80px;
+      p{
+        font-size: 30px;
+        color: @font02;
+        font-weight: bold;
+        margin: 38px 0;
+        i{
+          font-style: normal;
+          color: #ffa906;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.hotdot {
+  display: block;
+  width: 106px;
+  height: 50px;
+  position: absolute;
+  top: 240px;
+  left: 866px;
+  cursor: pointer;
+}
+

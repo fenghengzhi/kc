@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>科技政策匹配</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/policyMatch.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/moment.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/policyMatch.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/notice/list">通知公告</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/policy/list">政策法规</a></li>
+                <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm#zxbl_govs">在线办理</a></li>
+                <li><a href="http://101.226.6.177:8089/briseis/public/content/list_govs.htm?siteAreaId=4028c3815e74b126015e7508c9e70003">权力清单</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/policyMatch/policyMatch.html">科技政策匹配</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">科技政策匹配</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-text">
+            <p>企业特征画像</p>
+            <span>请选择符合您企业特征的筛选项</span>
+        </div>
+        <div class="main-select">
+            <div class="hu-select select-md" name="site" hu-data-set="huSelect.set" hu-data-get="huSelect.get">
+                <span>注册地点</span>
+                <ul class="hu-select-dropdown select-md">
+                    <li hu-data-value="" title="全部">全部</li>
+                    <li hu-data-value="中国大陆" title="中国大陆">中国大陆</li>
+                    <li hu-data-value="海南省" title="海南省">海南省</li>
+                    <li hu-data-value="海口市" title="海口市">海口市</li>
+                    <li hu-data-value="三亚市" title="三亚市">三亚市</li>
+                    <li hu-data-value="五指山市" title="五指山市">五指山市</li>
+                    <li hu-data-value="琼海市" title="琼海市">琼海市</li>
+                    <li hu-data-value="儋州市" title="儋州市">儋州市</li>
+                    <li hu-data-value="文昌市" title="文昌市">文昌市</li>
+                    <li hu-data-value="万宁市" title="万宁市">万宁市</li>
+                    <li hu-data-value="东方市" title="东方市">东方市</li>
+                    <li hu-data-value="定安县" title="定安县">定安县</li>
+                    <li hu-data-value="屯昌县" title="屯昌县">屯昌县</li>
+                    <li hu-data-value="澄迈县" title="澄迈县">澄迈县</li>
+                    <li hu-data-value="临高县" title="临高县">临高县</li>
+                    <li hu-data-value="白沙黎族自治县" title="白沙黎族自治县">白沙黎族自治县</li>
+                    <li hu-data-value="昌江黎族自治县" title="昌江黎族自治县">昌江黎族自治县</li>
+                    <li hu-data-value="乐东黎族自治县" title="乐东黎族自治县">乐东黎族自治县</li>
+                    <li hu-data-value="陵水黎族自治县" title="陵水黎族自治县">陵水黎族自治县</li>
+                    <li hu-data-value="保亭黎族苗族自治县" title="保亭黎族苗族自治县">保亭黎族苗族自治县</li>
+                    <li hu-data-value="琼中黎族苗族自治县" title="琼中黎族苗族自治县">琼中黎族苗族自治县</li>
+                </ul>
+            </div>
+            <div class="hu-select select-md" name="type" hu-data-set="huSelect.set" hu-data-get="huSelect.get">
+                <span>企业类型</span>
+                <ul class="hu-select-dropdown select-md">
+                    <li hu-data-value="">全部</li>
+                    <li hu-data-value="涉农企业">涉农企业</li>
+                    <li hu-data-value="成长企业">成长企业</li>
+                    <li hu-data-value="高新技术企业">创新创业高新技术企业服务机构</li>
+                    <li hu-data-value="科技型中小企业">科技型中小企业</li>
+                    <li hu-data-value="企事业单位">企事业单位</li>
+                    <li hu-data-value="文化产业企业">创新文化产业企业项目示范</li>
+                    <li hu-data-value="高等学校">高等学校</li>
+                    <li hu-data-value="中小学、社区、社团">中小学、社区、社团</li>
+                    <li hu-data-value="社会组织">社会组织</li>
+                    <li hu-data-value="科研院所">科研院所</li>
+                    <li hu-data-value="科技园区">科技园区</li>
+                    <li hu-data-value="创业人才">创业人才</li>
+                    <li hu-data-value="驻琼科研单位">驻琼科研单位</li>
+                    <li hu-data-value="行政事业单位">创新行政事业单位项目示范</li>
+                    <li hu-data-value="社会组织">社会组织</li>
+                    <li hu-data-value="农场、市安委会成员单位和重点企业">市安委会成员单位和重点企业</li>
+                </ul>
+            </div>
+            <div class="hu-select select-md" name="capital" hu-data-set="huSelect.set" hu-data-get="huSelect.get">
+                <span>注册资本</span>
+                <ul class="hu-select-dropdown select-md">
+                    <li hu-data-value="">全部</li>
+                    <li hu-data-value="50万以下">50万以下</li>
+                    <li hu-data-value="不低于50万">不低于50万</li>
+                    <li hu-data-value="50-100万">50-100万</li>
+                    <li hu-data-value="100-1000万">100-1000万</li>
+                    <li hu-data-value="1000万-5000万">1000万-5000万</li>
+                    <li hu-data-value="5000万以上">5000万以上</li>
+
+                </ul>
+            </div>
+            <div class="hu-select select-md" name="property" hu-data-set="huSelect.set" hu-data-get="huSelect.get">
+                <span>企业性质</span>
+                <ul class="hu-select-dropdown select-md">
+                    <li hu-data-value="">全部</li>
+                    <li hu-data-value="独立法人">独立法人</li>
+                    <li hu-data-value="双创示范基地">双创示范基地</li>
+                    <li hu-data-value="高校、协会、学会">高校、协会、学会</li>
+                    <li hu-data-value="研究机构">研究机构</li>
+                    <li hu-data-value="高新技术企业">高新技术企业</li>
+                    <li hu-data-value="示范园">示范园</li>
+                    <li hu-data-value="国家现代农业示范区">国家现代农业示范区</li>
+                    <li hu-data-value="科研单位">科研单位</li>
+                    <li hu-data-value="国家大学科技园">国家大学科技园</li>
+                    <li hu-data-value="技术创新平台">技术创新平台</li>
+                    <li hu-data-value="创新创业服务机构">创新创业服务机构</li>
+                    <li hu-data-value="创新项目示范">创新项目示范</li>
+
+                </ul>
+            </div>
+            <div class="hu-select select-md" name="scale" hu-data-set="huSelect.set" hu-data-get="huSelect.get">
+                <span>企业规模</span>
+                <ul class="hu-select-dropdown select-md">
+                    <li hu-data-value="">全部</li>
+                    <li hu-data-value="初创企业">初创企业</li>
+                    <li hu-data-value="中小企业">中小企业</li>
+                    <li hu-data-value="成长企业">成长企业</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-btn">
+            <button class="hu-btn btn-primary btn-md">一键匹配</button>
+        </div>
+
+        <div class="main-result">
+            <div class="main-result-box">
+                <h2 class="main-result-title">相关科技政策</h2>
+                <ul>
+                    <div style="height: 366px;text-align: center;width: 1024px;">
+                        <div style="background-image: url(../images/icon-no-data.svg);width: 100px;height: 131px;display: block;background-size: 100px;margin: 0 auto;"></div>
+                        <div style="text-align: center;color: #999;margin-top: 16px;font-size: 14px;letter-spacing: 1px;">请选择符合您企业特征的筛选项</div>
+                    </div>
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<span class="title">红红火火恍恍惚惚</span>-->
+                        <!--<span class="time">2017.06.30</span>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

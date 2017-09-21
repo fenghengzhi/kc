@@ -1,0 +1,247 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common();
+  .header {
+    .header-part3 {
+      background: url("../../../images/universitiesAlliance-banner.png") center no-repeat;
+      p {
+        line-height: 82px;
+        letter-spacing: 12px;
+        font-size: 46px;
+      }
+    }
+  }
+
+  .main {
+    .setting {
+      margin: 32px 0;
+    }
+    .cent-video {
+      .english {
+        padding-bottom: 0 !important;
+      }
+
+    }
+    .cent {
+      text-align: center;
+      //border-bottom: 1px solid @line02;
+      padding-bottom: 32px;
+
+      .top-titel {
+        margin: 32px 0 0;
+        h2 {
+          font-size: 24px;
+          color: @font02;
+        }
+        p {
+          color: @font03;
+          font-size: 14px;
+        }
+        .english {
+          font-size: 16px;
+          margin: 12px auto;
+          padding-bottom: 7px;
+        }
+        .line1-bg {
+          text-align: center;
+          margin: auto;
+        }
+        .star {
+          margin: auto;
+          height: 2px;
+          width: 270px;
+          background-color: @primary02;
+          display: flex;
+          justify-content: center;
+          div {
+            width: 70px;
+            background-color: white;
+            margin-top: -11px;
+          }
+          i {
+            color: @primary02;
+          }
+        }
+      }
+
+      .commonality-bg {
+        display: flex;
+        justify-content: space-between;
+        .commonality-img {
+          //margin-top: 26px;
+          width: 242px;
+          img {
+            box-shadow: 0 0 10px 0px #ccc;
+            margin: 32px 0;
+          }
+          h2 {
+            font-size: 18px;
+            color: @font01;
+            padding: 2px 0 16px;
+            border-bottom: 1px dashed @line01;
+          }
+          p {
+            font-size: 12px;
+            color: @font03;
+            text-align: left;
+            line-height: 20px;
+            margin: 16px 15px 0;
+          }
+        }
+      }
+      .retrievaln-bg {
+        .commonality-img {
+          img {
+            box-shadow: none;
+          }
+          h2 {
+            font-size: 18px;
+            color: @primary;
+            //padding: 2px 0 16px;
+            border: none;
+          }
+          p {
+            font-size: 14px;
+            margin: 0 25px;
+          }
+        }
+      }
+
+      .literature {
+        //border: 2px solid @line01;
+        box-shadow: 0 0 5px 1px #888888;
+        display: flex;
+        align-items: center;
+        margin: 35px auto 0;
+        height: 52px;
+        width: 645px;
+        background-color: white;
+        border-right: none;
+
+        .select1 {
+          //padding: 0 10px 0 20px;
+          //width: 103px;
+          height: 100%;
+          font-size: 18px;
+          color: @font01;
+          span {
+            height: 100%;
+            border: none;
+            padding: 4px 0 0 3px;
+            margin-right: 8px;
+            background-color: white;
+          }
+        }
+
+        input {
+          padding-left: 20px;
+          height: 36px;
+          width: 100%;
+          border-bottom: none;
+          border-right: none;
+          border-top: none;
+          border-left: 2px solid @line02;
+          &:focus {
+            outline: none;
+          }
+        }
+        .hu-btn.btn-primary {
+          height: 52px;
+          width: 120px;
+          font-size: 18px;
+          padding: 0;
+          border-radius: 0;
+          i {
+            font-size: 18px;
+            margin-right: 3px;
+          }
+        }
+
+        .button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .University-bg {
+        .hu-tabs-container {
+          .tabs-wrap {
+            width: 1024px;
+            ul {
+              .tabs-decoration {
+                margin-top: 2px;
+              }
+              li {
+                width: 140px;
+                a {
+                  font-size: 18px;
+                  color: @font01;
+                  font-weight: bold;
+                }
+              }
+            }
+
+          }
+          .hu-tab-content {
+            margin-top: 26px;
+            .tab-pane {
+              display: flex;
+              justify-content: space-between;
+              .University-img {
+                width: 200px;
+                height: 130px;
+                background-color: #eeeeee;
+                position: relative;
+                h2 {
+                  position: absolute;
+                  bottom: 0;
+                  font-size: 18px;
+                  color: white;
+                  height: 40px;
+                  width: 100%;
+                  background: rgba(0, 0, 0, .3);
+                  border: none;
+                  line-height: 32px;
+                }
+                p {
+                  font-size: 14px;
+                  margin: 0 25px;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .cent-literature {
+      padding: 32px 0 60px;
+      background-color: @bg02;
+      .top-titel {
+        margin-top: 0 ;
+        .star{
+          div{
+            background-color: @bg02;
+          }
+        }
+      }
+    }
+    .cent-retrievaln {
+      padding-bottom: 32px;
+      .top-titel {
+        margin-top: 0 ;
+      }
+    }
+  }
+
+}
+
+#searchNew{
+  h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

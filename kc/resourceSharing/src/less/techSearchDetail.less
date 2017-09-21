@@ -1,0 +1,88 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/resourceSharing-banner.png") center no-repeat;
+}
+
+
+
+.singleline(@size) {
+  font-size: @size;
+  line-height: @size;
+}
+.main {
+  .main-part1 {
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+    .main-part1-header {
+      .common-title();
+      margin-bottom: 32px;
+    }
+    .main-part1-con {
+      display: flex;
+
+      .con-left {
+        @imgsize: 150px;
+        width: auto;
+        height: @imgsize;
+        & > img {
+          width: auto;
+          height: @imgsize;
+          //border:1px solid #ddd;
+        }
+      }
+      .con-mid {
+        align-self: flex-end;
+        padding-left: 16px;
+        flex-grow: 1;
+        .title {
+          margin-bottom: 32px;
+          .singleline(18px);
+          color: @font01;
+        }
+        .lines {
+          .singleline(16px);
+          margin-bottom: -16px;
+          color: @font02;
+          .line {
+            margin-bottom: 16px;
+            &:first-child > span {
+              color: @btn02;
+            }
+          }
+        }
+      }
+      .con-right {
+        align-self: flex-end;
+        .hu-btn {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .main-part2 {
+    margin-bottom: 300px;
+    .main-part2-header {
+      .common-title();
+      margin-bottom: 24px;
+
+    }
+    .main-part2-con {
+      padding-left: 13px;
+      border-top: 1px solid @line01;
+      padding-top: 16px;
+      font-size: 16px;
+      color: @font02;
+      line-height: 2;
+    }
+  }
+}
+
+h2 {
+  .common-title()
+}

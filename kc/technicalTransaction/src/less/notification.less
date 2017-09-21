@@ -1,0 +1,110 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/outcomeTransformation-banner.png")center no-repeat;
+}
+
+.main{
+
+  .hu-card{
+    margin: 50px auto;
+  }
+
+  .hu-card-body{
+    display: flex;
+    .main-left{
+      height: 682px;
+      width: 114px;
+      text-align: center;
+      border-right: 1px solid @line01;
+      img{
+        display: block;
+        margin: 24px auto 8px;
+      }
+      .username{
+        margin-bottom: 36px;
+      }
+      .main-tab1{
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-left: 2px solid #fff;
+        background: url("../../../images/icon-release01.svg")6px center no-repeat;
+        color: @font03;
+        &:hover{
+          color: @font02;
+          background: url("../../../images/icon-release02.svg")6px center no-repeat;
+        }
+        &.selected{
+          border-left: 2px solid @orange;
+          color: @font02;
+          background: url("../../../images/icon-release02.svg")6px center no-repeat;
+        }
+      }
+      .main-tab2{
+        cursor: pointer;
+        border-left: 2px solid #fff;
+        background: url("../../../images/icon-bidding01.svg")6px center no-repeat;
+        color: @font03;
+        &:hover{
+          color: @font02;
+          background: url("../../../images/icon-bidding02.svg")6px center no-repeat;
+        }
+        &.selected{
+          border-left: 2px solid @orange;
+          color: @font02;
+          background: url("../../../images/icon-bidding02.svg")6px center no-repeat;
+        }
+      }
+    }
+    .main-right{
+      width:calc(~" 100% - 115px ");
+      .hu-tabs.tabs-secondary > li a{
+        border: none;
+      }
+      .tab-pane{
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .main-box{
+        cursor: pointer;
+        flex-shrink: 0;
+        width: 275px;
+        height: 123px;
+        margin: 0 0 20px 0;
+        border: 1px solid @line01;
+        .box-title{
+          font-size: 16px;
+          font-weight: bold;
+          border-left: 2px solid @primary;
+          margin: 10px 0 18px;
+          padding-left: 10px;
+          color: @font02;
+        }
+        .box-msg{
+          display: flex;
+          padding-left: 10px;
+          color: @font03;
+          margin-bottom: 10px;
+          span{
+            padding-left: 10px;
+            min-width: 100px;
+          }
+        }
+      }
+      .nodata{
+        display: flex;
+        height: 594px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+}

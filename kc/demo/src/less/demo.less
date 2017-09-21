@@ -1,0 +1,155 @@
+@import url(../../../common/src/less/define.less);
+body{
+  padding: 20px;
+}
+.singleSelect{
+  display: flex;
+  align-items: center;
+  em{
+    color: #f00;
+    font-style: normal;
+    font-size: 20px;
+  }
+  label.hu-radio{
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  label.hu-radio input[type=radio] + * {
+    width: 100px;
+    background: #fff;
+    height: 30px;
+    border: 1px solid @line01;
+    padding: 0;
+    line-height: 28px;
+  }
+
+  label.hu-radio input[type=radio]:checked + * {
+    background:url("../../../images/icon-draw.png")right bottom no-repeat;
+    width: 100px;
+    height: 30px;
+    border: 1px solid @primary;
+  }
+}
+
+
+.main-tradingProcess {
+  width: @main-width;
+  margin: auto;
+  .tradingProcess-title {
+    .common-title();
+    margin: 24px auto;
+  }
+  .tradingProcess {
+    height: 140px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    .tradingProcess-top {
+      flex-grow: 0;
+      background: url("../../../images/transact-timeaxis.png");
+      height: 16px;
+      overflow: hidden;
+    }
+
+    .tradingProcess-bottom {
+      display: flex;
+      height: 90px;
+      padding-top: 24px;
+      & > div {
+        width: 0;
+        flex-grow: 1;
+        font-size: 14px;
+        line-height: 14px;
+        color: @font02;
+        text-align: center;
+        //background-color: #0000ff;
+        position: relative;
+        &:after {
+          position: absolute;
+          background-image: url(../../../images/icon-right.svg);
+          @icon-right-size:25px;
+          width: @icon-right-size;
+          height: @icon-right-size;
+          content: '';
+          display: block;
+          right: 0;
+          top:0;
+          background-size:@icon-right-size;
+
+        }
+        &:nth-last-child(1):after {
+          content: none;
+        }
+        & > span {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 22px;
+          color: @font02;
+          margin-right: 6px;
+        }
+      }
+
+    }
+  }
+}
+
+
+.filterBox{
+  .common();
+  width: 1024px;
+}
+
+.filter {
+  padding-top: 16px;
+  .filter-line {
+    height: 16px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 24px;
+    position: relative;
+
+    .filter-con {
+      overflow: hidden;
+      .filter-name {
+        margin-right: 30px;
+        flex-shrink: 0;
+        float: left;
+      }
+      ul {
+        width: 800px;
+        flex-shrink: 0;
+        overflow: hidden;
+        li {
+          &:hover {
+            color: @primary;
+          }
+          float: left;
+          cursor: pointer;
+          border-left: 1px solid @line01;
+          padding-left: 16px;
+          margin: 0 16px 16px 0;
+        }
+        .selected {
+          color: @primary;
+        }
+      }
+      .more-filter{
+        display: flex;
+        color: @primary;
+        cursor: pointer;
+        position: absolute;
+        top:0;
+        right: 0;
+        i{
+          display: block;
+          transition: 200ms;
+        }
+        .rotate{
+          transform:rotate(90deg);
+        }
+      }
+    }
+  }
+}

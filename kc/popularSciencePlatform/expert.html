@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家列表</title>
+    
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <link rel="stylesheet" href="../common/src/less/filter.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/expert.css">
+
+    <link rel="icon" href="../images/logo.ico">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.history.js"></script>
+    <script type="text/javascript" src="../lib/uri.min.js"></script>
+    
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/expert.js"></script>
+    <script type="text/javascript" src="../common/src/js/filter.js"></script>
+
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/baselist.html">科普基地</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/expert.html">科普专家</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/speciallist.html">科普专项</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/videolist.html">科普视频</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">科普专家</p>
+        </div>
+        <div class="filter">
+            <div class="cen">
+                <div class="filter-line line1" name="serviceType">
+                    <div class="filter-con">
+                        <div class="filter-name">服务方式</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li>技术咨询</li>
+                            <li>委托研究</li>
+                            <li>人才培养</li>
+                            <li>联合攻关</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-line line2" name="domain">
+                    <div class="filter-con">
+                        <div class="filter-name">专业领域</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li>新材料科学技术</li>
+                            <li>新能源与节能技术</li>
+                            <li>电子与信息技术</li>
+                            <li>医疗卫生与生物技术</li>
+                            <li>先进制造与自动化技术</li>
+                            <li>航空航天技术</li>
+                            <li>海洋工程技术与装备</li>
+                            <li>交通运输装备与技术</li>
+                            <li>现代农业科技</li>
+                            <li>电光源与激光技术</li>
+                            <li>绿色化学与化工技术</li>
+                            <li>其它科技领域</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-line line3" name="technicalTitle">
+                    <div class="filter-con">
+                        <div class="filter-name">专家职称</div>
+                        <ul>
+                            <li class="selected">全部</li>
+                            <li>教授</li>
+                            <li>副教授</li>
+                            <li>研究员</li>
+                            <li>高级工程师</li>
+                            <li>教授级高工</li>
+                            <li>主任医师</li>
+                            <li>副主任医师</li>
+                            <li>副研究员</li>
+                            <li>主任技师</li>
+                            <li>副主任技师</li>
+                        </ul>
+                        <!--<div>更多<i class="icon hufont ic-navigate-next"></i></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="con-list">
+            <div class="con-list-demand">
+                <h2>需求列表</h2>
+                <div id="demand-list">
+                    <div class="list-demand-1">
+                        <a href="expertdetail.html"><img src="http://placehold.it/150x150" alt=""></a>
+                        <div class="match">
+                            <h3><a href="expertdetail.html">薛永祺 </a><span>研究员</span></h3>
+                            <p>薛永祺（1937.1-）红外和遥感技术专家，江苏苏州张家港人，中国科学院上海技术物理研究所研究员。从事多光谱和成像光谱技术研究，为中国建立机载...</p>
+                            <p>服务方式: <span class="btn1">技术咨询</span></p>
+                            <p>专业领域: <span class="btn2">电光源与激光技术</span></p>
+                        </div>
+                    </div>
+                    <div class="list-demand-1">
+                        <a href="expertdetail.html"><img src="http://placehold.it/150x150" alt=""></a>
+                        <div class="match">
+                            <h3><a href="expertdetail.html">薛永祺 </a><span>研究员</span></h3>
+                            <p>薛永祺（1937.1-）红外和遥感技术专家，江苏苏州张家港人，中国科学院上海技术物理研究所研究员。从事多光谱和成像光谱技术研究，为中国建立机载...</p>
+                            <p>服务方式: <span class="btn1">技术咨询</span></p>
+                            <p>专业领域: <span class="btn2">电光源与激光技术</span></p>
+                        </div>
+                    </div>
+                    <div class="list-demand-1">
+                        <a href="expertdetail.html"><img src="http://placehold.it/150x150" alt=""></a>
+                        <div class="match">
+                            <h3><a href="expertdetail.html">薛永祺 </a><span>研究员</span></h3>
+                            <p>薛永祺（1937.1-）红外和遥感技术专家，江苏苏州张家港人，中国科学院上海技术物理研究所研究员。从事多光谱和成像光谱技术研究，为中国建立机载...</p>
+                            <p>服务方式: <span class="btn1">技术咨询</span></p>
+                            <p>专业领域: <span class="btn2">电光源与激光技术</span></p>
+                        </div>
+                    </div>
+                    <div class="list-demand-1">
+                        <a href="expertdetail.html"><img src="http://placehold.it/150x150" alt=""></a>
+                        <div class="match">
+                            <h3><a href="expertdetail.html">薛永祺 </a><span>研究员</span></h3>
+                            <p>薛永祺（1937.1-）红外和遥感技术专家，江苏苏州张家港人，中国科学院上海技术物理研究所研究员。从事多光谱和成像光谱技术研究，为中国建立机载...</p>
+                            <p>服务方式: <span class="btn1">技术咨询</span></p>
+                            <p>专业领域: <span class="btn2">电光源与激光技术</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="page"></div>
+            </div>
+            <div class="con-list-expert">
+                <h2>热门专家</h2>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+                <div class="list-expert-1">
+                    <img src="http://placehold.it/70x70" alt="">
+                    <div class="hot">
+                        <h3>张罗先</h3>
+                        <p>职称: <span>高级工程师</span></p>
+                        <p>专业领域: <span>建筑</span></p>
+                        <p>服务方式: <span>技术咨询</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

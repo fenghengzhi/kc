@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投融资服务报名</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/investServiceSignUp.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash.min.js"></script>
+    <script type="text/javascript" src="../lib/moment.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/datarea.js"></script>
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/investServiceSignUp.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/innovativeService/IPRList.html">知识产权评估</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/innovativeService/investServiceList.html">投融资服务</a></li>
+                <li><a href="http://train.sstir.cn/">科技培训</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/question/index">答疑解难</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">投融资服务</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-part1">
+            <div class="main-part1-left">
+                <img src="http://placehold.it/382x260" alt="">
+                <div>目标大赛</div>
+            </div>
+            <div class="main-part1-right">
+                <div class="title1">8月07</div>
+                <div class="title2">TechCrunch2017上海创业大赛海选&lt;国际线上分赛&gt;</div>
+                <div class="lines">
+                    <div class="line"><i style="background-image: url(../images/time.svg);"></i>2017-08-07~2017-10-14
+                    </div>
+                    <div class="line"><i style="background-image: url(../images/address.svg);"></i>上海 上海市·上海市</div>
+                    <!--<div class="line">2017-08-10 发布</div>-->
+                </div>
+                <a style="visibility: hidden;" class="hu-btn btn-primary btn-sm">立即报名</a>
+            </div>
+        </div>
+        <div class="main-part2">
+            <div class="main-part2-badge">目标大赛</div>
+            <div style="display: flex;flex-direction: column;width: 100%;height: 100%;justify-content: center;align-items: center">
+
+                <form _action="test" id="main-part2-form" _enctype="multipart/form-data" _method="post" disabled>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="td-left" colspan="2" style="padding-bottom: 16px;padding-left: 80px;text-align: left;">为申请加盟的服务机构注册帐号（带<span class="required">*</span>号为必填项）</td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><span class="required">*</span> 用户名：</td>
+                            <td class="td-right"><input maxlength="50" musthave="" class="hu-input input-primary input-sm" name="username" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><span class="required">*</span> 投融资活动名称：</td>
+                            <td class="td-right"><input maxlength="255" musthave="" class="hu-input input-primary input-sm" name="competitionName" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">手机号：</td>
+                            <td class="td-right"><input maxlength="255" phone="" class="hu-input input-primary input-sm" name="mobile" type="tel"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">发布人邮箱：</td>
+                            <td class="td-right"><input maxlength="255" email="" class="hu-input input-primary input-sm" name="email" type="email"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">企业名称：</td>
+                            <td class="td-right"><input maxlength="255" class="hu-input input-primary input-sm" name="enterpriseName" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">公司地址：</td>
+                            <td class="td-right">
+                                <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" hu-data-change="commonService.provincechange" name="provinceId">
+                                    <span>省市</span>
+                                    <ul class="hu-select-dropdown">
+                                    </ul>
+                                </div>
+
+                                <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" hu-data-change="commonService.citychange" name="cityId">
+                                    <span>市</span>
+                                    <ul class="hu-select-dropdown">
+                                    </ul>
+                                </div>
+
+                                <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="county">
+                                    <span>区/县</span>
+                                    <ul class="hu-select-dropdown">
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">公司网址：</td>
+                            <td class="td-right"><input maxlength="255" class="hu-input input-primary input-sm" name="url" type="url"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left">企业所属领域：</td>
+                            <td class="td-right"><input maxlength="255" class="hu-input input-primary input-sm" name="domain" type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="text-align: center;padding-top: 72px;">
+                                <div style="margin:0 auto;">
+                                    <button id="btn" class="btn-primary hu-btn btn-sm" onclick="if(commonService.checkData($('#main-part2-form'))){console.log(huForm.getFormData($('#main-part2-form')));}return false;">提交</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p><i class="icon hufont ic-check" data-clipboard-text="<i class=&quot;icon hufont ic-check&quot;></i>"></i>
+                            提交成功</p>
+                        <p><a href="investServiceList.html">点击此处</a>返回首页</p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

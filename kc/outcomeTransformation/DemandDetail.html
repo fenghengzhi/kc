@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>需求详情</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/DemandDetail.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash.min.js"></script>
+    <script type="text/javascript" src="../lib/moment.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text /javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="../common/src/js/datarea.js"></script>
+    <script type="text/javascript" src="src/js/DemandDetail.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">成果转化平台</p>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="plan">
+            <div class="mar clearfix">
+                <div class="plans">
+                    <a href="DemandList.html" class="demand" style="cursor:pointer;">
+                        <span class="circle">需求</span>
+                        <span class="dem">需求中心</span>
+                    </a>
+                    <a href="PlanList.html" class="technique" style="cursor:pointer;">
+                        <span class="circle" style="background-color: #b2b5ba;">方案</span>
+                        <span class="dem" style="color:#666666;">技术方案</span>
+                    </a>
+                </div>
+                <div class="release">
+                    <div class="demands" style="margin-right:16px;">
+                        <a href="demandPublish.html" class="hu-btn btn-primary btn-sm"><i></i><span>发布需求</span>
+                        </a>
+                    </div>
+                    <div class="scheme">
+                        <a href="planPublish.html" class="hu-btn btn-primary btn-sm"><i></i><span>发布方案</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="detail-title" id="detail-title">
+        <div class="roof main">
+            <div class="title-top clearfix">
+                <div class="portrait"></div>
+                <div class="tright">
+                    <h4>一种运动式座凳子非机动车</h4>
+                    <div class="people"><span class="lt">发布人</span><span class="rt">&nbsp;科创客服_方案</span></div>
+                </div>
+            </div>
+            <div class="classify clearfix">
+                <ul>
+                    <li>山地自行车</li>
+                    <li>运动学</li>
+                    <li>全民健身计划</li>
+                </ul>
+            </div>
+            <div class="detail">
+                <ul>
+                    <li>
+                        <div class="lf">
+                            <div class="directory" style="margin-right:8px;">指定响应人</div>
+                            <div class="dtail">全部</div>
+                        </div>
+                        <div class="mid" style="margin-right:135px;">
+                            <div class="directory">方案类型</div>
+                            <div class="dtail">技术提供</div>
+                        </div>
+                        <div class="rg">
+                            <div class="directory">地域</div>
+                            <div class="dtail">上海&nbsp;上海市&nbsp;浦东新区</div>
+                        </div>
+                    </li>
+                    <li style="margin-top:8px;">
+                        <div class="lf">
+                            <div class="directory" style="margin-right:22px;">预算金额</div>
+                            <div class="dtail" style="color:#5f8bc9">面议</div>
+                        </div>
+                        <div class="mid">
+                            <div class="directory">剩余时间</div>
+                            <div class="dtail">已过期</div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="hu-btn btn-primary btn-sm" onclick="toastr.box({content:$('#responseBox'),closeBtn:0,title:false,zIndex:1,area: ['auto', 'auto']});">
+                            我要响应
+                        </button>
+                    </li>
+                    <li>
+                        <div class="over"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main" id="main">
+        <div class="list clearfix">
+            <ul style="margin-bottom:16px;">
+                <li>
+                    <div class="left clearfix">
+
+                        <div class="title">
+                            <h5>需求描述</h5>
+                        </div>
+
+                        <div class="font">
+                            <p>
+                                先进装备系统与现代机器人技术是上海大学机电及自动化学院重大项目技术，包括标准和非标柔性装配及自动化生产线、特种机器人系统、先进装备制造技等。上海大学先进装备系统与现代机器人技术努力着眼于“只要企业制造谁被提升能想到的，就是我们要做的”工业化理念，致力于为企业解决工程技凭借自“积极为国制造”和“中国设计”提供最好的智力支持。</p>
+                            <p>技术创新点或者优势：
+                            </p>
+                            <p>直接为企业流水线作业工序提供无缝衔接的工业自动化生产线系统，为线上物流提供现代化机器人配套可以提供完备的自动化生产解决方案。（上海大学）</p>
+                            <div class="contact">
+                                <p>联系人：李白</p>
+                            </div>
+                            <div class="phone">
+                                <p>联系电话：1784552198</p>
+                            </div>
+                            <div class="email">
+                                <p>Email：15522445255@163.com</p>
+                            </div>
+                        </div>
+
+                        <div class="push">
+                            <span>收起/展开详情 <i class="icon hufont ic-navigate-next only-pic"></i></span>
+                        </div>
+
+                        <div class="require-detail">
+                            <div class="require-top">
+                                <p class="dt-p">需求详情</p>
+                            </div>
+                            <div class="require-mes">
+                                <p class="title-top">需求联系人信息：</p>
+                                <ul class="litem-mes">
+                                    <li><p class="mes-dt">姓名:  </p><span class="mes-detaile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                       &nbsp;&nbsp;&nbsp;&nbsp;林冬泉</span></li>
+                                    <li><p class="mes-dt">手机： </p><span class="mes-detaile"></span></li>
+                                    <li><p class="mes-dt">涉及技术领域：</p><span class="mes-detaile"></span></li>
+                                    <li><p class="mes-dt">需求所属阶段：</p><span class="mes-detaile">批量生产阶段</span></li>
+                                    <li><p class="mes-dt">需求类型： </p><span class="mes-detaile">新产品开发</span></li>
+                                    <li><p class="mes-dt">	联系电话：</p><span class="mes-detaile"></span></li>
+                                    <li><p class="mes-dt">	Email:   </p><span class="mes-detaile"></span></li>
+                                </ul>
+                            </div>
+                            <div class="next-require-mes">
+                                <ul>
+                                    <li class="item-text"><p class="it-p">需求详细内容：</p><span class="it-span">
+                                                                                                    过破碎系统破碎成50mm×50mm的碎块，投入进料仓。
+                                                                                                     废轮胎碎块在高温无氧231321321内热裂解，
+                                                                                                     所得的裂解油气经分馏冷却后，得到燃料油与少量可燃气。
+                                                                                                     可燃气净化后作为燃料用于供热系统，供热系统采用余热循环利用方式，大大节省了能源消耗，降低了生产线运行成本。生产线产生的烟气，经烟气净化系统净化后达标排放。裂解所得的固体产物——粗炭黑和钢丝，经磁选分离后，将粗炭黑输送至炭黑处理系统；钢丝作为</span></li>
+                                    <li class="item-text"><p class="it-p">解决技术难题：</p><span class="it-span"></span></li>
+                                    <li class="item-text"><p class="it-p">预期达到的指标：</p><span class="it-span"></span></li>
+                                    <li class="item-text"><p class="it-p">需求投入经费：</p><span class="it-span">	500万元以上</span></li>
+                                    <li class="item-text"><p class="it-p">需求研发周期:</p><span class="it-span">&nbsp;&nbsp;&nbsp;技术成果转化</span></li>
+                                    <li class="item-text"><p class="it-p">主要关注点：</p><span class="it-span">&nbsp;&nbsp;&nbsp;方案设计 设备及加工 成本控制</span></li>
+                                    <li class="item-text"><p class="it-p">期望合作方式：</p><span class="it-span">	方案设计 设备及加工 成本控制</span></li>
+                                    <li class="item-text"><p class="it-p">期望交互方式：</p><span class="it-span">高校 研究院所 技术型研发企业</span></li>
+                                    <li class="item-text"><p class="it-p">意向合作方:</p><span class="it-span">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方案设计 设备及加工 成本控制</span></li>
+                                    <li class="item-text"><p class="it-p">期望其他服务：</p><span class="it-span">方案设计 设备及加工 成本控制</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="response">
+                            <div class="title">
+                                <h5>响应人列表</h5>
+                            </div>
+
+                            <div class="user">
+                                <div class="user-detail">
+                                    <ul>
+                                        <li>
+                                            <div class="logo"></div>
+                                            <div class="user-name">
+                                                用户名称
+                                            </div>
+                                            <div class="test">
+                                                企业-专家
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="talk"><p>
+                                                与现代机器人技术努力着眼于“只要企业制造设备提升能想到的，就是我们要做的”工业化理念，致力于为企业解决工程技术难题，在技术致力于为企业解决工市场领域找到。</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-detail">
+                                    <ul>
+                                        <li>
+                                            <div class="logo"></div>
+                                            <div class="user-name">
+                                                用户名称
+                                            </div>
+                                            <div class="test">
+                                                企业-专家
+                                            </div>
+                                        </li>
+                                        <li style="margin-bottom:70px;">
+                                            <div class="talk"><p>
+                                                与现代机器人技术努力着眼于“只要企业制造设备提升能想到的，就是我们要做的”工业化理念，致力于为企业解决工程技术难题，在技术致力于为企业解决工市场领域找到。</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="right">
+
+                        <div class="title">
+                            <h5>精彩推荐</h5>
+                        </div>
+
+                        <div class="img-div clearfix">
+                            <div class="im" style="padding-top:0;">
+                                <img src="" alt="" style="background-color: #cccccc;margin-top:0;">
+                                <div class="keepout">新型铅酸蓄电池隔板</div>
+                            </div>
+                            <div class="im">
+                                <img src="" alt="" style="background-color: #cccccc;">
+                                <div class="keepout">低风速叶尖系列化分段叶片</div>
+                            </div>
+                            <div class="im" style="border-bottom:none;">
+                                <img src="" alt="" style="background-color: #cccccc;">
+                                <div class="keepout">低风速叶尖系列化分</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="responseBox" hidden>
+        <!--相应的是需求-->
+        <input type="text" hidden name="way" value="1">
+        <!--所响应的需求ID-->
+        <input type="text" hidden name="requireId">
+        <!--发布需求者ID-->
+        <input type="text" hidden name="fromId">
+        <!--响应需求的id-->
+        <input type="text" hidden name="toId">
+        <!--发布需求者用户名-->
+        <input type="text" hidden name="fromName">
+        <!--响应需要的用户名-->
+        <input type="text" hidden name="toName">
+
+        <div class="card-title">
+            响应需求
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>解决方案</td>
+                <td><textarea musthave="" placeholder="好的描述，让大家更好的知道你的需求" name="plan" class="hu-textarea"></textarea></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>方案图片</td>
+                <td>
+                    <label class="hu-btn btn-sm btn-primary">
+                        +上传
+                        <input type="file" hidden name="photo">
+                    </label>
+                </td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>是否公开</td>
+                <td>
+                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="isPublic">
+                        <span hu-data-value="1">是</span>
+                        <ul class="hu-select-dropdown">
+                            <li hu-data-value="1">是</li>
+                            <li hu-data-value="0">否</li>
+                        </ul>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="btns">
+                    <button class="hu-btn btn-primary-outline btn-sm" onclick="layer.closeAll()">取消</button>
+                    <button class="hu-btn btn-primary btn-sm submit-btn" onclick="if(commonService.checkData($('#responseBox'))){console.log(huForm.getFormData($('#responseBox')));layer.closeAll();toastr.info('响应成功')}">
+                        提交
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

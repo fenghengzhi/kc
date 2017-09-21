@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入驻信息(先不做)</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/entryinformation.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/entryinformation.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/haikou/share/index">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/share/list">共享业务</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/carrier/list">创新载体</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/expert/list">专家推荐</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/talent/list">人才推荐</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/instrument/list">仪器共享</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/lab/list">实验室共享</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/resourceSharing/intelligencePeriodical.html">科技情报</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/resourceSharing/technicalliterature.html">科技文献</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/resourceSharing/techSearchList.html">科技查新</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/enterprise/list">企业信息</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">科技查新</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-bg">
+            <div class="top-bg">
+                <div class="one">
+                    <div class="active">1</div>
+                    <h4 class="active-color">填写注册信息</h4>
+                </div>
+                <div class="line"></div>
+                <div class="one ">
+                    <div>2</div>
+                    <h4>填写法人单位信息</h4>
+                </div>
+                <div class="line"></div>
+                <div class="one ">
+                    <div>3</div>
+                    <h4>填写服务机构信息</h4>
+                </div>
+                <div class="line"></div>
+                <div class="one ">
+                    <div>4</div>
+                    <h4>填写服务信息</h4>
+                </div>
+            </div>
+            <div class="form switchover1">为申请加盟的服务机构注册账号(带<span class="xing">&nbsp;&nbsp;*</span> 号为必填)
+                <br>
+                <label for="name">
+                    <span><i class="xing"> *</i>用户名 :</span>
+                    <input type="text" id="name">
+                    <p>&nbsp;注册过后不能修改</p>
+                </label>
+                <label for="pass">
+
+                    <span><i class="xing"> *</i>密码 :</span>
+                    <input type="text" id="pass">
+                </label>
+                <label for="pass2">
+
+                    <span><i class="xing"> *</i>确认密码 :</span>
+                    <input type="text" id="pass2">
+                </label>
+                <label for="email">
+
+                    <span><i class="xing"> *</i>电子邮箱 :</span>
+                    <input type="text" id="email">
+                </label>
+                <label for="email2">
+
+                    <span><i class="xing"> * </i>邮箱确认 :</span>
+                    <input type="text" id="email2">
+                </label>
+                <label for="authcode">
+
+                    <span><i class="xing"> *</i>验证码 :</span>
+                    <input type="text" id="authcode">
+                    <img src="#" alt="">
+                </label>
+                <label for="affirm">
+                    <input type="checkbox" id="affirm">
+                    我已阅读并接受 《上海研发公共服务平台加盟单位服务协议》
+                </label>
+                <label for="txt">
+                <pre id="txt">
+                    <p>《上海研发公共服务平台加盟单位服务协议》</p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum et ipsa mollitia nam nostrum saepe tenetur ut vel! Alias aspernatur debitis doloribus eos excepturi nam quam soluta tempora vero voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis consequuntur culpa ducimus eligendi expedita fuga fugit inventore magnam odit optio pariatur quaerat quos recusandae reiciendis, repellendus sed ut voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, autem beatae commodi dignissimos ducimus et id illum itaque laboriosam minima neque non officiis quia repudiandae rerum veritatis, voluptates. Ab, nihil.loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere maiores sunt voluptatibus? Accusantium adipisci, animi consequatur iusto libero magnam nesciunt nobis odit praesentium quia, sequi ut velit vitae! Amet!
+                </pre>
+                </label>
+                <div class="doublebtn">
+                    <button class="hu-btn btn-primary btn-md">下一步</button>
+                    <button class="hu-btn btn-primary btn-md">返回</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第三方服务列表</title>
+
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/serviceListAll.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.history.js"></script>
+    <script type="text/javascript" src="../lib/uri.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/serviceListAll.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul>
+                    <li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li>
+            </ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">第三方服务</p>
+        </div>
+    </div>
+
+    <div class="main clearfix">
+
+        <div class="server-kind clearfix">
+            <a href="serviceListAll.html?supplierType=1" class="part1 patent1">
+                <div class="logo">
+                    <img src="../images/icon-patentagent.svg" alt="">
+                </div>
+                <div class="small-title clearfix">
+                    <h5>专利代理</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=3" class="part1 patent2">
+                <div class="logo">
+                    <img src="../images/icon-effortsinto.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>成果转化</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=2" class="part1 patent3">
+                <div class="logo">
+                    <img src="../images/icon-financialservice.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>金融服务</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=4" class="part1 patent4" style="border-right:1px solid #dddddd">
+                <div class="logo">
+                    <img src="../images/icon-legalservice.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>法律服务</h5>
+                </div>
+            </a>
+            <a href="serviceListAll.html?supplierType=5" class="part1 patent5">
+                <div class="logo">
+                    <img src="../images/icon-deps.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>专业学会</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=7" class="part1 patent7">
+                <div class="logo">
+                    <img src="../images/icon-training.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>人才培训</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=8" class="part1 patent8">
+                <div class="logo">
+                    <img src="../images/icon-information.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>管理咨询</h5>
+                </div>
+
+            </a>
+            <a href="serviceListAll.html?supplierType=9" class="part1 patent9" style="border-right:1px solid #dddddd">
+                <div class="logo">
+                    <img src="../images/icon-other.svg" alt="">
+                </div>
+                <div class="small-title">
+                    <h5>其他服务</h5>
+                    <div class="infor">
+                        <!--<p></p>-->
+                    </div>
+                </div>
+
+            </a>
+
+        </div>
+        <div class="patent-main">
+            <div class="patent-bx1" id="patent-bx1">
+                <div id="patent1" class="patent-agent clearfix">
+                    <div class="agent-title">
+                        <div class="title">
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-bx">
+                    <!--<div class="left-btn">-->
+                    <!--<img src="../images/icon-left.png" alt="">-->
+                    <!--</div>-->
+                    <div class="carousel clearfix">
+                        <div class="carousel-list clearfix">
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-part">
+
+                                <div class="top-part">
+
+                                    <div class="company-logo"></div>
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-company.svg" alt=""></div>
+
+                                        <div class="part-title">上海迈坦信息科技有限公司</div>
+
+                                    </div>
+
+                                    <div class="company-infor">021-54336693</div>
+
+                                    <div class="position">上海市骏丰国际财富广场1503室</div>
+
+                                </div>
+
+                                <div class="bottom-part">
+
+                                    <div class="top-part-mat clearfix">
+
+                                        <div class="part-logo"><img src="../images/icon-content.svg" alt=""></div>
+
+                                        <div class="part-title">服务内容</div>
+
+                                    </div>
+
+                                    <div class="detail-information">
+                                        <p style="margin-bottom:10px;">应用型技术的全球市场推广</p>
+                                        <p style="margin-bottom:11px;">转型升级的创新研发</p>
+                                        <p style="margin-bottom:20px;">现有生产的技术问题解决</p>
+                                    </div>
+
+                                    <div class="btn">
+
+                                        <button class="hu-btn btn-primary btn-sm">申请服务</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="right-btn">-->
+                    <!--<img src="../images/icon-left.png" alt="">-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;padding-bottom: 50px;">
+            <div style="margin: 0 auto;" id="page"></div>
+        </div>
+    </div>
+
+    <div id="applyBox" hidden>
+        <!--服务机构id-->
+        <input type="text" hidden name="supplierId" id="supplierId">
+        <!--服务机构名称-->
+        <input type="text" hidden name="supplierName" id="supplierName">
+
+        <div class="card-title">
+            申请服务
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>企业名称</td>
+                <td><input type="text" class="hu-input input-sm" name="name"></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>服务标题</td>
+                <td><input musthave="" type="text" class="hu-input input-sm" name="title"></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>申请内容</td>
+                <td><textarea musthave="" placeholder="" name="content" class="hu-textarea"></textarea>
+                </td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>联系人姓名</td>
+                <td><input type="text" class="hu-input input-sm" name="contactsName"></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>联系人电话</td>
+                <td><input type="text" class="hu-input input-sm" name="contactsTel"></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>联系人手机</td>
+                <td><input phone="" type="text" class="hu-input input-sm" name="contactsMobile"></td>
+            </tr>
+            <tr class="pad"></tr>
+            <tr>
+                <td>联系人邮箱</td>
+                <td><input email="" type="text" class="hu-input input-sm" name="contactsEmail"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="btns">
+                    <button class="hu-btn btn-primary-outline btn-sm" onclick="layer.closeAll()">取消</button>
+                    <button class="hu-btn btn-primary btn-sm submit-btn" onclick="serviceListAllService.submit()">
+                        提交
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

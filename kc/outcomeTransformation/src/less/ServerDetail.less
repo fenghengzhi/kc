@@ -1,0 +1,86 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common();
+  .server{
+    position: relative;
+    li{
+      float: left;
+      .server-right-logo{
+        width: 247px;
+        height: 91px;
+        //background-color: #ccc;
+        position: absolute;
+        right: 0;
+        top:80px;
+      }
+    }
+    .server-left{
+      width: 659px;
+      .title {
+        font-size: 16px;
+        color: @font02;
+        margin-top: 24px;
+        padding-bottom: 24px;
+        height: 18px;
+        border-bottom:1px solid #cccccc;
+        h5 {
+          line-height: 18px;
+          float: left;
+          padding-left: 10px;
+          border-left: 3px solid @primary;
+          font-size:16px;
+        }
+        span{
+          font-size:14px;
+          float: left;
+          line-height: 18px;
+          margin-left:10px;
+          color: @primary;
+        }
+      }
+      .server-detail p{
+        display: inline-block;
+        font-size:16px;
+        color:@font01;
+        width: 80px;
+        float: left;
+        line-height: 32px;
+      }
+      span{
+        width: 520px;
+        line-height: 32px;
+        font-size:16px;
+        color:@font03;
+        display: inline-block;
+        margin-left:32px;
+      }
+      .service-flow{
+        margin-bottom:24px;
+        .details{
+          display: inline-block;
+          cursor:pointer;
+          color:@primary;
+          position: absolute;
+          right: 30px;
+          top: 40px;
+          div{
+            float: left;
+            line-height: 32px;
+          }
+        }
+      }
+      button,a{
+        margin-bottom:30px;
+        color:@primary;
+      }
+    }
+  }
+}
+.header-part3{
+  background: url("../../../images/outcomeTransformation-banner.png")center no-repeat;
+}
+
+h2{
+  .common-title()
+}

@@ -1,0 +1,181 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/universitiesAlliance-banner.png") center no-repeat;
+}
+
+.main {
+  .universities {
+    margin: 24px 0;
+    display: flex;
+    .details {
+      .logo {
+        display: flex;
+        img {
+          width: 65px;
+          height: 65px;
+          margin-right: 15px;
+          background-color: #ccc;
+        }
+        h2 {
+          font-size: 28px;
+          font-weight: bold;
+          line-height: 42px;
+          color: @font01;
+          padding-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+      p {
+        text-indent: 32px;
+        font-size: 14px;
+        color: @font02;
+        line-height: 30px;
+        img {
+          float: right;
+          //display: block;
+          //width: 286px;
+          //height: 190px;
+          margin-left: 43px;
+          background-color: #ccc;
+          overflow: hidden;
+        }
+        overflow: hidden;
+      }
+    }
+  }
+  .message {
+    //margin-top: 8px;
+    display: flex;
+    .left,.right{
+      width: 490px;
+      display: flex;
+    }
+    .con {
+      p {
+        font-size: 14px;
+        color: #000000;
+        font-weight: bold;
+        margin: 24px 0;
+
+      }
+    }
+    .message-1{
+      width: 108px;
+    }
+    .message-2 {
+      p{
+        margin: 19px 0;
+      }
+      p:nth-of-type(1),p:nth-of-type(2){
+        color:@font02;
+      }
+    }
+    .con-1{
+      margin:0 10px;
+      p{
+        font-weight: 500;
+        color:@font02;
+        line-height: 20px;
+      }
+    }
+  .message-4{
+    p{
+      margin: 19px 0;
+    }
+  }
+  }
+  .history{
+    padding: 16px 0;
+    .history-con{
+      line-height: 1.5;
+      margin-top: 16px;
+      ul{
+        line-height: 26px;
+        li{
+          margin: 10px 0;
+        }
+      }
+    }
+    ul{
+      text-indent: 20px;
+    }
+    p{
+      width: 695px;
+    }
+    .line{
+      span{
+        .common-title();
+        color: @font01;
+        font-weight: bold;
+      }
+      padding-bottom: 16px;
+      border-bottom: 1px solid @line01;
+    }
+    .state{
+      display: flex;
+      .history-con{
+        display: flex;
+        width: 695px;
+        flex-direction: column;
+        div{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      img {
+        display: block;
+        width: 286px;
+        height: 190px;
+        margin:50px 0 0 43px;
+        background-color: #ccc;
+      }
+      span{
+        display: block;
+        margin: 30px;
+      }
+      p{
+        line-height: 26px;
+      }
+
+    }
+  }
+  .faculty{
+    padding: 16px 0;
+    p{
+      width: 695px;
+    }
+    .line{
+      span{
+        .common-title();
+        color: @font01;
+        font-weight: bold;
+      }
+      padding-bottom: 16px;
+      border-bottom: 1px solid @line01;
+    }
+    .state{
+      display: flex;
+      margin: 16px 0 20px;
+      p{
+        line-height: 26px;
+        text-indent: 20px;
+      }
+      img {
+        width: 286px;
+        height: 190px;
+        margin-left: 43px;
+        margin-top: 5px;
+        background-color: #ccc;
+      }
+    }
+  }
+}

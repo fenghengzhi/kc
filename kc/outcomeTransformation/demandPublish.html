@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布需求表单</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/demandPublish.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/lodash.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/datarea.js"></script>
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/demandPublish.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">成果转化平台</p>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="hu-card card-shadow">
+            <div class="hu-card-body">
+                <div class="card-title">需求中心</div>
+                <div class="main-tradingProcess">
+                    <div class="tradingProcess">
+                        <div class="tradingProcess-top" step="1"></div>
+                        <div class="tradingProcess-bottom">
+                            <div><span>01</span>描述需求</div>
+                            <div><span>02</span>填写需求详情</div>
+                            <div><span>03</span>选择推送对象</div>
+                            <div><span>04</span>发布成功</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-warn">
+                    <span><i class="icon hufont ic-lightbulb-outline"></i> 温馨提示</span>
+                    <p>1、为了保证您的信息能顺利通过我们的审核，请将信息的真实情况尽可能全面的发布出来！</p>
+                    <p>2、根据我们的长期跟踪统计，信息完整度越高，越容易获得目标用户的关注！</p>
+                    <p>3、信息完整度越高，将在我们的平台搜索结果排序靠前、获得推荐机会，以及享受增值服务试用机会！</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hu-card card-shadow main-form main-form1">
+            <div class="card-title">基本信息</div>
+            <div class="hu-card-body">
+                <div class="main-form main-form1">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="td-left">需求类型：</td>
+                            <td class="td-right">
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" checked value="技术攻关">
+                                    <span>技术攻关</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="专家咨询">
+                                    <span>专家咨询</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="专利代理">
+                                    <span>专利代理</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="金融服务">
+                                    <span>金融服务</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="法律服务">
+                                    <span>法律服务</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="专业学会">
+                                    <span>专业学会</span>
+                                </label>
+                                <label class="hu-radio">
+                                    <input type="radio" name="type" value="科研设备">
+                                    <span>科研设备</span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><span class="required">*</span> 需求标题：</td>
+                            <td class="td-right">
+                                <input maxlength="200" musthave="" style="width: 570px;" type="text" class="hu-input input-primary input-md" placeholder="" name="title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="required">*</span> 需求描述：</td>
+                            <td class="td-right">
+                                <textarea musthave="" style="width: 570px;height: 150px;resize:none;" class="hu-textarea" name="content"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>相关材料：</td>
+                            <td class="td-right">
+                                <label class="hu-btn btn-primary btn-sm">
+                                    +上传
+                                    <input name="attachment" type="file" style="display: none;">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>预算：</td>
+                            <td class="td-right">
+                                <div style="display: flex;justify-content: space-between;width: 570px;">
+                                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" style="width: 100px;" name="budget" value="test">
+                                        <span hu-data-value="3">预算</span>
+                                        <ul class="hu-select-dropdown">
+                                            <li hu-data-value="1">面议</li>
+                                            <li hu-data-value="2">1-3</li>
+                                            <li class="active" hu-data-value="3">3-10</li>
+                                            <li hu-data-value="4">30-50</li>
+                                        </ul>
+                                    </div>
+
+                                    <div style="display: flex;align-items: center;margin-right: -8px;">
+                                        <span>地域：</span>
+                                        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" style="width: 100px;" hu-data-change="commonService.provincechange" name="provinceId">
+                                            <span hu-data-value="3">省市</span>
+                                            <ul class="hu-select-dropdown">
+                                            </ul>
+                                        </div>
+                                        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" style="width: 100px;" hu-data-change="commonService.citychange" name="cityId">
+                                            <span hu-data-value="3">市</span>
+                                            <ul class="hu-select-dropdown">
+                                            </ul>
+                                        </div>
+
+                                        <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" style="width: 100px;" name="county">
+                                            <span hu-data-value="3">区/县</span>
+                                            <ul class="hu-select-dropdown">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>是否公开：</td>
+                            <td class="td-right">
+                                <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="isPublic">
+                                    <span hu-data-value="1">是</span>
+                                    <ul class="hu-select-dropdown">
+                                        <li class="active" hu-data-value="1">是</li>
+                                        <li hu-data-value="0">否</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div class="form-next">
+                        <button class="hu-btn btn-sm btn-primary-outline">上一步</button>
+                        <button class="hu-btn btn-sm btn-primary" onclick="demandPublishService.showpage(2,1)">下一步
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hu-card card-shadow main-form main-form2 hide">
+            <div class="card-title">需求详情</div>
+            <div class="hu-card-body">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="td-left left" style="padding-bottom: 16px;">需求联系人信息</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right"><label for="name">姓名</label></td>
+                        <td style="position:relative;" class="contact-info">
+                            <div style="">
+                                <input maxlength="50" class="hu-input input-primary input-sm" type="text" name="name" id="name">
+                                <label for="mobile" class="font03 fsz12">手机</label>
+                                <input maxlength="20" phone="" class="hu-input input-primary input-sm" type="text" name="mobile" id="mobile">
+                                <label for="email" class="font03 fsz12">Email</label>
+                                <input maxlength="50" email="" class="hu-input input-primary input-sm" type="email" name="email" id="email">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="division-line"></tr>
+                    <tr>
+                        <td class="td-left right">　涉及技术领域</td>
+                        <td class="td-right">
+                            <div id="domainSelect">
+                                <div class="domainAdd1">
+                                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" hu-data-change="commonService.domain1change" name="domain1">
+                                        <span hu-data-value=""></span>
+                                        <ul class="hu-select-dropdown">
+                                        </ul>
+                                    </div>
+                                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" hu-data-change="commonService.domain2change" name="domain2">
+                                        <span hu-data-value=""></span>
+                                        <ul class="hu-select-dropdown">
+                                        </ul>
+                                    </div>
+                                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" hu-data-change="commonService.domain3change" name="domain3">
+                                        <span hu-data-value=""></span>
+                                        <ul class="hu-select-dropdown">
+                                        </ul>
+                                    </div>
+                                    <div class="hu-select select-sm" hu-data-set="huSelect.set" hu-data-get="huSelect.get" name="domain4">
+                                        <span hu-data-value=""></span>
+                                        <ul class="hu-select-dropdown">
+                                        </ul>
+                                    </div>
+                                    <button id="addDomain" class="hu-btn btn-sm btn-primary-outline">添加</button>
+                                    <button id="otherDomain" class="hu-btn btn-sm btn-primary-outline">其他领域</button>
+                                </div>
+                                <div class="domainAdd2 hide">
+                                    <input type="text" class="hu-input input-sm input-primary" name="domain5" placeholder="">
+                                    <button id="addDomain2" class="hu-btn btn-sm btn-primary-outline">添加</button>
+                                    <button id="backToDomain" class="hu-btn btn-sm btn-primary-outline">返回</button>
+                                </div>
+                                <br>
+                                <div id="domain">
+                                    <div class="hu-tag tag-primary tag-action" hu-data-model="" hu-data-type="array" hu-data-beforeupdate="commonService.html2Text" hu-data-afterget="commonService.html2Text" hu-data-container="" name="domain">
+                                        <span hu-data-item=""></span><i class="close"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">　需求所属阶段</td>
+                        <td>
+                            <label for="phase1" class="hu-radio">
+                                <input type="radio" id="phase1" name="phase" checked value="研制阶段">
+                                <span>研制阶段</span>
+                            </label>
+                            <label for="phase2" class="hu-radio">
+                                <input type="radio" id="phase2" name="phase" value="试生产阶段">
+                                <span>试生产阶段</span>
+                            </label>
+                            <label for="phase3" class="hu-radio">
+                                <input type="radio" id="phase3" name="phase" value="小批量生产阶段">
+                                <span>小批量生产阶段</span>
+                            </label>
+                            <label for="phase4" class="hu-radio">
+                                <input type="radio" id="phase4" name="phase" value="批量生产阶段">
+                                <span>批量生产阶段</span>
+                            </label>
+                            <!--<label for="phase5" class="hu-radio">-->
+                            <!--<input type="radio" id="phase5" name="phase" value="0">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">　　　需求类型</td>
+                        <td>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" checked value="新产品开发">
+                                <span>新产品开发</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="产品升级换代">
+                                <span>产品升级换代</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="生产线技术改造">
+                                <span>生产线技术改造</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="制造工艺改进">
+                                <span>制造工艺改进</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="制备装备改进">
+                                <span>制备装备改进</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="检测认证">
+                                <span>检测认证</span>
+                            </label>
+                            <label class="hu-checkbox">
+                                <input type="checkbox" name="requireType" value="信息咨询">
+                                <span>信息咨询</span>
+                            </label>
+                            <!--<label for="requireType8" class="hu-checkbox">-->
+                            <!--<input type="checkbox" id="requireType8" name="requireType" value="8">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    <tr class="division-line"></tr>
+                    <tr>
+                        <td class="td-left left">　需求详细内容</td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">
+                            预期技术指标：
+                        </td>
+                        <td><textarea style="width: 570px;height: 150px;resize:none;" name="requireIndex" class="hu-textarea"></textarea></td>
+                    </tr>
+                    <tr style="height: 16px;"></tr>
+                    <tr>
+                        <td class="td-left right">需求研发周期：</td>
+                        <td><input maxlength="255" style="width: 117px;" type="number" class="hu-input input-primary" name="developmentCycle"> 月
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-left right">主要关注点：</td>
+                        <td>
+                            <label for="focus1" class="hu-checkbox">
+                                <input type="checkbox" id="focus1" name="focus" value="材料选型">
+                                <span>材料选型</span>
+                            </label>
+                            <label for="focus2" class="hu-checkbox">
+                                <input type="checkbox" id="focus2" name="focus" value="设备及加工">
+                                <span>设备及加工</span>
+                            </label>
+                            <label for="focus3" class="hu-checkbox">
+                                <input type="checkbox" id="focus3" name="focus" value="成本控制">
+                                <span>成本控制</span>
+                            </label>
+                            <label for="focus4" class="hu-checkbox">
+                                <input type="checkbox" id="focus4" name="focus" value="质量监控">
+                                <span>质量监控</span>
+                            </label>
+                            <!--<label for="focus5" class="hu-checkbox">-->
+                            <!--<input type="checkbox" id="focus5" name="focus" value="5">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                            <label for="focus6" class="hu-checkbox">
+                                <input type="checkbox" id="focus6" name="focus" value="6">
+                                <span>方案设计</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">期望合作方式：</td>
+                        <td>
+                            <label for="cooperationWay1" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay1" name="cooperationWay" value="技术转让">
+                                <span>技术转让</span>
+                            </label>
+                            <label for="cooperationWay2" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay2" name="cooperationWay" value="技术开发">
+                                <span>技术开发</span>
+                            </label>
+                            <label for="cooperationWay3" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay3" name="cooperationWay" value="技术服务">
+                                <span>技术服务</span>
+                            </label>
+                            <label for="cooperationWay4" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay4" name="cooperationWay" value="技术咨询">
+                                <span>技术咨询</span>
+                            </label>
+                            <label for="cooperationWay5" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay5" name="cooperationWay" value="技术入股">
+                                <span>技术入股</span>
+                            </label>
+                            <label for="cooperationWay6" class="hu-checkbox">
+                                <input type="checkbox" id="cooperationWay6" name="cooperationWay" value="可协商">
+                                <span>可协商</span>
+                            </label>
+                            <!--<label for="cooperationWay7" class="hu-checkbox">-->
+                            <!--<input type="checkbox" id="cooperationWay7" name="cooperationWay" value="6">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">期望交付方式：</td>
+                        <td>
+                            <label for="deliveryWay1" class="hu-radio">
+                                <input type="radio" id="deliveryWay1" name="deliveryWay" checked value="产品">
+                                <span>产品</span>
+                            </label>
+                            <label for="deliveryWay2" class="hu-radio">
+                                <input type="radio" id="deliveryWay2" name="deliveryWay" value="工艺">
+                                <span>工艺</span>
+                            </label>
+                            <label for="deliveryWay3" class="hu-radio">
+                                <input type="radio" id="deliveryWay3" name="deliveryWay" value="整体方案">
+                                <span>整体方案</span>
+                            </label>
+                            <label for="deliveryWay4" class="hu-radio">
+                                <input type="radio" id="deliveryWay4" name="deliveryWay" value="可协商">
+                                <span>可协商</span>
+                            </label>
+                            <!--<label for="deliveryWay5" class="hu-radio">-->
+                            <!--<input type="radio" id="deliveryWay5" name="deliveryWay" value="0">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">期望合作方式：</td>
+                        <td>
+                            <label for="partner1" class="hu-checkbox">
+                                <input type="checkbox" id="partner1" name="partner" value="高校">
+                                <span>高校</span>
+                            </label>
+                            <label for="partner2" class="hu-checkbox">
+                                <input type="checkbox" id="partner2" name="partner" value="研究院所">
+                                <span>研究院所</span>
+                            </label>
+                            <label for="partner3" class="hu-checkbox">
+                                <input type="checkbox" id="partner3" name="partner" value="技术型研发企业">
+                                <span>技术型研发企业</span>
+                            </label>
+                            <label for="partner4" class="hu-checkbox">
+                                <input type="checkbox" id="partner4" name="partner" value="个人">
+                                <span>个人</span>
+                            </label>
+                            <label for="partner5" class="hu-checkbox">
+                                <input type="checkbox" id="partner5" name="partner" value="指定合作方">
+                                <span>指定合作方</span>
+                            </label>
+                            <!--<label for="partner6" class="hu-checkbox">-->
+                            <!--<input type="checkbox" id="partner6" name="partner" value="6">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left right">期望其他服务：</td>
+                        <td>
+                            <label for="otherService1" class="hu-radio">
+                                <input type="radio" id="otherService1" name="otherService" checked value="采购比价">
+                                <span>采购比价</span>
+                            </label>
+                            <label for="otherService2" class="hu-radio">
+                                <input type="radio" id="otherService2" name="otherService" value="专利申请">
+                                <span>专利申请</span>
+                            </label>
+                            <label for="otherService3" class="hu-radio">
+                                <input type="radio" id="otherService3" name="otherService" value="技术成果转化">
+                                <span>技术成果转化</span>
+                            </label>
+                            <label for="otherService4" class="hu-radio">
+                                <input type="radio" id="otherService4" name="otherService" value="市场调研">
+                                <span>市场调研</span>
+                            </label>
+                            <label for="otherService5" class="hu-radio">
+                                <input type="radio" id="otherService5" name="otherService" value="决策咨询与政策辅导">
+                                <span>决策咨询与政策辅导</span>
+                            </label>
+                            <!--<label for="otherService6" class="hu-radio">-->
+                            <!--<input type="radio" id="otherService6" name="otherService" value="0">-->
+                            <!--<span>其他</span>-->
+                            <!--</label>-->
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="form-next">
+                    <button class="hu-btn btn-sm btn-primary-outline" onclick="demandPublishService.showpage(1,2)">上一步
+                    </button>
+                    <button class="hu-btn btn-sm btn-primary" onclick="demandPublishService.showpage(3,2)">下一步</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="hu-card card-shadow main-form main-form3 hide">
+            <div class="card-title">推送对象</div>
+            <div class="hu-card-body">
+                <table style="width: 950px;">
+                    <tbody>
+                    <tr>
+                        <td style="width: 100px;">标签</td>
+                        <td><input class="hu-input input-primary input-sm" type="text" id="tag-input"></td>
+                    </tr>
+                    <tr style="height: 16px;"></tr>
+                    <tr>
+                        <td></td>
+                        <td id="tag-container"></td>
+                    </tr>
+                    <!--<tr>-->
+                        <!--<td>推送对象</td>-->
+                        <!--<td>-->
+                            <!--<div class="push-targets">-->
+                                <!--<div class="push-target selected">-->
+                                    <!--<div class="push-target-part1" style="display: flex;">-->
+                                        <!--<div class="head"><img src="../images/user01.png" alt=""></div>-->
+                                        <!--<div class="push-target-part1-right" style="display:flex;flex-direction: column;">-->
+                                            <!--<div class="name">专家姓名</div>-->
+                                            <!--<div class="person"><i class="icon hufont ic-person-outline"></i>专家-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="tags"><span class="tag">数据</span><span class="tag">医疗</span><span class="tag">新能源</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="push-target">-->
+                                    <!--<div class="push-target-part1" style="display: flex;">-->
+                                        <!--<div class="head"><img src="../images/user01.png" alt=""></div>-->
+                                        <!--<div class="push-target-part1-right" style="display:flex;flex-direction: column;">-->
+                                            <!--<div class="name">专家姓名</div>-->
+                                            <!--<div class="person"><i class="icon hufont ic-person-outline"></i>专家-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="tags"><span class="tag">数据</span><span class="tag">医疗</span><span class="tag">新能源</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="push-target">-->
+                                    <!--<div class="push-target-part1" style="display: flex;">-->
+                                        <!--<div class="head"><img src="../images/user01.png" alt=""></div>-->
+                                        <!--<div class="push-target-part1-right" style="display:flex;flex-direction: column;">-->
+                                            <!--<div class="name">专家姓名</div>-->
+                                            <!--<div class="person"><i class="icon hufont ic-person-outline"></i>专家-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="tags"><span class="tag">数据</span><span class="tag">医疗</span><span class="tag">新能源</span></div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <tr>
+                        <!--<td colspan="2" style="text-align:center;padding-top: 16px;">-->
+                            <!--<button class="hu-btn btn-xs btn-primary" onclick="toastr.info('换不了')"><i class="icon hufont ic-refresh"></i>换一换-->
+                            <!--</button>-->
+                        <!--</td>-->
+                        <!--<td colspan="2" style="text-align:right;padding-top: 16px;">-->
+                        <!--<button class="hu-btn btn-xs btn-primary-outline">上一页</button>-->
+                        <!--<button class="hu-btn btn-xs btn-primary-outline">1</button>-->
+                        <!--<button class="hu-btn btn-xs btn-primary">下一页</button>-->
+
+                        <!--</td>-->
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="form-next">
+                    <button class="hu-btn btn-sm btn-primary-outline" onclick="demandPublishService.showpage(2,3)">上一步
+                    </button>
+                    <button id="btn" class="hu-btn btn-sm btn-primary" onclick="console.log(huForm.getFormData($('.main')));demandPublishService.showpage(4,3);">
+                        提交
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hu-card card-shadow main-form main-form4 hide">
+            <div class="hu-card-body">
+                <p><i class="icon hufont ic-check" data-clipboard-text="<i class=&quot;icon hufont ic-check&quot;></i>"></i>
+                    您好 , 您的信息发布成功</p>
+                <p>请耐心等待, <a href="DemandList.html">点击此处</a>返回首页</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

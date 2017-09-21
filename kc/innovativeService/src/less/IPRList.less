@@ -1,0 +1,129 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+@import 'shared/bannerBackground.less';
+.banner-bg();
+
+.main {
+  width: 1024px;
+  .main-part1 {
+    margin: 32px 0;
+    text-align: center;
+  }
+  .main-part2 {
+    height: 140px;
+    //border: 1px solid @line01;
+    box-shadow:0 0 10px #ccc;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    .main-part2-top {
+      flex-grow: 1;
+    }
+    .main-part2-bottom {
+      display: flex;
+      height: 90px;
+      padding-top: 24px;
+      & > div {
+        width: 0;
+        flex-grow: 1;
+        font-size: 14px;
+        line-height: 14px;
+        color: @font02;
+        text-align: center;
+        //background-color: #0000ff;
+        position: relative;
+        &:after {
+          position: absolute;
+          background-image: url(../../../images/icon-right.svg);
+          @icon-right-size:25px;
+          width: @icon-right-size;
+          height: @icon-right-size;
+          content: '';
+          display: block;
+          right: 0;
+          top:0;
+          background-size:@icon-right-size;
+
+        }
+        &:nth-last-child(1):after {
+          content: none;
+        }
+        & > span {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 22px;
+          color: @font02;
+          margin-right: 6px;
+        }
+      }
+
+    }
+  }
+  .main-part3 {
+    & > .title {
+      .common-title();
+    }
+    .items {
+      margin-bottom: 60px;
+      .item {
+        padding: 24px 0;
+        display: flex;
+        //flex-direction:column;
+        border-bottom: 1px solid @line01;
+        .item-left {
+          width: 100px;
+          height: 100px;
+
+        }
+        .item-mid {
+          flex-grow: 1;
+          padding-left: 24px;
+          .title {
+            font-size: 16px;
+            line-height: 18px;
+            color: @font01;
+          }
+          .address {
+            font-size: 14px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            color: @font03;
+            i {
+              width: 14px;
+              height: 14px;
+              color: red;
+              background-size: 14px 14px;
+              display: block;
+              margin-right: 10px;
+            }
+          }
+          .content {
+            margin: 24px 0 16px;
+            color: @font02;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 700px;
+            overflow: hidden;
+          }
+        }
+        .item-right {
+          display: flex;
+          //justify-content: center;
+          align-items: center;
+          .view-details-btn {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  .common-title()
+}

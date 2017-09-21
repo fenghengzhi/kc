@@ -1,0 +1,392 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+@import 'shared/bannerBackground.less';
+.banner-bg();
+
+.main{
+  width:1140px!important;
+  
+  .activity-single{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    //cursor: pointer;
+    //border-bottom: 1px solid rgba(0,0,0,.06);
+    .collection-pos{
+
+    }
+
+    &.mp-5{
+      //margin: 5px;
+      padding: 5px;
+    }
+
+    &.border{
+      //border: 1px solid lightgrey;
+    }
+
+    &.hover{
+      &:hover{
+        //border: 1px solid #fd5722;
+        //box-shadow: 5px 5px 4px rgba(0,0,0,0.3);
+        //background: #fc7d47;
+        //transform: scale(1.05);
+        -webkit-animation-delay:1s;
+        -webkit-animation-duration:2s;
+        -webkit-transition: 0.5s;
+      }
+    }
+
+    > div > div{
+      min-height: 150px;
+    }
+
+    .activity-single-img{
+      width: 100%;
+      min-height: 150px;
+      cursor: pointer;
+    }
+    .title{
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .pos-time{
+      color: #999;
+      p{
+        margin-bottom: 5px;
+      }
+
+      //span{
+      //  position: relative;
+      //  top: 2px;
+      //  left: 10px;
+      //}
+    }
+    .people-value{
+      position: absolute;
+      bottom: 3px;
+      width: 96%;
+      span{
+        border-radius: 3px;
+        padding: 4px 10px;
+        color: white;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .activity-month-style{
+    color: #D9B77F;
+    position: relative;
+    font-size: 20px;
+    top: -22px;
+  }
+
+  .activity-day-style{
+    font-size: 45px;
+    color: #D9B77F;
+    position: relative;
+    /* font-weight: 700; */
+    top: -32px;
+    left: -3px;
+  }
+
+  .activity-status{
+    background: url(../images/activity-status.png) 0 center no-repeat;
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    background-size: 300%;
+  }
+
+  .activity-status-success{
+    background-position-x: 0;
+    background-position-y: -167px;
+  }
+
+  .activity-status-process{
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+
+  .activity-status-error{
+    background-position-x: 0;
+    background-position-y: -326px;
+  }
+
+  .note-statusbar{
+    display: none;
+  }
+
+  .event-create-label{
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    text-align: center;
+    background:#ff6600;
+    color: white;
+    padding: 10px;
+  }
+
+  @media (max-width:  785px){
+    .bg-parent{
+      .content{
+        top:10%;
+        padding: 0 1%;
+      }
+    }
+    .detail-top-title{
+      font-size: 18px;
+    }
+  }
+
+
+  @media (min-width:786px) and (max-width:  882px){
+    .bg-parent{
+      .content{
+        top:10%;
+        padding: 0 1%;
+      }
+    }
+  }
+
+  @media (max-width: 785px){
+    .bg-parent{
+      .left-btn {
+        float: left;
+        position: relative;
+        left: -11px;
+        top: 0;
+      }
+    }
+  }
+
+
+  @media (min-width:  786px){
+    .bg-parent{
+      .left-btn {
+        float: right;
+        position: relative;
+        top: 110px;
+      }
+    }
+  }
+
+  @media (min-width: 883px) and (max-width: 939px){
+    .bg-parent{
+      .content{
+        top:10%;
+        padding: 0 10%;
+      }
+    }
+  }
+
+
+
+  @media (min-width: 940px) and (max-width: 1169px){
+    .bg-parent{
+      .content{
+        top:10%;
+        padding: 0 10%;
+      }
+    }
+  }
+
+
+  @media (min-width: 1170px){
+    .bg-parent{
+      .content{
+        top:10%;
+        padding: 0 20%;
+      }
+    }
+  }
+
+  .bg-parent{
+    height: 400px;
+    overflow: hidden;
+    background-color: #222;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    position: relative;
+    top: 51px;
+    .content {
+      position: relative;
+      color: #fff;
+      width: 100%;
+      text-align: left;
+      ul{
+        padding: 0;
+      }
+    }
+
+    span {
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      float: left;
+      background-color: #f60;
+      text-align: center;
+    }
+
+    i{
+      position: relative;left: 2px;
+    }
+
+    li {
+      float: none;
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 25px;
+      line-height: 30px;
+    }
+    p{
+      color: #f60;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .a-apply{
+      padding: 6px 20px;
+      display: inline-block;
+      background-color: #f60;
+      color: #fff;
+      border-radius: 3px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      &.red{
+        background-color: #f00;
+      }
+    }
+  }
+
+
+
+  .MsoNormal{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .page-activity .activity-introduce {
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+  }
+
+  .filter-type{
+    margin: 10px;
+    height: 60px;
+    label.title{
+      margin-top: 5px;
+    }
+    ul{
+      display: inline-block;
+      padding: 0;
+      li{
+        float: left;
+        margin: 3px 5px;
+        padding: 3px 8px;
+        color: gray;
+        cursor: pointer;
+
+        &:hover{
+          background: #fc7d47;
+          color: white;
+        }
+
+      }
+    }
+
+    .active{
+      background: #fc7d47;
+      color: white;
+    }
+  }
+
+  .activity-top-title{
+    padding: 20px 20px 10px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #eff3f8;
+  }
+
+  #activity-comment-table,#mark-table{
+    th{
+      min-width: 50px;
+    }
+  }
+
+  .page-content{
+    min-height: 700px;
+  }
+
+  .user-info-style{
+    text-align: center;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    margin: 20px;
+    min-height: 200px;
+    min-width: 120px;
+    img{
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+    ul{
+      padding: 0;
+      margin: 0 10px;
+    }
+
+  }
+
+  .bg-parent .a-apply.gray {
+    background-color: gray;
+  }
+
+  .jump-judge-pos-style{
+    color:#00A8FF;
+    //padding: 0 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: underline;
+    a{
+      color:#00A8FF;
+    }
+  }
+
+  #show-judge-anchor a {
+    width: 100%;
+    font-size: 20px;
+    background: #00A8FF;
+    color: white;
+  }
+
+  .competition-statistics{
+    label{
+      float:left;
+      margin-right: 5px;
+    }
+    ul{
+      float: left;;
+      li{
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+h2{
+  .common-title()
+}

@@ -1,0 +1,72 @@
+@import url(../../../common/src/less/define.less);
+@import "shared/tab.less";
+body {
+  .common()
+}
+
+@import 'shared/bannerBackground.less';
+.banner-bg();
+
+.main {
+  .main-tab();
+  .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -27px;
+    margin-bottom: -24px;
+    .item {
+      margin-right: 27px;
+      margin-bottom: 24px;
+      width: 323px;
+      transition: all 0.5s;
+
+      &:hover {
+        box-shadow: 0 0 10px #ccc;
+      }
+      .item-content {
+        border: 1px solid @line01;
+        padding: 16px 14px;
+        .title {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 16px;
+          color: @font01;
+          margin-bottom: 20px;
+        }
+        .line1 {
+          font-size: 14px;
+          line-height: 14px;
+          position: relative;
+          .line1-left {
+            float: left;
+            color: @font03;
+            .day {
+              font-size: 16px;
+              line-height: 16px;
+              color: @btn02;
+            }
+            .time {
+              font-size: 16px;
+              line-height: 16px;
+              color: @font03;
+            }
+          }
+          .line1-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: @font03;
+            .people {
+              color: @btn02;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  .common-title()
+}

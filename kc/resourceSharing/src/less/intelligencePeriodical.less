@@ -1,0 +1,90 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/resourceSharing-banner.png") center no-repeat;
+}
+
+.main {
+  margin-bottom: 50px;
+  .main-title {
+    border-bottom: 1px solid @line01;
+    height: 58px;
+    padding-top: 25px;
+    h1 {
+      .common-title()
+    }
+  }
+
+  .main-box{
+    display: flex;
+    border-bottom: 1px solid @line01;
+    padding: 32px 0;
+    .box-cover{
+      width: 174px;
+      flex-shrink: 0;
+      margin-right: 80px;
+    }
+    .box-text{
+      .box-text-title{
+        font-size: 24px;
+        color: @font01;
+      }
+      .box-text-company{
+        font-size: 16px;
+        color: @font02;
+        margin: 28px 0 16px;
+      }
+      .box-text-synopsis{
+        font-size: 14px;
+        color: @font03;
+        line-height: 1.5;
+      }
+      .box-text-stage{
+        margin-top: 20px;
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          li{
+            margin: 0 12px 10px 0;
+            cursor: pointer;
+            position: relative;
+            button{
+              width: 130px;
+              height: 42px;
+              color: @font03;
+              border:1px solid @font03;
+              border-radius: 0;
+              border-color: @line01;
+              &:hover{
+                color: #fff;
+                border-color: @primary;
+              }
+            }
+            span{
+              color: #fff;
+              border-top: 30px solid @orange;
+              border-left: 30px solid transparent;
+              position: absolute;
+              top:0;
+              right: 0;
+              i{
+                position: absolute;
+                color: #fff;
+                top:-27px;
+                right: 0;
+                font-style: normal;
+              }
+            }
+          }
+          .seeMore{
+            color: @primary;
+          }
+        }
+      }
+    }
+  }
+}

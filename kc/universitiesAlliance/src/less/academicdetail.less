@@ -1,0 +1,81 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+.header-part3{
+  background: url("../../../images/universitiesAlliance-banner.png")center no-repeat;
+}
+
+//h2{
+//  .common-title()
+//}
+.main{
+  .top{
+    margin-top: 30px;
+    text-align: center;
+    color: @font01;
+    h1{
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .h2{
+      //min-width:100%;
+      font-size: 16px;
+      display: inline-block;
+      font-weight: bold;
+      margin: 16px 0 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid @line01;
+    }
+    h3{
+      font-size: 14px;
+      margin: 14px 0 26px;
+      span{
+        color:@font03;
+      }
+    }
+  }
+  .digest{
+    padding-bottom: 50px;
+    .h3{
+      border-bottom: 1px solid @line01;
+      h3{
+        .common-title();
+        margin-bottom: 24px;
+        font-weight: bold;
+        color: @font01;
+      }
+    }
+
+    .message {
+      margin-top: 64px;
+      .con {
+        margin-left: 80px;
+        div{
+          display: flex;
+          font-size: 14px;
+          font-weight: bold;
+          color:@font01;
+          margin: 15px 0;
+          span{
+            line-height: 25px;
+            width: 110px;
+            flex-shrink: 0;
+          }
+          p{
+            line-height: 25px;
+            margin-left: 35px;
+            color: @font02;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  button{
+  display: flex;
+    justify-content: center;
+    margin: 58px auto;
+  }
+}

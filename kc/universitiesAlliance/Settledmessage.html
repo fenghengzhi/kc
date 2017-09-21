@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入驻信息</title>
+    
+    <link rel="icon" href="../images/logo.ico">
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/Settledmessage.css">
+    <link rel="stylesheet" href="../lib/flatpickr.min.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/Settledmessage.js"></script>
+    <script src="../lib/flatpickr.min.js"></script>
+    <script src="../lib/zh.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul><li><a href="http://101.226.6.177:8089/haikou/">首页</a></li>
+                    <li><a href="http://101.226.6.177:8089/briseis/public/hk/govService.htm">政府服务</a></li>
+                    <li class="selected"><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">创新城市</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/info/index">科技创新资讯</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/share/index">科技资源共享</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/innovativeService/index.html">科创服务</a></li>
+                    <li><a href="http://101.226.6.177:8089/haikou/openPlatform/list">大数据开放平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="http://101.226.6.177:8089/hk/indicator/secondaryIndex?code=RDLabourForceNum">统计评估</a></li></ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul><li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/briseis/public/a/index.htm">重点单位建设支持</a></li>
+                <li><a href="https://modao.cc/app/3e5aa7496104abe2f88fcbfbf7c0860963ac5364#screen=s77dfc0f9856caec9f1fdb8">创新城市关键指标统计</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/universitiesAlliance/universitihome.html">全省高校联盟</a></li></ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">全省高校科创联合平台</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="form">
+            <div class="bg">
+                <span class="top-message">基本信息</span>
+                <div class="line">
+                    <span>头像</span>
+                    <img src="http://placehold.it/65x65" alt="" name="image">
+                    <div class="form-file">
+                        <input type="file" id="form-file">
+                        <button class=" hu-btn btn-primary btn-sm">+上传</button>
+                        <p class="jy1"><i class="xing"> * </i>&nbsp;&nbsp;建议上传65*65尺寸的图像</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <label for="form-name">
+                        <span><i class="xing"> *</i>高校名称</span>
+                        <input musthave="" type="text" id="form-name" name="name" class="hu-input input-primary input-sm">
+                    </label>
+                    <label for="form-sort">
+                        <span>类别</span>
+                        <input type="text" id="form-sort" name="category" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="timer">
+                        <span>创办时间</span>
+                        <input id="timer" type="text" class="hu-input input-primary" name="serviceTime" placeholder="时间">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="form-section">
+                        <span>主管部门</span>
+                        <input type="text" id="form-section" name="competentDepartments" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="form-region">
+                        <span>所属地区</span>
+                        <input type="text" id="form-region" name="location" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <span><i class="xing"> *</i>高校简介</span>
+                    <textarea musthave="" name="brief" hu-data-type="array"></textarea>
+                </div>
+            </div>
+            <div class="bg">
+                <span class="top-message">其他信息</span>
+                <div class="line">
+                    <label for="form-schooltype">
+                        <span>学校类型</span>
+                        <input type="text" id="form-schooltype" name="schoolType" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="form-schoolproperty">
+                        <span>学校属性</span>
+                        <input type="text" id="form-schoolproperty" name="schoolAttr" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="form-website">
+                        <span>学校官网链接</span>
+                        <input type="text" id="form-website" name="schoolLink" class="hu-input input-primary input-sm">
+                    </label>
+                </div>
+                <div class="line">
+                    <label for="form-alumnus">
+                        <span>知名校友</span>
+                        <input type="text" id="form-alumnus" name="schoolmate" class="hu-input input-primary input-sm" placeholder="用分号隔开">
+                    </label>
+                </div>
+                <div class="line">
+                    <span>历史沿革</span>
+                    <textarea name="development" hu-data-type="array"></textarea>
+                </div>
+                <div class="line">
+                    <label for="form-history">
+                        <span>历史沿革图片</span>
+                        <input type="text" id="form-history" name="developmentImage" class="hu-input input-primary input-sm">
+                    </label>
+                    <div class="form-file">
+                        <input type="file" id="form-file1">
+                        <button class=" hu-btn btn-primary btn-sm">+上传</button>
+                        <p><i class="xing"> * </i>&nbsp;&nbsp;建议上传286*190尺寸的图像</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <span>师资</span>
+                    <textarea name="teachers"></textarea>
+                </div>
+                <div class="line">
+                    <label for="form-teachers">
+                        <span>师资力量图片</span>
+                        <input type="text" id="form-teachers" name="teachersImage" class="hu-input input-primary input-sm">
+                    </label>
+                    <div class="form-file">
+                        <input type="file" id="form-file2">
+                        <button class=" hu-btn btn-primary btn-sm">+上传</button>
+                        <p><i class="xing"> * &nbsp;</i> 建议上传286*190尺寸的图像</p>
+                    </div>
+                </div>
+                <button id="tijiao" class="tijiao hu-btn btn-primary btn-sm">提交</button>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p><i class="icon hufont ic-check" data-clipboard-text="<i class=&quot;icon hufont ic-check&quot;></i>"></i>
+                                    您好 , 您的信息正在申请中</p>
+                                <p>请耐心等待, <a href="universitihome.html">点击此处</a>返回首页</p>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="../images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="../images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

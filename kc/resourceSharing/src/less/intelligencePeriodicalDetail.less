@@ -1,0 +1,60 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+.header-part3 {
+  background: url("../../../images/resourceSharing-banner.png") center no-repeat;
+}
+
+.main {
+  margin-bottom: 50px;
+  .main-title {
+    border-bottom: 1px solid @line01;
+    height: 58px;
+    padding-top: 25px;
+    h2 {
+      .common-title()
+    }
+  }
+  .main-synopsis {
+    display: flex;
+    padding: 32px 0;
+    img {
+      width: 174px;
+      height: 249px;
+      flex-shrink: 0;
+      margin-right: 80px;
+    }
+    .main-synopsis-text {
+      .synopsis-text-title {
+        font-size: 24px;
+        color: @font01;
+      }
+      .synopsis-text-company {
+        font-size: 16px;
+        color: @font02;
+        margin: 28px 0 16px;
+      }
+      .synopsis-text-synopsis {
+        font-size: 14px;
+        color: @font03;
+        line-height: 1.5;
+      }
+    }
+  }
+  .main-detail {
+    margin-bottom: 32px;
+    .main-detail-title {
+      border-bottom: 1px solid @line01;
+      height: 58px;
+      padding-top: 25px;
+      margin-bottom: 20px;
+      span {
+        .common-title();
+        font-weight: bold;
+      }
+    }
+  }
+}

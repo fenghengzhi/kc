@@ -1,0 +1,283 @@
+@import url(../../../common/src/less/define.less);
+#applyBox {
+  padding-bottom: 32px;
+  .card-title {
+    width: 80px;
+    height: 30px;
+    background: @primary;
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  textarea {
+    width: 560px;
+    height: 170px;
+    resize: none;
+    &::placeholder {
+      font-size: 14px;
+      color: @font02;
+
+    }
+  }
+  table {
+    margin-left: 120px;
+    tr {
+      &.pad {
+        height: 32px;
+        content: ''
+      }
+      td {
+        &:first-child {
+          font-size: 14px;
+          color: @font01;
+          white-space: nowrap;
+          padding-right: 40px;
+        }
+        &.btns {
+          margin-right: 50px;
+          margin-bottom: 32px;
+          text-align: right;
+          padding-right: 50px;
+          margin-left: -20px;
+          .submit-btn {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+body {
+  .common();
+  .server-kind {
+    margin-top: 24px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    //padding-left: 77px;
+    .part1 {
+      width: 256px;
+      height: 80px;
+      border: 1px solid @line01;
+      //border-right: none;
+      //border-bottom: none;
+      margin-right:-1px;
+      margin-bottom:-1px;
+      float: left;
+      //padding-top: 15px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      cursor: pointer;
+      &:hover{
+        box-shadow:0 0 24px 4px @line01;
+      }
+    }
+
+    .logo {
+      //line-height: 62px;
+      margin-right: 20px;
+      @size:24px;
+      height:@size;
+      &>img{
+        height:@size;
+      }
+      
+    }
+    .small-title {
+      float: left;
+      margin-right:20PX;
+      h5 {
+        font-size: 18px;
+        font-weight:normal;
+        color: @font01;
+        float: left;
+        //padding-right:40px;
+      }
+    }
+    .infor {
+      margin-top:8px;
+      float: left;
+      p {
+        font-size: 14px;
+        color: @font03;
+        line-height: 16px;
+      }
+    }
+    .shadow{
+      box-shadow:0 0 24px 4px @line01;
+    }
+  }
+  //.fixed {
+  //  position: fixed;
+  //  top: 0;
+  //  width: 100%;
+  //  margin: 0 auto;
+  //  left: 0;
+  //  z-index: 10000;
+  //  overflow: hidden;
+  //  background-color: #fff;
+  //}
+;
+  .patent-agent {
+    border-bottom: 1px solid @line01;
+    margin-bottom: 32px;
+    .title {
+      font-size: 16px;
+      color: @font02;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      height: 18px;
+      h5 {
+        line-height: 18px;
+        display: block;
+        float: left;
+        padding-left: 10px;
+        border-left: 3px solid @primary;
+        font-size: 16px;
+      }
+      .more{
+        float:right;
+      }
+    }
+  }
+;
+  .carousel {
+    //display: flex;
+
+    width: 876px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .carousel-list {
+      position: relative;
+      //width: 220%;
+      width: 897px;
+    }
+    .carousel-part {
+      float: left;
+      width: 272px;
+      height: 315px;
+      margin-right: 27px;
+      border: 1px solid @line01;
+      padding: 16px 18px;
+      margin-bottom: 24px;
+      .top-part {
+        border-bottom: 1px solid @line01;
+        overflow: hidden;
+        .company-logo {
+          width: 125px;
+          text-align:center;
+          height: 40px;
+          //background-color: #cccccc;
+          margin-left: 55px;
+        }
+        .top-part-mat {
+          margin-top: 14px;
+          .part-logo {
+            float: left;
+            margin-right: 20px;
+          }
+          .part-title {
+            float: left;
+            font-size: 16px;
+            color: @font01;
+            font-weight: bold;
+            margin-bottom: 12px;
+            cursor: pointer;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            width:192px;
+            white-space:nowrap;
+          }
+        }
+        .company-infor {
+          font-weight: bold;
+          color: @font01;
+          font-size: 16px;
+          margin-left: 40px;
+        }
+        .position {
+          height: 14px;
+          margin: 12px 0 24px 40px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+        }
+      }
+    ;
+      .bottom-part {
+        .top-part-mat {
+          margin-top: 14px;
+          .part-logo {
+            float: left;
+            margin-right: 20px;
+          }
+          .part-title {
+            float: left;
+            font-size: 16px;
+            color: @font01;
+            font-weight: bold;
+            margin-bottom: 12px;
+          }
+        }
+        .detail-information {
+          margin-left: 40px;
+          p {
+            font-size: 14px;
+            color: @font02;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            overflow:hidden;
+          }
+        }
+        .btn {
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .carousel-bx {
+    width: 1024px;
+    //height: 328px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    .left-btn {
+      width: 25px;
+      height: 57px;
+      overflow: hidden;
+      margin-top: 135px;
+      position: absolute;
+      left: 40px;
+      cursor: pointer;
+    }
+    .right-btn {
+      width: 25px;
+      height: 57px;
+      overflow: hidden;
+      margin-top: 135px;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      cursor: pointer;
+      img {
+        position: relative;
+        right: 40px;
+      }
+    }
+  }
+}
+
+.header-part3 {
+  background: url("../../../images/outcomeTransformation-banner.png") center no-repeat;
+}
+h2{
+  .common-title()
+}
