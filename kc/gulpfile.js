@@ -51,7 +51,7 @@ gulp.task('serve', function () {
         open:
             'local',
         startPath:
-            "/kc/",
+            "/kc/outcomeTransformation/index.html",
         ghostMode:
             false
     });
