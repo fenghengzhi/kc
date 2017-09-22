@@ -8,7 +8,16 @@
 
     function popularhomeService() {
         let popularhomeService = {};
-
+        popularhomeService.kejiguanshipin=function () {
+            // toastr.box({content: $('#yuanshishipin'), closeBtn: 1, title: true, zIndex: 1, area: ['auto', 'auto']});
+            $('#kejiguan-video')[0].webkitEnterFullscreen();
+            $('#kejiguan-video')[0].play();
+        }
+        popularhomeService.yuanshishipin=function () {
+            // toastr.box({content: $('#yuanshishipin'), closeBtn: 1, title: true, zIndex: 1, area: ['auto', 'auto']});
+            $('#yuanshishipin-video')[0].webkitEnterFullscreen();
+            $('#yuanshishipin-video')[0].play();
+        }
         $(function () {
             allclick();
             getData();
@@ -108,7 +117,7 @@
                         for(var i = 0;i < data.length;i ++ ){
                             var html =
                                 `<a href="expertdetail.html?id=${data[i].id}" class="experts1">
-                                    <img src="${data[i].photo||`http://img.kechuang.cn/u${data[i].memberId}.jpg?imageMogr2/thumbnail/150x150&time=1504690694632`}" alt="">
+                                    <img src="${data[i].photo || `../resources/expert/${data[i].memberId}.jpg`}" alt="">
                                     <div class="head">
                                         <h3>${data[i].name}</h3>
                                         <h3>${data[i].technicalTitle}</h3>
