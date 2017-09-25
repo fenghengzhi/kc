@@ -1,0 +1,357 @@
+html {
+	margin: 0px; padding: 0px;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+hr {
+	margin: 0px; padding: 0px;
+}
+figure {
+	margin: 0px; padding: 0px;
+}
+table {
+	margin: 0px; padding: 0px;
+}
+caption {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+legend {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+button {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+menu {
+	margin: 0px; padding: 0px;
+}
+header {
+	display: block;
+}
+footer {
+	display: block;
+}
+section {
+	display: block;
+}
+article {
+	display: block;
+}
+aside {
+	display: block;
+}
+nav {
+	display: block;
+}
+hgroup {
+	display: block;
+}
+address {
+	display: block;
+}
+figure {
+	display: block;
+}
+figcaption {
+	display: block;
+}
+menu {
+	display: block;
+}
+details {
+	display: block;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+caption {
+	text-align: left; font-weight: normal;
+}
+th {
+	text-align: left; font-weight: normal;
+}
+html {
+	border: 0px currentColor; border-image: none;
+}
+body {
+	border: 0px currentColor; border-image: none;
+}
+fieldset {
+	border: 0px currentColor; border-image: none;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+iframe {
+	border: 0px currentColor; border-image: none;
+}
+abbr {
+	border: 0px currentColor; border-image: none;
+}
+i {
+	font-style: normal;
+}
+cite {
+	font-style: normal;
+}
+em {
+	font-style: normal;
+}
+var {
+	font-style: normal;
+}
+address {
+	font-style: normal;
+}
+dfn {
+	font-style: normal;
+}
+[hidefocus] {
+	outline: 0px;
+}
+summary {
+	outline: 0px;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font-size: 100%;
+}
+h2 {
+	font-size: 100%;
+}
+h3 {
+	font-size: 100%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 100%;
+}
+h6 {
+	font-size: 100%;
+}
+small {
+	font-size: 100%;
+}
+sup {
+	font-size: 83%;
+}
+sub {
+	font-size: 83%;
+}
+pre {
+	font-family: inherit;
+}
+code {
+	font-family: inherit;
+}
+kbd {
+	font-family: inherit;
+}
+samp {
+	font-family: inherit;
+}
+q::before {
+	content: none;
+}
+q::after {
+	content: none;
+}
+textarea {
+	overflow: auto; resize: none;
+}
+label {
+	cursor: default;
+}
+summary {
+	cursor: default;
+}
+a {
+	cursor: pointer;
+}
+button {
+	cursor: pointer;
+}
+del {
+	text-decoration: none;
+}
+ins {
+	text-decoration: none;
+}
+u {
+	text-decoration: none;
+}
+s {
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+body {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+input {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+select {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+keygen {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+legend {
+	font: 12px/1.14 arial, ����; outline: 0px; font-size-adjust: none; font-stretch: normal;
+}
+body {
+	
+}
+a {
+	
+}
+a:hover {
+	
+}
+html {
+	width: 100%; min-height: 100%;
+}
+body {
+	width: 100%; text-align: left; font-family: "Arial","Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",sans-serif; min-height: 100%;
+}
+a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.c_f {
+	
+}
+.c_f::after {
+	height: 0px; overflow: hidden; clear: both; display: block; visibility: hidden; content: ".";
+}
+.f_l {
+	float: left;
+}
+.f_r {
+	float: right;
+}
+.rel {
+	position: relative;
+}
+.abs {
+	position: absolute;
+}
+.mar_l_r {
+	margin: 0px 1%;
+}
+.wid_4 {
+	width: 49%;
+}
+.wid_2 {
+	width: 20%;
+}
+.wid_6 {
+	width: 65%;
+}
+.wid_52 {
+	width: 52%;
+}
+.wid_60 {
+	width: 60%;
+}
+.mar_l {
+	margin-left: 1%;
+}
+.hei1 {
+	height: 400px !important; margin-bottom: 20px;
+}
+.mar_t3 {
+	margin-top: 30px;
+}
+.kg1 {
+	padding: 0px 14px;
+}
+.wid_3 {
+	width: 30%;
+}
+.wid_5 {
+	width: 50%;
+}
+.lin_h {
+	line-height: 26px !important;
+}

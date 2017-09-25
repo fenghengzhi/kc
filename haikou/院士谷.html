@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="src/less/demo.css">
+    <link rel="stylesheet" href="src/less/add.css">
+
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/demo.js"></script>
+    <script type="text/javascript" src="src/js/popup.js"></script>
+    <script type="text/javascript" src="src/js/menu.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		mainmenu();
+
+        /**
+            ifDrag: 是否拖拽
+            dragLimit: 拖拽限制范围
+        */
+        $('#popup').popup({ifDrag: true, dragLimit: true});
+
+        $("#btn1").click(function() {
+            $("#video")[0].play();
+        });
+    });
+</script>
+
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part3">
+            <div class="new_banner yuan_bac">海南院士谷</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="main_add" >
+    	<div class="title_add">
+            <div class="main-title">院士合作模式</div>
+            <div class="main-subtitle">Academicians cooperation model</div>
+        </div>
+    	<div class="main_part blue_bac" >
+        	<div class="m_con">
+            	<h6>上海院士与海南合作</h6>
+                <p>上海院士与海南合作采取<br>合作研究、联合攻关、技术咨询、成果转让、人才培养、讲座论坛<br>的方式合作</p>
+            </div>       
+        </div>
+        <div class="title_add">
+            <div class="main-title"><a href="#">院士资源</a></div>
+            <div class="main-subtitle">Academician resources</div>
+        </div>
+        
+        <div class="main_part main_part_n_bac" style="position:relative">
+        <div class="University-bg commonality-bg">
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic1.png"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">林忠钦 <span>（院士）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：智能制造<br>中国工程院院士</span></p>
+                    <p class="index_rencaiTxt"><span>上海交通大学校长</span></p>
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+
+            </div>
+        
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic2.png"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">何积丰 <span>（院士）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：电子信息<br>中国科学院院士</span></p>
+                    <p class="index_rencaiTxt"><span>华师大软件学院院长</span></p>
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)" id="btn1"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+            </div>
+        
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic3.jpg"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">陈国良 <span>（研究员）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：医药卫生<br>中国工程院院士</span></p>
+                    <p class="index_rencaiTxt"><span>中国科学技术大学教授</span></p>
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+            </div>
+			</div>	
+            
+            <div class="University-bg commonality-bg">
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic4.jpg"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">田禾 <span>（教授）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：化工<br>中国科学院院士 </span></p>
+                    
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+
+            </div>
+        
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic5.png"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">王红阳 <span>（院士）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：医药卫生<br>中国工程院院士</span></p>
+                    
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+            </div>
+        
+            <div class="index_rencai marT20">
+                <div class="img4">
+                    <img src="../images/add/pic/pic6.png"  width="120" height="160">
+                </div>
+                <div class="ys_con">
+                    <p class="index_rencaiTxt">叶可明 <span>（教授）</span></p>
+                    <p class="index_rencaiTxt"><span>专业领域：土木工程<br>中国工程院院士</span></p>
+                    
+                    <p class="index_rencaiTxt"><span>连线：<a href="javascript:void(0)"><img src="../images/add/icon.png" width="33" height="32"></a></span></p>
+                </div>
+            </div>
+			</div>		
+	
+            <div id="popup">
+                <div class="title">
+                  <p >视频连线</p>
+                  <span>x</span>
+                </div>
+                <div class="cont">
+                    <video id="video" src="../video/何积丰院士.mp4" controls="controls" style="height:470px; width:800px; ">
+                    您的浏览器不支持 video 标签。
+                    </video>
+                
+                </div>
+            </div>
+  
+            <div class="clear"></div>
+        
+        </div>
+        
+        
+        
+        
+    
+    
+    	<div class="clear"></div>   
+    </div>
+
+    <div class="footer">
+        </div>
+</div>
+<div id="mask_shadow"></div>
+
+</body>
+</html>

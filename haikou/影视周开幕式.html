@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="src/less/demo.css">
+    <link rel="stylesheet" href="src/less/add.css">
+
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/demo.js"></script>
+    <script type="text/javascript" src="src/js/popup.js"></script>
+    <script type="text/javascript" src="src/js/menu.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		mainmenu(11,-1,-1);
+
+        /**
+	        ifDrag: 是否拖拽
+	        dragLimit: 拖拽限制范围
+        */
+        $('#popup').popup({ifDrag: true, dragLimit: true});
+
+        $("#btn1").click(function() {
+            $("#video")[0].play();
+        })
+    });
+</script>
+
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        
+      <div class="movie_bac" style="position:relative">
+       	<h2>海南省<br>国际科技影视周开幕式</h2>
+        <h4>Hainan Opening Ceremony of International <br>Science and Technology Film Week</h4>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab_t">
+              <tr>
+                <td width="20%">主力单位：   </td>
+                <td width="80%">海南省科学技术厅</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>海南省工业与信息化厅</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>海南省文化广电出版体育厅</td>
+              </tr>
+              <tr>
+                <td>承办单位：</td>
+                <td>海口市科学技术工业信息化局</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>海口市文化广电出版体育局</td>
+              </tr>
+            </table>
+			<a href="javascript:void(0)" id="btn1"><div class="movie_but but_po">珍稀动物视频&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>
+                <div id="popup">
+            <div class="title">
+              <p >国际科技影视周</p>
+              <span>x</span>
+            </div>
+            <div class="cont">
+                <video id="video" src="../video/珍稀物种科普电影片花.mp4" controls="controls" style="height:470px; width:800px; ">
+                您的浏览器不支持 video 标签。
+                </video>
+            
+            </div>
+            </div>
+
+      </div>
+        <div class="clear"></div>
+    </div>
+
+    
+
+    <div class="footer">
+        </div>
+</div>
+<div id="mask_shadow"></div>
+
+</body>
+</html>

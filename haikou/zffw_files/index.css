@@ -1,0 +1,528 @@
+.g-layout-page {
+	background: rgb(245, 245, 245); left: 0px; top: 0px; width: 100%; bottom: 0px; overflow: auto; position: absolute;
+}
+.g-page {
+	background: rgb(255, 255, 255); margin: 0px auto; max-width: 1400px;
+}
+.g-top {
+	
+}
+.g-bottom {
+	
+}
+.m-top {
+	border-color: rgb(68, 68, 68); margin: 0px auto; padding: 0px 10%; width: 80%; height: 50px; line-height: 50px; box-shadow: 0px 0px 4px #aaaaaa;
+}
+.m-top .title {
+	color: rgb(153, 153, 153); font-size: 13px; float: left;
+}
+.m-top .list-ul {
+	float: right;
+}
+.m-top .list {
+	color: rgb(102, 102, 102); margin-left: 20px; float: left;
+}
+.m-page-top {
+	margin: 0px auto; width: 80%;
+}
+.m-page-top .logo {
+	margin: 20px 10px; float: left;
+}
+.m-page-top .name {
+	margin: 20px 0px; float: left;
+}
+.m-page-top .name .big {
+	text-align: left; color: rgb(102, 102, 102); line-height: 26px; font-size: 18px; font-weight: bold;
+}
+.m-page-top .name .small {
+	text-align: left; color: rgb(102, 102, 102); line-height: 19px; font-size: 13px; font-weight: bold;
+}
+.m-page-top .ul-nav {
+	padding-top: 35px; float: right;
+}
+.m-page-top .ul-nav .list-nav {
+	color: rgb(102, 102, 102); font-size: 16px; margin-left: 25px; float: left;
+}
+.g-warp {
+	background: url("../images/bg1.png") no-repeat center / cover; width: 100%; height: 105px; line-height: 105px; position: relative;
+}
+.g-warp .name {
+	vertical-align: middle;
+}
+.m-content {
+	margin: 0px auto; width: 95%;
+}
+.m-content .title {
+	margin-top: 50px;
+}
+.m-content .title .left {
+	width: 38%; padding-top: 10px; float: left;
+}
+.m-content .title .name {
+	width: 24%; float: left;
+}
+.title .name .chinese {
+	color: rgb(95, 95, 95); font-size: 20px;
+}
+.title .name .english {
+	color: rgb(126, 121, 121); font-size: 10px;
+}
+.m-content .title .right {
+	width: 38%; padding-top: 10px; float: right;
+}
+.box-main {
+	margin-top: 30px;
+}
+.m-left-idx {
+	width: 44%;
+}
+.m-img {
+	width: 100%; height: 292px;
+}
+.focus {
+	width: 100%; height: 292px; position: relative;
+}
+.focus img {
+	width: 100%; height: 292px;
+}
+.focus .fPic {
+	left: 0px; top: 0px; position: absolute;
+}
+.focus .D1fBt {
+	height: 16px; overflow: hidden; z-index: 10; -ms-zoom: 1;
+}
+.focus .shadow {
+	background: rgba(0, 0, 0, 0.6); left: 0px; width: 100%; height: 40px; text-align: left; bottom: 0px; line-height: 40px; display: block; position: absolute; z-index: 10;
+}
+.focus .shadow a {
+	width: 73%; color: rgb(255, 255, 255); overflow: hidden; font-size: 15px; text-decoration: none; margin-left: 10px; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.focus .fcon {
+	background: rgb(0, 0, 0); width: 100%; float: left; display: none; position: relative;
+}
+.focus .fcon img {
+	display: block;
+}
+.focus .fbg {
+	height: 21px; text-align: center; right: 5px; bottom: 8px; position: absolute; z-index: 200;
+}
+.focus .fbg div {
+	margin: 5px auto 0px; height: 14px; overflow: hidden; -ms-zoom: 1;
+}
+.focus .D1fBt a {
+	background: rgb(217, 217, 217); margin: 0px 3px; outline: 0px; border-radius: 7px; width: 10px; height: 10px; text-align: center; color: rgb(176, 176, 176); text-decoration: none; float: left; display: inline; position: relative;
+}
+.focus .D1fBt .current {
+	background: rgb(252, 17, 74);
+}
+.focus .D1fBt a:hover {
+	background: rgb(252, 17, 74);
+}
+.focus .D1fBt img {
+	display: none;
+}
+.focus .D1fBt i {
+	font-style: normal; display: none;
+}
+.m-right-idx {
+	background: rgb(246, 246, 246); width: 54%; height: 293px;
+}
+.m-right-idx .title-li {
+	background: rgb(95, 138, 201); width: 200px; height: 40px; color: rgb(255, 255, 255); line-height: 40px; font-size: 15px;
+}
+.m-right-idx .top {
+	width: 100%; border-bottom-color: rgb(95, 138, 201); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.box {
+	padding: 2% 2% 2% 0%;
+}
+.box .list-box {
+	background: rgb(255, 255, 255); padding: 1%; width: 46%; margin-bottom: 10px; margin-left: 2%; float: left;
+}
+.list-box .ico {
+	width: 30%; margin-top: 24px;
+}
+.list-box .name {
+	width: 70%; text-align: left; float: right;
+}
+.list-box .name .top1 {
+	height: 30px; color: rgb(102, 100, 100); line-height: 30px; font-size: 14px; border-bottom-color: rgb(102, 100, 100); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.list-box .name .bott1 {
+	height: 20px; color: rgb(129, 127, 127); line-height: 20px; overflow: hidden; font-size: 12px; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.box-new {
+	padding: 5px 1%; border: 1px solid rgb(209, 209, 209); border-image: none; width: 30%; height: 265px;
+}
+.box-new .new-title {
+	height: 40px; text-align: left; line-height: 40px; margin-top: 10px; border-bottom-color: rgb(89, 89, 89); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.box-new .new-title .title-new {
+	width: 80%; color: rgb(104, 102, 102); overflow: hidden; padding-left: 4%; font-size: 15px; float: left; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
+}
+.box-new .title-new .bor {
+	background: rgb(254, 172, 9); left: 0px; top: 10px; width: 5px; height: 20px; display: inline-block; position: absolute;
+}
+.box-new .new-title .more {
+	width: 16%; color: rgb(95, 138, 201); font-size: 13px; float: right; display: inline-block;
+}
+.box-new .newlist {
+	height: 35px; text-align: left; color: rgb(102, 100, 100); line-height: 35px; overflow: hidden; padding-left: 12px; font-size: 13px; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
+}
+.newlista {
+	color: rgb(102, 100, 100); font-size: 13px; display: block;
+}
+.newlista:hover {
+	color: rgb(233, 168, 39);
+}
+.box-new .circle {
+	background: rgb(254, 172, 9); border-radius: 100%; left: 0px; top: 17px; width: 5px; height: 5px; display: inline-block; position: absolute;
+}
+.box-boxli .title-li {
+	text-align: left; color: rgb(95, 138, 201); font-size: 13px; margin-top: 13px;
+}
+.box-boxli .compname {
+	width: 75%; height: 25px; color: rgb(89, 89, 89); line-height: 25px; overflow: hidden; font-size: 13px; float: left; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.box-boxli .time {
+	height: 25px; color: rgb(89, 89, 89); line-height: 25px; font-size: 13px; float: right;
+}
+.box-new .newlist1 {
+	width: 97%; height: 30px; text-align: left; line-height: 30px; overflow: hidden; padding-right: 3%; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.newlist1a {
+	color: rgb(102, 100, 100); font-size: 13px; display: inline-block;
+}
+.newlist1a:hover {
+	color: rgb(233, 168, 39);
+}
+.box-new .newlist2 {
+	width: 98%; height: 30px; text-align: left; line-height: 30px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.box-new .newlist2 .newlist2a {
+	color: rgb(102, 100, 100); font-size: 10px; display: inline-block;
+}
+.box-new .newlist2 .newlist2a:hover {
+	color: rgb(233, 168, 39);
+}
+.box-new .new-ul {
+	width: 50%; margin-top: 5px;
+}
+.img-list {
+	width: 49.5%; height: 200px; margin-bottom: 10px; float: left;
+}
+.img-list img {
+	width: 100%; height: 100%;
+}
+.img-list3 img {
+	width: 100%; height: 100%;
+}
+.img-list1 {
+	background: rgb(233, 168, 39); width: 49.5%; height: 200px; margin-bottom: 10px; margin-left: 1%; float: left;
+}
+.img-list1 .text {
+	color: rgb(255, 255, 255); line-height: 30px; font-size: 14px; margin-top: 10px;
+}
+.kg {
+	padding: 0px 4px;
+}
+.img-list3 {
+	width: 32.66%; height: 200px;
+}
+.box-new .newlist .num {
+	color: rgb(254, 172, 9); padding-right: 15px; font-size: 15px;
+}
+.star {
+	float: right; display: inline-block;
+}
+.star img {
+	width: 13px; margin-right: 10px;
+}
+.g-bottom {
+	background: rgb(63, 63, 63); width: 100%;
+}
+.bot-main {
+	margin: 0px auto; width: 80%;
+}
+.contant .lx-h3 {
+	height: 40px; color: rgb(255, 255, 255); line-height: 40px; font-size: 15px;
+}
+.contant .info {
+	height: 30px; color: rgb(255, 255, 255); line-height: 30px; font-size: 13px; font-weight: bold;
+}
+.contant {
+	padding: 50px 0px 50px 0%; text-align: left; float: left;
+}
+.erw-img {
+	margin: 50px 0px; border-right-color: rgb(100, 100, 100); border-right-width: 2px; border-right-style: solid; float: left;
+}
+.img-e {
+	margin-right: 30px; float: left;
+}
+.img-e p {
+	color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; margin-top: 5px;
+}
+.other {
+	padding: 50px 0px; margin-left: 30px; float: left;
+}
+.other .otera {
+	color: rgb(255, 255, 255); line-height: 27px; font-size: 13px; font-weight: bold;
+}
+.bott-bottom {
+	width: 100%;
+}
+.bott-bottom .top {
+	height: 30px; line-height: 30px; border-bottom-color: rgb(120, 120, 120); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.bott-bottom .top .list {
+	float: left;
+}
+.bott-bottom .top .list:hover {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.top .list .namelist {
+	color: rgb(255, 255, 255); line-height: 20px; font-size: 14px; font-weight: bold; margin-right: 30px; display: inline-block;
+}
+.bottom {
+	margin-top: 10px;
+}
+.bottom .list {
+	line-height: 20px; float: left;
+}
+.bottom .list .namelist {
+	height: 26px; color: rgb(255, 255, 255); line-height: 26px; font-size: 12px; font-weight: bold; margin-right: 30px; display: inline-block;
+}
+.bo-bot-bottm {
+	background: rgb(50, 50, 50); height: 35px; line-height: 35px;
+}
+.bo-bot-bottm p {
+	text-align: left; color: rgb(150, 150, 146); font-size: 13px; margin-left: 10%;
+}
+.sider {
+	width: 100%;
+}
+.sider .title {
+	background: url(".../images/sub-title-bg.jpg") repeat-x; height: 50px; padding-top: 24px; border-top-color: rgb(0, 90, 158); border-top-width: 4px; border-top-style: solid;
+}
+.sider .title h3 {
+	text-align: left; color: rgb(0, 90, 158); padding-left: 16px; font-size: 18px; font-weight: bold; float: left;
+}
+.sider .title li {
+	background: url("../images/icon-jt.png") no-repeat 0px 3px; color: rgb(104, 104, 104); text-indent: 20px; padding-right: 16px; font-size: 12px;
+}
+.sider .title li .tz {
+	color: rgb(104, 104, 104); font-size: 12px;
+}
+.tzbox {
+	padding-bottom: 20px;
+}
+.tzbox .tz-list {
+	width: 100%; height: 40px; text-align: left; color: rgb(102, 102, 102); line-height: 40px; font-size: 14px; float: left; display: block;
+}
+.tzbox .tz-list i {
+	border-width: 5px; border-style: solid; border-color: transparent transparent transparent rgb(0, 96, 157); margin: 15px 10px; border-image: none; float: left;
+}
+.tzbox .tz-list .lista {
+	width: 70%; color: rgb(120, 120, 130); overflow: hidden; float: left; display: block; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.tzbox .tz-list b {
+	color: rgb(153, 153, 153); line-height: 200%; margin-top: 10px; float: right; display: block;
+}
+.notice-text h1 {
+	color: rgb(97, 97, 97); font-size: 26px; font-weight: bold;
+}
+.sub-author {
+	padding: 20px 160px; margin-bottom: 20px; border-bottom-color: rgb(201, 201, 201); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.sub-author span {
+	color: rgb(153, 153, 153); padding-right: 15px;
+}
+.notice-text .img {
+	width: 70%; height: 300px;
+}
+.img-title {
+	color: rgb(102, 100, 100); font-size: 14px; margin-top: 5px;
+}
+.notice-text .text {
+	padding: 20px 16px 60px; text-align: left; color: rgb(97, 97, 97); line-height: 30px; font-size: 18px;
+}
+.notice-text .text1 {
+	padding: 0px 16px 30px; text-align: left; color: rgb(97, 97, 97); line-height: 30px; text-indent: 38px; font-size: 18px;
+}
+.notice-text .text3 {
+	padding: 20px 16px 80px; text-align: left; color: rgb(97, 97, 97); line-height: 30px; font-size: 16px;
+}
+.main-inforb {
+	margin: 30px auto 0px; width: 90%;
+}
+.main-inforb .if-list {
+	margin-bottom: 15px;
+}
+.main-inforb .if-list .name {
+	height: 35px; text-align: right; line-height: 35px; padding-right: 1%; font-size: 16px; float: left; display: inline-block;
+}
+.main-inforb .if-list .name1 {
+	height: 35px; text-align: right; line-height: 35px; padding-right: 1%; font-size: 16px; float: left; display: inline-block;
+}
+.main-inforb .if-list .name2 {
+	height: 35px; text-align: right; line-height: 35px; padding-right: 1%; font-size: 16px; float: left; display: inline-block;
+}
+.main-inforb .if-list .name {
+	width: 21%;
+}
+.main-inforb .if-list .name1 {
+	width: 11%;
+}
+.main-inforb .if-list .name2 {
+	width: 34%;
+}
+.main-inforb .if-list .name em {
+	color: rgb(235, 1, 1); padding-right: 5px; font-size: 26px;
+}
+.main-inforb .if-list .input {
+	border: 1px solid rgb(180, 179, 179); border-image: none; height: 35px; line-height: 35px; text-indent: 10px; font-size: 14px; float: left;
+}
+.main-inforb .if-list .radio {
+	font-size: 20px;
+}
+.main-inforb .if-list .sex {
+	top: 0px; width: 25%; right: 0px; position: absolute;
+}
+.if-list .sex img {
+	width: 15px; height: 15px; padding-top: 10px; padding-left: 7px;
+}
+.list-star {
+	height: 35px; text-align: left; line-height: 49px; float: left;
+}
+.list-star img {
+	width: 18px; padding-left: 10px;
+}
+.main-inforb .if-list .box-s {
+	border: 1px solid rgb(180, 179, 179); border-image: none; width: 49%; height: 35px; line-height: 35px; text-indent: 10px; float: left;
+}
+.main-inforb .if-list .text {
+	width: 73%; float: left; min-height: 130px;
+}
+.butt_q {
+	text-align: left; padding-bottom: 50px; margin-left: 21%;
+}
+.butt_q .button {
+	background: rgb(3, 159, 232); border-radius: 5px; border: currentColor; border-image: none; width: 120px; height: 35px; color: rgb(255, 255, 255); line-height: 35px; font-size: 22px; margin-top: 40px;
+}
+.butt_q .button1 {
+	background: rgb(3, 159, 232); border-radius: 5px; border: currentColor; border-image: none; width: 120px; height: 35px; color: rgb(255, 255, 255); line-height: 35px; font-size: 22px; margin-left: 30%;
+}
+.butt_a .button {
+	background: rgb(3, 159, 232); border-radius: 5px; border: currentColor; border-image: none; width: 120px; height: 35px; color: rgb(255, 255, 255); line-height: 35px; font-size: 22px; margin-top: 40px;
+}
+.butt_a {
+	text-align: left; padding-bottom: 50px; margin-left: 50%;
+}
+.button.on {
+	background: rgb(221, 221, 221); border: 1px solid rgb(139, 139, 139); border-image: none; color: rgb(90, 90, 90); margin-left: 30px;
+}
+.main-inforb .title-new {
+	height: 40px; text-align: left; color: rgb(61, 60, 60); padding-left: 2%; font-size: 20px; margin-bottom: 10px; position: relative;
+}
+.main-inforb .title-new .bor {
+	background: rgb(254, 172, 9); left: 0px; top: 0px; width: 5px; height: 23px; display: inline-block; position: absolute;
+}
+.if-list .text2 {
+	height: 35px; text-align: left; color: rgb(61, 60, 60); line-height: 35px; font-size: 16px; float: left;
+}
+.if-list .text-p {
+	text-align: left; color: rgb(61, 60, 60); line-height: 25px; font-size: 16px; margin-bottom: 30px; -ms-overflow-x: hidden;
+}
+.tabel-s {
+	padding-bottom: 30px;
+}
+.tabel-s .table {
+	margin: 10px auto; width: 80%;
+}
+.tabel-s .table tr {
+	height: 65px; line-height: 65px; font-size: 16px;
+}
+.tabel-s .table tr td {
+	border: 1px solid rgb(211, 208, 208); border-image: none;
+}
+.tabel-s .table .tr-bg {
+	background: rgb(247, 247, 247);
+}
+.g-banner {
+	background: url("../images/006.png") no-repeat center; width: 100%; height: 300px;
+}
+.m-box {
+	padding-bottom: 15px;
+}
+.m-box-left {
+	width: 48%; float: left;
+}
+.m-box-right {
+	width: 48%; float: right;
+}
+.m-lmbox {
+	
+}
+.m-lmbox ul li.u-lmlist {
+	padding: 10px 0px; margin-bottom: 10px; position: relative;
+}
+.m-lmbox ul li.u-lmlist a {
+	display: block;
+}
+.m-lmbox ul li.u-lmlist .u-img1 {
+	left: 0rem; top: 10px; width: 105px; position: absolute;
+}
+.m-lmbox ul li.u-lmlist .u-text1 {
+	text-align: left; margin-left: 115px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-tt1 {
+	color: rgb(114, 112, 112); line-height: 34px; overflow: hidden; font-size: 18px; font-weight: bold; border-bottom-color: rgb(211, 209, 209); border-bottom-width: 2px; border-bottom-style: solid; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-tt1-01 {
+	color: rgb(114, 112, 112); line-height: 24px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-tt1-01 .u-tt2 {
+	color: rgb(254, 172, 9);
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-tt1-02 {
+	color: rgb(114, 112, 112); line-height: 22px; overflow: hidden; -ms-text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text2 {
+	text-align: right; margin-top: 10px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text2 a {
+	margin: 0px 7px; padding: 0px 20px; border-radius: 5px; line-height: 34px; display: inline-block;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text2 a.u-tt3 {
+	background: rgb(3, 159, 232); color: rgb(255, 255, 255);
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text2 a.u-tt4 {
+	background: rgb(255, 255, 255); border: 1px solid rgb(3, 159, 232); border-image: none; color: rgb(3, 159, 232); line-height: 32px;
+}
+.m-lmbox ul li.u-lmlist .u-l {
+	margin-left: 0px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-tt5 {
+	color: rgb(3, 159, 232);
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 {
+	padding: 6px 0px; position: relative;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-text3-01 {
+	margin-right: 105px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-text3-01 .u-tt6 {
+	color: rgb(106, 102, 102); overflow: hidden; font-size: 16px; font-weight: bold; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-text3-01 .u-tt6-01 {
+	color: rgb(114, 112, 112); line-height: 24px; font-size: 9px;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-text3-01 .u-tt6-02 {
+	color: rgb(114, 112, 112); line-height: 22px; overflow: hidden; -ms-text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-img2 {
+	top: 10px; width: 79px; right: 0rem; position: absolute;
+}
+.m-lmbox ul li.u-lmlist .u-text1 .u-text3 .u-tt7 {
+	background: rgb(96, 198, 246); padding: 0px 20px; border-radius: 20px; right: 0rem; bottom: -12px; color: rgb(255, 255, 255); line-height: 26px; display: inline-block; position: absolute;
+}

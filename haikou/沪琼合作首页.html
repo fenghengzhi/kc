@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="src/less/demo.css">
+    <link rel="stylesheet" href="src/less/add.css">
+
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/demo.js"></script>
+    <script type="text/javascript" src="src/js/popup.js"></script>
+    <script type="text/javascript" src="src/js/menu.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		mainmenu(4,2,0);
+
+        /**
+            ifDrag: 是否拖拽
+            dragLimit: 拖拽限制范围
+        */
+        $('#popup').popup({ifDrag: true, dragLimit: true});
+
+        $("#btn1").click(function() {
+            $("#video")[0].play();
+        })
+    });
+</script>
+
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part3">
+            <div class="new_banner cooper_bac"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="main_add" style="position:relative">
+    	<div class="title_add tit_bac">
+            <div class="main-title">沪琼深度合作</div>
+            <div class="main-subtitle">Deep cooperation between Shanghai and Haikou</div>
+        </div>
+    	<div class="main_part" >
+        	<div class="huq_con">
+            	<a href="javascript:void(0)" id="btn1"><div class="movie_but but_huq">沪琼合作&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>
+            	<div class="huq_t"><img src="../images/add/huq/1_03.png" width="326" height="223"></div>
+           	  	<div class="huq_c">上海、海口等<span>17</span>个省市<br>近<span>30000多</span>台套大型科学仪器<br>和<span>550多</span>家检验检测机构<br>上海市科协<span>198</span>个专业学会协会全部为海南服务</div>
+                <div class="clear"></div>
+            </div>
+        	      
+      </div>
+        <div class="main_part main_part_n_bac" >
+   	    <img src="../images/add/huq/1_06.png" width="326" height="219" style="margin-right:18px">
+        <img src="../images/add/huq/1_08.png" width="326" height="219" style="margin-right:18px">
+        <img src="../images/add/huq/1_10.png" width="326" height="219">
+        </div>
+        
+        <div id="popup">
+                <div class="title">
+                  <p >沪琼合作</p>
+                  <span>x</span>
+                </div>
+                <div class="cont">
+                    <video id="video" src="../video/03沪琼深度合作.mp4" controls="controls" style="height:470px; width:800px; ">
+                    您的浏览器不支持 video 标签。
+                    </video>
+                
+                </div>
+            </div>
+    
+   	  <div class="clear"></div>   
+    </div>
+
+    <div class="footer">
+        </div>
+</div>
+<div id="mask_shadow"></div>
+</body>
+</html>

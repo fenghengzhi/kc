@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大数据开放平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 4000  //** 停顿时间  
+		}) 
+	})  
+</script>
+    <link rel="stylesheet" href="src/less/demo.css">
+<script type="text/javascript" src="src/js/menu.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		mainmenu(7,5,0);
+    	})
+    </script>
+</head>
+
+<body>
+
+<!-- 头部-->
+<div id="content">
+    <div class="header">
+
+	</div>
+</div>
+
+        <!-- banner-->
+        <div class="banner_box">
+        <center><img src="images/banner.png"></center>
+        </div>
+  <div class="main_newsimg bghui"><center><img src="images/img1.jpg"></center></div>
+        <div class="main_newsimg bghui"><center><img src="images/img2.jpg"></center></div>
+     
+
+        <!-- 主体-->
+        <div class="main_box">
+        
+           <!-- 新闻轮播-->
+           <div class="main_news">
+           <!-- 轮播图 -->
+            <div id="fsD1" class="focus">  
+                <div id="D1pic1" class="fPic">  
+                    <div class="fcon" style="display: none;">
+                        <a target="_blank" href="#"><img src="images/xw/5.jpg" style="opacity: 1; "></a>
+                        <span class="shadow"><a target="_blank" href="#"></a></span>
+                    </div>
+                    
+                    <div class="fcon" style="display: none;">
+                        <a target="_blank" href="#"><img src="images/02.jpg" style="opacity: 1; "></a>
+                        <span class="shadow"></span>
+                    </div>
+                    
+                    <div class="fcon" style="display: none;">
+                        <a target="_blank" href="#"><img src="images/xw/4.jpg" style="opacity: 1; "></a>
+                        <span class="shadow"><a target="_blank" href="#"></a></span>
+                    </div>
+                    
+                   
+                </div>
+                <div class="fbg">  
+                <div class="D1fBt" id="D1fBt">  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+                  
+                </div>  
+                </div>  
+               <!-- 轮播箭头   <span class="prev"></span>   
+                              <span class="next"></span>  -->  
+            </div>  
+           
+           <!-- 新闻文字 -->
+           <ul class="news_text">
+             <li>
+               <h3>科技部 财政部关于印发《国家重点研发计划管理暂行办法》的通知</h3> <!-- 需要限制字数 -->
+               <p>2017年6月22日</p>
+               <p><span>国科发资（2017）152号，国务院有关部委、有关直属机构，各省、自治区、直辖...</span><a href="noticeon.html">[详细]</a></p><!-- 需要限制字数 -->
+             </li>
+             <li>
+               <h3>海南将建政府大数据公共服务平台 推进政务信息共享</h3>
+               <p>2017-01-19</p>
+               <p><span>2017年全省工业和信息化工作会议获悉，继2016年策划了39个大数据发展的项目...</span><a href="noticeth.html">[详细]</a></p>
+             </li>
+              <li>
+               <h3>国家发改委互联网大数据分析首家省级分中心落户海南</h3>
+               <p>2016年10月23</p>
+               <p><span>近日国家信息中心正式批复我省建设国家发改委互联网大数据分析海南分中心...</span><a href="noticetw.html">[详细]</a></p>
+             </li>
+              
+           </ul>
+           </div>
+           
+           
+      <!-- 大赛概况--> 
+         <div class="main_tag">
+            <p><i>大赛概况</i><span>Competition situation</span></p>
+          </div>
+          <div class="match_box">
+          <img src="images/dsj/dskk.png">
+         <!--   <ul>
+             <li><i class="match_icon1"></i><h3>大赛介绍</h3><p>通过大赛的举办，深入推进政府数据开发试验，促进政府治理能提高、社会民生改善、产业目标实现，推动大数</p></li>
+             <li><i class="match_icon2"></i><h3>赛程赛制</h3><p>挖掘赛：主要涵盖利用数据分析来寻找事物间模式和趋势的项目或方案，凡涉及数据挖掘工具、解决方案，新型数据清洗、数据分析方案的项目。</p></li>
+             <li><i class="match_icon3"></i><h3>奖项设置</h3><p>奖励通过数据挖掘，发现数据新价值，并由此定制出具有典型性、先进性、创新性、可复制性的大数据解决方案</p></li>
+           </ul> -->
+          </div>
+     <div class="main_tag">
+            <p><i>数据沙箱</i><span>Competition situation</span></p>
+          </div>
+          <div class="match_box">
+           <img src="images/dsj/sjsx.png">
+           <!--  <ul>
+             <li><i class="match_icon1"></i><h3>基础能力平台</h3><p>通过大赛的举办，深入推进政府数据开发试验，促进政府治理能提高、社会民生改善、产业目标实现，推动大数</p></li>
+             <li><i class="match_icon2"></i><h3>作业调度系统</h3><p>挖掘赛：主要涵盖利用数据分析来寻找事物间模式和趋势的项目或方案，凡涉及数据挖掘工具、解决方案，新型数据清洗、数据分析方案的项目。</p></li>
+             <li><i class="match_icon3"></i><h3>流式处理系统</h3><p>奖励通过数据挖掘，发现数据新价值，并由此定制出具有典型性、先进性、创新性、可复制性的大数据解决方案</p></li>
+           </ul> -->
+          </div>      
+          <div class="main_tag">
+            <p><i>大数据实验室</i><span>Big data Lab</span></p>
+          </div>
+          <div class="match_box">
+           <img src="images/dsj/sys.png">
+          
+          </div>  
+           
+      </div>
+
+
+  <!--底部-->
+    <div class="footer">
+        </div>
+
+</body>
+</html>

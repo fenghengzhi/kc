@@ -1,0 +1,108 @@
+.pagination {
+	margin: 20px 0px; border-radius: 4px; padding-left: 0px; display: inline-block;
+}
+.pagination > li {
+	display: inline;
+}
+.pagination > li > a {
+	padding: 6px 12px; border: 1px solid rgb(221, 221, 221); border-image: none; color: rgb(51, 122, 183); line-height: 1.4285; text-decoration: none; margin-left: -1px; float: left; position: relative; background-color: rgb(255, 255, 255);
+}
+.pagination > li > span {
+	padding: 6px 12px; border: 1px solid rgb(221, 221, 221); border-image: none; color: rgb(51, 122, 183); line-height: 1.4285; text-decoration: none; margin-left: -1px; float: left; position: relative; background-color: rgb(255, 255, 255);
+}
+.pagination > li:first-child > a {
+	margin-left: 0px; border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+.pagination > li:first-child > span {
+	margin-left: 0px; border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a {
+	border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+.pagination > li:last-child > span {
+	border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+.pagination > li > a:focus {
+	border-color: rgb(221, 221, 221); color: rgb(35, 82, 124); z-index: 2; background-color: rgb(238, 238, 238);
+}
+.pagination > li > a:hover {
+	border-color: rgb(221, 221, 221); color: rgb(35, 82, 124); z-index: 2; background-color: rgb(238, 238, 238);
+}
+.pagination > li > span:focus {
+	border-color: rgb(221, 221, 221); color: rgb(35, 82, 124); z-index: 2; background-color: rgb(238, 238, 238);
+}
+.pagination > li > span:hover {
+	border-color: rgb(221, 221, 221); color: rgb(35, 82, 124); z-index: 2; background-color: rgb(238, 238, 238);
+}
+.pagination > .active > a {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .active > a:focus {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .active > a:hover {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .active > span {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .active > span:focus {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .active > span:hover {
+	border-color: rgb(51, 122, 183); color: rgb(255, 255, 255); z-index: 3; cursor: default; background-color: rgb(51, 122, 183);
+}
+.pagination > .disabled > a {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination > .disabled > a:focus {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination > .disabled > a:hover {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination > .disabled > span {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination > .disabled > span:focus {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination > .disabled > span:hover {
+	border-color: rgb(221, 221, 221); color: rgb(119, 119, 119); cursor: not-allowed; background-color: rgb(255, 255, 255);
+}
+.pagination-lg > li > a {
+	padding: 10px 16px; line-height: 1.3333; font-size: 18px;
+}
+.pagination-lg > li > span {
+	padding: 10px 16px; line-height: 1.3333; font-size: 18px;
+}
+.pagination-lg > li:first-child > a {
+	border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:first-child > span {
+	border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a {
+	border-top-right-radius: 6px; border-bottom-right-radius: 6px;
+}
+.pagination-lg > li:last-child > span {
+	border-top-right-radius: 6px; border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a {
+	padding: 5px 10px; line-height: 1.5; font-size: 12px;
+}
+.pagination-sm > li > span {
+	padding: 5px 10px; line-height: 1.5; font-size: 12px;
+}
+.pagination-sm > li:first-child > a {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:first-child > span {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}
+.pagination-sm > li:last-child > span {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}

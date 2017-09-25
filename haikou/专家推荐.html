@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="src/less/demo.css">
+        <link rel="stylesheet" href="src/less/add.css">
+
+    <link rel="stylesheet" href="src/less/cc.css">
+
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/demo.js"></script>
+    <script type="text/javascript" src="src/js/menu.js"></script>
+        <script type="text/javascript" src="src/js/popup.js"></script>
+
+    <script>
+    	$(document).ready(function(){
+    		mainmenu();
+    		
+    		$("#video_dc").click(function(){
+    			$("#popup").fadeIn();
+    			$("#video")[0].play();
+
+    		})
+    		
+    		$("#popup .title span").click(function(){
+    			$("#popup").fadeOut();
+    			$("#video")[0].pause();
+    		})
+    		
+    	})
+    </script>
+    <style type="text/css">
+    	#popup{opacity: 1; left: 50%; margin-left: -400px; top: 50%; margin-top: -262px;}
+    </style>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part3 share_banner" id="video_dc" style="    height: 118px;">
+            <p class="title">专家推荐</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="cc_nav">
+        	<a>首页</a><span>></span><a>资源共享</a><span>></span>专家推荐
+        </div>
+        <div>	
+        	<ul class="cc_listtab cc_tab">
+        		<li class="on">海口市专家</li>
+        		<!--<li>全球顶级专家</li>
+        		<li>候鸟型专家</li>-->
+        		<a href="http://ges.sstir.cn/scopus/index.do" class="cc_button fr marT10">全球高层次科技专家信息库</a>
+        	</ul>
+        	
+        	<div class="cc_tabF yiqi_tabF">
+        		<div class="cc_tabC">
+        			<div class="search_frame">
+        				<div class="search_con">
+        					<p>年<span class="width2"></span>龄：</p>
+        					<div>
+        						<a class="on">全部</a><a>20-30</a><a>30-40</a>
+        					</div>
+        				</div>
+        				<div class="search_con">
+        					<p>科研方向：</p>
+        					<div>
+        						<a class="on">全部</a><a>20-30</a><a>30-40</a>
+        					</div>
+        				</div>
+        				<div class="search_con">
+        					<p>工作时间：</p>
+        					<div>
+        						<a class="on">全部</a><a>20-30</a><a>30-40</a>
+        					</div>
+        				</div>
+        			</div>
+        			
+        			<div class="zhuanjia_list">
+        				<div class="zhuanjia_frame">
+				        	<div class="zhuanjia_detailL fl"><img src="../images/cc/zhuanjia.png"></div>
+				        	<div class="zhuanjia_detailR fr">
+				        		<h1>唐晓燕<span>教授</span></h1>
+				        		<div>
+				        			<p>年龄：34岁<span>科研方向：新材料</span><span>工作时间：8年</span><span>专业领域：生物</span></p>
+				        		</div>
+				        		<div class="zhuanjia_txt">
+				        			<span>个人介绍：</span>唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕
+				        		</div>
+				        	</div>
+			        	</div>
+			        	
+			        	<div class="zhuanjia_frame">
+				        	<div class="zhuanjia_detailL fl"><img src="../images/cc/zhuanjia.png"></div>
+				        	<div class="zhuanjia_detailR fr">
+				        		<h1>唐晓燕<span>教授</span></h1>
+				        		<div>
+				        			<p>年龄：34岁<span>科研方向：新材料</span><span>工作时间：8年</span><span>专业领域：生物</span></p>
+				        		</div>
+				        		<div class="zhuanjia_txt">
+				        			<span>个人介绍：</span>唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕
+				        		</div>
+				        	</div>
+			        	</div>
+			        	
+			        	<div class="zhuanjia_frame">
+				        	<div class="zhuanjia_detailL fl"><img src="../images/cc/zhuanjia.png"></div>
+				        	<div class="zhuanjia_detailR fr">
+				        		<h1>唐晓燕<span>教授</span></h1>
+				        		<div>
+				        			<p>年龄：34岁<span>科研方向：新材料</span><span>工作时间：8年</span><span>专业领域：生物</span></p>
+				        		</div>
+				        		<div class="zhuanjia_txt">
+				        			<span>个人介绍：</span>唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕
+				        		</div>
+				        	</div>
+			        	</div>
+			        	
+			        	<div class="zhuanjia_frame">
+				        	<div class="zhuanjia_detailL fl"><img src="../images/cc/zhuanjia.png"></div>
+				        	<div class="zhuanjia_detailR fr">
+				        		<h1>唐晓燕<span>教授</span></h1>
+				        		<div>
+				        			<p>年龄：34岁<span>科研方向：新材料</span><span>工作时间：8年</span><span>专业领域：生物</span></p>
+				        		</div>
+				        		<div class="zhuanjia_txt">
+				        			<span>个人介绍：</span>唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕
+				        		</div>
+				        	</div>
+			        	</div>
+			        	
+			        	<div class="zhuanjia_frame">
+				        	<div class="zhuanjia_detailL fl"><img src="../images/cc/zhuanjia.png"></div>
+				        	<div class="zhuanjia_detailR fr">
+				        		<h1>唐晓燕<span>教授</span></h1>
+				        		<div>
+				        			<p>年龄：34岁<span>科研方向：新材料</span><span>工作时间：8年</span><span>专业领域：生物</span></p>
+				        		</div>
+				        		<div class="zhuanjia_txt">
+				        			<span>个人介绍：</span>唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕唐晓燕
+				        		</div>
+				        	</div>
+			        	</div>
+        			</div>
+        			
+        			
+        			<div id="fenye"><table border="0" align="center"><tbody><tr><td id="pagelist"><a href="#" class="prev">首 页</a> <a href="#" class="curr" style="color:#FFF">1</a><a href="#">2</a><a href="#">3</a><a href="#" class="prev">末页</a> </td></tr></tbody></table></div>
+        		</div>
+        	
+        		<div class="cc_tabC noshow">2</div>
+        		
+        		<div class="cc_tabC noshow">3</div>
+        	</div>	
+        </div>
+    </div>
+
+    <div class="footer">
+        </div>
+</div>
+
+<div id="popup">
+                <div class="title">
+                  <p >沪琼合作</p>
+                  <span>x</span>
+                </div>
+                <div class="cont">
+                    <video id="video" src="../video/02全球顶级专家服务.mp4" controls="controls" style="height:470px; width:800px; ">
+                    您的浏览器不支持 video 标签。
+                    </video>
+                </div>
+            </div>
+
+
+
+<script src="../demo/src/js/cc.js"></script>
+
+</body>
+</html>
