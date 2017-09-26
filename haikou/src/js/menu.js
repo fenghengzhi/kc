@@ -11,7 +11,7 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='            <li><a href="院士谷.html">院士谷</a></li>';
         menu+='            <li><a href="zffw.htm">政府服务</a></li>';
         menu+='            <li><a href="沪琼合作首页.html">沪琼合作</a></li>';
-        menu+='            <li><a href="###href006">科技成果转化</a></li>';
+        menu+='            <li><a href="/kc/technicalTransaction/index.html">科技成果转化</a></li>';
         menu+='            <li><a href="科创资源共享首页.html">科创资源共享</a></li>';
         menu+='            <li><a href="index.html">大数据开放平台</a></li>';
         menu+='            <li><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>';

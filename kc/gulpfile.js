@@ -25,7 +25,7 @@ gulp.task('replace', function () {
                     <li><a href="/kc/innovativeService/index.html">科创服务</a></li>`;
 
     let submenu = {
-        4: `'<li><a href="/haikou/zffw.htm">首页</a></li>
+        4: `<li><a href="/haikou/zffw.htm">首页</a></li>
             <li><a href="/haikou/通知通告.html">通知公告</a></li>
             <li><a href="/haikou/政策法规.html">政策法规</a></li>
             <li><a href="###href015">在线办理</a></li>
