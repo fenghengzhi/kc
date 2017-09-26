@@ -6,7 +6,7 @@ function mainmenu(indexmenu,submenu,highmenu){
 	var menu='<div class="header-part1">';
         menu+='<div class="header-part1-con">';
         menu+='        <ul>';
-        menu+='            <li><a href="首页.html">平台首页</a></li>';
+        menu+='            <li><a href="首页.html">首页</a></li>';
         menu+='            <li><a href="项目简介.html">项目简介</a></li>';
         menu+='            <li><a href="院士谷.html">院士谷</a></li>';
         menu+='            <li><a href="zffw.htm">政府服务</a></li>';
@@ -14,10 +14,11 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='            <li><a href="###href006">科技成果转化</a></li>';
         menu+='            <li><a href="科创资源共享首页.html">科创资源共享</a></li>';
         menu+='            <li><a href="index.html">大数据开放平台</a></li>';
-        menu+='            <li><a href="http://101.226.6.177:8089/kc2/popularSciencePlatform/popularhome.html">科普平台</a></li>';
+        menu+='            <li><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>';
         menu+='            <li><a href="海口今日科创介绍.html">海口今日科创</a></li>';
         menu+='            <li><a href="领导版客户端介绍.html">领导版客户端</a></li>';
         menu+='            <li><a href="影视周开幕式.html">影视周开幕式</a></li>';
+        menu+='            <li><a href="/kc/innovativeService/index.html">科创服务</a></li>';
         menu+='        </ul>';
         menu+='        <div class="login">';
         menu+='            <span class="signin"><a href="###href053">登录</a></span>';
@@ -29,7 +30,7 @@ function mainmenu(indexmenu,submenu,highmenu){
         
         menu+='<div class="header-part2">';
         menu+='    <div class="logo">';
-        menu+='        <a href="###href011"><img src="../images/logo.png" alt="LOGO"></a>';
+        menu+='        <a href="/haikou/首页"><img src="../images/logo.png" alt="LOGO"></a>';
         menu+='    </div>';
         menu+='    <ul>';
         
@@ -42,20 +43,20 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='        <li><a href="政策法规.html">政策法规</a></li>';
         menu+='        <li><a href="###href015">在线办理</a></li>';
         menu+='        <li><a href="###href016">权力清单</a></li>';
-        menu+='        <li><a href="###href017">科技政策匹配</a></li>';
+        menu+='        <li><a href="/kc/policyMatch/policyMatch.html">科技政策匹配</a></li>';
 		  break;
 		case 2:
 		
 		menu+='        <li><a href="沪琼合作首页.html">首页</a></li>';
         menu+='        <li><a href="实验室共享.html">实验室共享</a></li>';
-        menu+='        <li><a href="http://101.226.6.177:8089/kc2/resourceSharing/technicalliterature.html">科技文献</a></li>';
+        menu+='        <li><a href="/kc/huqionghezuo/technicalliterature.html">科技文献</a></li>';
         menu+='        <li><a href="###href015">专家推荐</a></li>';
 		  break;
 		case 3:
 		menu+='        <li><a href="###href012">首页</a></li>';
-        menu+='        <li><a href="http://101.226.6.177:8089/kc2/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>';
-        menu+='        <li><a href="http://101.226.6.177:8089/kc2/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>';
-        menu+='        <li><a href="http://101.226.6.177:8089/kc2/outcomeTransformation/rightSearch.html">第三方服务</a></li>';
+        menu+='        <li><a href="/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>';
+        menu+='        <li><a href="/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>';
+        menu+='        <li><a href="/kc/outcomeTransformation/rightSearch.html">第三方服务</a></li>';
         menu+='        <li><a href="基金.html">科创基金</a></li>';
         menu+='        <li><a href="###href015">技术交易市场</a></li>';
 		  break;
@@ -65,8 +66,8 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='        <li><a href="创新载体展现.html">创新载体展示</a></li>';
         menu+='        <li><a href="人才检索.html">人才推荐</a></li>';
         menu+='        <li><a href="仪器共享.html">仪器共享</a></li>';
-        menu+='        <li><a href="###href015">科技情报</a></li>';
-        menu+='        <li><a href="###href015">科技查新</a></li>';
+        menu+='        <li><a href="/kc/resourceSharing/intelligencePeriodical.html">科技情报</a></li>';
+        menu+='        <li><a href="/kc/resourceSharing/techSearchList.html">科技查新</a></li>';
         menu+='        <li><a href="###href015">企业信息查询</a></li>';
 		  break;
 		case 5:
@@ -79,7 +80,7 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='        <li><a href="Contest.html">数据竞塞平台</a></li>';
 		  break;
 		case 6:
-		menu+='        <li><a href="http://101.226.6.177:8089/kc2/popularSciencePlatform/popularhome.html">首页</a></li>';
+		menu+='        <li><a href="/kc/popularSciencePlatform/popularhome.html">首页</a></li>';
         menu+='        <li><a href="###href013">科普基地</a></li>';
         menu+='        <li><a href="###href014">科普专家</a></li>';
         menu+='        <li><a href="###href015">科普专项</a></li>';
