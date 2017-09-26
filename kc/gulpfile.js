@@ -8,7 +8,8 @@ gulp.task('replace', function () {
         6: 'outcomeTransformation',
         7: 'resourceSharing',
         9: 'popularSciencePlatform',
-        13: 'innovativeService'
+        13: 'innovativeService',
+        100:'technicalTransaction'
     };
     let indexmenu = `<li><a href="/haikou/首页.html">首页</a></li>
                     <li><a href="/haikou/项目简介.html">项目简介</a></li>
@@ -50,7 +51,9 @@ gulp.task('replace', function () {
 
         9: ``,
 
-        13: ``
+        13: ``,
+
+        100:``
     };
 
     for (let i in dirnames) {
@@ -59,7 +62,7 @@ gulp.task('replace', function () {
             .pipe(cheerio({
                 run: function ($, file) {
                     $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
-                    $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i}) > a`).addClass('selected');
+                    $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
                     if (submenu[i]) {
                         $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
                     }
@@ -68,4 +71,16 @@ gulp.task('replace', function () {
             .pipe(gulp.dest(`./${dirname}/`));
     }
 
+    for (let i in dirnames) {
+
+        gulp.src(`./technicalTransaction/*.html`)
+            .pipe(cheerio({
+                run: function ($, file) {
+                    $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
+                    $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(6)`).addClass('selected');
+                    $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(6)`).addClass('selected');
+                }, parserOptions: {decodeEntities: false}
+            }))
+            .pipe(gulp.dest(`./technicalTransaction/`));
+    }
 });
