@@ -5,7 +5,7 @@ gulp.task('replace', function () {
     let dirnames = {
         4: 'policyMatch',
         5: 'huqionghezuo',
-        6: 'technicalTransaction',
+        6: 'outcomeTransformation',
         7: 'resourceSharing',
         9: 'popularSciencePlatform',
         13: 'innovativeService'
@@ -15,7 +15,7 @@ gulp.task('replace', function () {
                     <li><a href="/haikou/院士谷.html">院士谷</a></li>
                     <li><a href="/haikou/zffw.htm">政府服务</a></li>
                     <li><a href="/haikou/沪琼合作首页.html">沪琼合作</a></li>
-                    <li><a href="/kc/technicalTransaction/index.html">科技成果转化</a></li>
+                    <li><a href="/kc/outcomeTransformation/index.html">科技成果转化</a></li>
                     <li><a href="/haikou/科创资源共享首页.html">科创资源共享</a></li>
                     <li><a href="/haikou/index.html">大数据开放平台</a></li>
                     <li><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
