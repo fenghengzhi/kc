@@ -7,5 +7,6 @@ browserSync.init({
     proxy: '101.226.6.177:8089',
     open: 'local',
     startPath: '/haikou/首页.html',
-    ghostMode: false
+    ghostMode: false,
+    notify: false
 });
