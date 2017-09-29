@@ -86,7 +86,7 @@ gulp.task('replace', function () {
     // }
 
     gulp.src(`./*/*.html`)
-        .pipe(replace('<a href="http://101.226.6.177:8089/haikou/fund/index">科创基金</a>','<a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a>'))
+        .pipe(replace('<a href="/kc/outcomeTransformation/index.html">科技成果转化</a>','<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>'))
 
         .pipe(gulp.dest(`./`));
 

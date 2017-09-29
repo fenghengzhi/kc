@@ -32,19 +32,21 @@
     <div class="header">
         <div class="header-part1">
             <div class="header-part1-con">
-                <ul><li><a href="/haikou/首页.html">首页</a></li>
+                <ul>
+                    <li><a href="/haikou/首页.html">首页</a></li>
                     <li><a href="/haikou/项目简介.html">项目简介</a></li>
                     <li><a href="/haikou/院士谷.html">院士谷</a></li>
                     <li><a href="/haikou/zffw.htm">政府服务</a></li>
                     <li><a href="/haikou/沪琼合作首页.html">沪琼合作</a></li>
-                    <li class="selected"><a href="/kc/outcomeTransformation/index.html">科技成果转化</a></li>
+                    <li class="selected"><a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a></li>
                     <li><a href="/haikou/科创资源共享首页.html">科创资源共享</a></li>
                     <li><a href="/haikou/index.html">大数据开放平台</a></li>
                     <li><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
                     <li><a href="/haikou/海口今日科创介绍.html">海口今日科创</a></li>
                     <li><a href="/haikou/领导版客户端介绍.html">领导版客户端</a></li>
                     <li><a href="/haikou/影视周开幕式.html">影视周开幕式</a></li>
-                    <li><a href="/kc/innovativeService/index.html">科创服务</a></li></ul>
+                    <li><a href="/kc/innovativeService/index.html">科创服务</a></li>
+                </ul>
                 <div class="login">
                     <span class="signin"><a href="###href053">登录</a></span>
                     <span class="register"><a href="###href054">注册</a></span>
@@ -59,7 +61,8 @@
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
-                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li>
+                <li class="selected"><a
+                        href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li>
                 <li><a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li>
             </ul>
@@ -68,9 +71,21 @@
             <p class="title">第三方服务</p>
         </div>
     </div>
-    <div class="video">
-        <video controls preload="auto" src="../resources/service/service.mp4"></video>
+    <div style="text-align: center;">
+        <div style="margin:0 auto;width: 1024px;position: relative;    margin-top: 32px;">
+            <img src="../images/disanfangfuwu.png" width="1024" alt="">
+            <div style="position:absolute;right:0;top:50%;transform:translateY(-50%);color:white;font-size: 24px;width: 555px;padding:50px;line-height: 50px;text-align: left;">
+                第三方服务机构：<br>
+                专利代理、成果转化、金融服务、法律服务、专业学会、人才培训、管理咨询等。
+
+            </div>
+            <i style="cursor:pointer;font-style: normal;position:absolute;left:0;color:white;top:50%;transform:translateY(-50%) translateX(224px) scale(2); display: block;text-align: center;line-height: 32px;height:36px;width:36px; border: 1px solid white; border-radius: 50%; font-size: 18px; vertical-align: middle;"
+               onclick="$('#service-video')[0].webkitEnterFullscreen();$('#service-video')[0].play();">▶</i>
+        </div>
     </div>
+
+        <video hidden id="service-video" controls preload="auto" src="../resources/service/service.mp4"></video>
+
     <div class="main clearfix">
 
         <div class="server-kind clearfix">
