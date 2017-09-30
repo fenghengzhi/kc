@@ -53,12 +53,12 @@ function mainmenu(indexmenu,submenu,highmenu){
         menu+='        <li><a href="专家推荐.html">专家推荐</a></li>';
 		  break;
 		case 3:
-		menu+='        <li><a href="###href012">首页</a></li>';
+		menu+='        <li><a href="/kc/outcomeTransformation/index.html">首页</a></li>';
         menu+='        <li><a href="/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>';
         menu+='        <li><a href="/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>';
-        menu+='        <li><a href="/kc/outcomeTransformation/rightSearch.html">第三方服务</a></li>';
+        menu+='        <li><a href="/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li>';
         menu+='        <li><a href="基金.html">科创基金</a></li>';
-        menu+='        <li><a href="###href015">技术交易市场</a></li>';
+        menu+='        <li><a href="/kc/technicalTransaction/index.html">技术交易市场</a></li>';
 		  break;
 		case 4:
 		menu+='        <li><a href="科创资源共享首页.html">首页</a></li>';
