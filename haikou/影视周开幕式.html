@@ -11,19 +11,14 @@
     <script type="text/javascript" src="src/js/demo.js"></script>
     <script type="text/javascript" src="src/js/popup.js"></script>
     <script type="text/javascript" src="src/js/menu.js"></script>
-    <script>
+    <script type="text/javascript">
     	$(document).ready(function(){
     		mainmenu(11,-1,-1);
 
-        /**
-	        ifDrag: 是否拖拽
-	        dragLimit: 拖拽限制范围
-        */
-        $('#popup').popup({ifDrag: true, dragLimit: true});
-
-        $("#btn1").click(function() {
-            $("#video")[0].play();
-        })
+            $("#btn1").click(function() {
+                $("#video")[0].webkitEnterFullscreen();
+                $("#video")[0].play();
+            })
     });
 </script>
 
@@ -57,14 +52,14 @@
                 <td>海口市文化广电出版体育局</td>
               </tr>
             </table>
-			<a href="javascript:void(0)" id="btn1"><div class="movie_but but_po">珍稀动物视频&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>
-                <div id="popup">
+			<a href="javascript:void(0)" id="btn1"><div class="movie_but but_po">科技影片视频&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>
+
             <div class="title">
               <p >国际科技影视周</p>
               <span>x</span>
             </div>
             <div class="cont">
-                <video id="video" src="../video/珍稀物种科普电影片花.mp4" controls="controls" style="height:470px; width:800px; ">
+                <video id="video" src="../video/珍稀物种科普电影片花.mp4" controls="controls" width="0" height="0">
                 您的浏览器不支持 video 标签。
                 </video>
             

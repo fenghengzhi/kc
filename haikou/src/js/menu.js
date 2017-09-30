@@ -50,7 +50,7 @@ function mainmenu(indexmenu,submenu,highmenu){
 		menu+='        <li><a href="沪琼合作首页.html">首页</a></li>';
         menu+='        <li><a href="实验室共享.html">实验室共享</a></li>';
         menu+='        <li><a href="/kc/huqionghezuo/technicalliterature.html">科技文献</a></li>';
-        menu+='        <li><a href="###href015">专家推荐</a></li>';
+        menu+='        <li><a href="专家推荐.html">专家推荐</a></li>';
 		  break;
 		case 3:
 		menu+='        <li><a href="###href012">首页</a></li>';

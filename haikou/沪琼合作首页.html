@@ -15,15 +15,7 @@
     	$(document).ready(function(){
     		mainmenu(4,2,0);
 
-        /**
-            ifDrag: 是否拖拽
-            dragLimit: 拖拽限制范围
-        */
-        $('#popup').popup({ifDrag: true, dragLimit: true});
-
-        $("#btn1").click(function() {
-            $("#video")[0].play();
-        })
+            window.open("video.html");
     });
 </script>
 
@@ -43,13 +35,13 @@
             <div class="main-subtitle">Deep cooperation between Shanghai and Haikou</div>
         </div>
         <div>
-        	<video id="video" src="../video/03沪琼深度合作.mp4" controls="controls" autoplay="autoplay" style="height:470px; width:800px; ">
+        	<video id="video" src="../video/03沪琼深度合作.mp4" controls="controls" style="height:470px; width:800px; ">
                     您的浏览器不支持 video 标签。
                     </video>
         </div>
     	<div class="main_part">
         	<div class="huq_con">
-            	<a><div class="movie_but but_huq">沪琼合作&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>
+            	<!--<a><div class="movie_but but_huq">沪琼合作&nbsp;<img src="../images/add/icon21.png" width="30" height="30"></div></a>-->
             	<div class="huq_t"><img src="../images/add/huq/1_03.png" width="326" height="223"></div>
            	  	<div class="huq_c">上海、海口等<span>17</span>个省市<br>近<span>30000多</span>台套大型科学仪器<br>和<span>550多</span>家检验检测机构<br>上海市科协<span>198</span>个专业学会协会全部为海南服务</div>
                 <div class="clear"></div>
