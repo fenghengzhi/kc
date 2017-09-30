@@ -79,7 +79,7 @@
 
 
             setInterval(function () {
-                var EndTime = new Date('2017/09/20 00:00:00');
+                var EndTime = new Date('2017/10/20 00:00:00');
                 var NowTime = new Date();
                 var t = EndTime - NowTime.getTime();
                 var d = Math.floor(t / 1000 / 60 / 60 / 24);

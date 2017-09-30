@@ -59,7 +59,7 @@
 	width: 38%; padding-top: 10px; float: left;
 }
 .m-content .title .name {
-	width: 24%; text-align:center
+	width: 24%; float: left;
 }
 .title .name .chinese {
 	color: rgb(95, 95, 95); font-size: 20px;
@@ -155,13 +155,13 @@
 	padding: 5px 1%; border: 1px solid rgb(209, 209, 209); border-image: none; width: 30%; height: 265px;
 }
 .box-new .new-title {
-	height: 30px; text-align: left; line-height: 30px; margin-top: 10px; border-bottom-color: rgb(89, 89, 89); border-bottom-width: 1px; border-bottom-style: dashed;
+	height: 40px; text-align: left; line-height: 40px; margin-top: 10px; border-bottom-color: rgb(89, 89, 89); border-bottom-width: 1px; border-bottom-style: dashed;
 }
 .box-new .new-title .title-new {
 	width: 80%; color: rgb(104, 102, 102); overflow: hidden; padding-left: 4%; font-size: 15px; float: left; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
 }
 .box-new .title-new .bor {
-	background: rgb(254, 172, 9); left: 0px; top: 0px; width: 5px; height: 20px; display: inline-block; position: absolute;
+	background: rgb(254, 172, 9); left: 0px; top: 10px; width: 5px; height: 20px; display: inline-block; position: absolute;
 }
 .box-new .new-title .more {
 	width: 16%; color: rgb(95, 138, 201); font-size: 13px; float: right; display: inline-block;
@@ -170,13 +170,13 @@
 	height: 35px; text-align: left; color: rgb(102, 100, 100); line-height: 35px; overflow: hidden; padding-left: 12px; font-size: 13px; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
 }
 .newlista {
-	color: rgb(102, 100, 100); font-size: 13px; display: block; line-height:35px;height:35px;
+	color: rgb(102, 100, 100); font-size: 13px; display: block;
 }
 .newlista:hover {
 	color: rgb(233, 168, 39);
 }
 .box-new .circle {
-	background: rgb(254, 172, 9); border-radius: 100%; left: 0px; top: 15px; width: 5px; height: 5px; display: inline-block; position: absolute;
+	background: rgb(254, 172, 9); border-radius: 100%; left: 0px; top: 17px; width: 5px; height: 5px; display: inline-block; position: absolute;
 }
 .box-boxli .title-li {
 	text-align: left; color: rgb(95, 138, 201); font-size: 13px; margin-top: 13px;
@@ -539,22 +539,14 @@
 	margin-bottom: 18px; position: relative;
 }
 .m-list ul li .u-ico {
-	background: url("govs_009.png") no-repeat center; left: 0px; top: 16px; width: 16px; height: 16px; display: inline-block; position: absolute;
+	background: url("govs_009.png") no-repeat center; left: 0px; top: 3px; width: 16px; height: 16px; display: inline-block; position: absolute;
 }
 .m-list ul li .u-tt8 {
-	width: 90%; text-align: left; color: rgb(66, 65, 66); line-height: 42px; font-size: 20px; margin-left: 27px; display: block;
+	width: 90%; text-align: left; color: rgb(66, 65, 66); line-height: 22px; font-size: 16px; margin-left: 27px; display: block;
 }
 .title2 {
 	text-align: left; color: rgb(95, 95, 95); font-size: 20px; margin-top: 30px; margin-bottom: 20px;
 }
 .m-img3 {
 	background: url("govs_010.png") no-repeat center / cover; width: 100%; height: 266px;
-}
-
-.u-lix{
-	line-height:35px;display:black;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:90%;
-}
-
-.u-lix-time{
-	float: left;line-height:35px;
 }
