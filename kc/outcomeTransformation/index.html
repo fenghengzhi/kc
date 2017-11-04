@@ -58,7 +58,10 @@
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li></ul>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li><li><a href="http://101.226.6.177:8089/kc/innovativeService/IPRList.html">知识产权评估</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/innovativeService/investServiceList.html">投融资服务</a></li>
+                <li><a href="http://train.sstir.cn/">科技培训</a></li>
+                <li><a href="http://101.226.6.177:8089/haikou/question/index">答疑解难</a></li></ul>
         </div>
         <div class="header-part3">
             <p class="title" style="color: #fff!important;text-shadow: 0 0 10px #666;">海口科创大数据服务平台<br>知识产权服务</p>
@@ -331,6 +334,162 @@
                     </script>
                 </div>
             </div>
+        </div>
+        <style>.main .main-box .activity-con {
+            display: flex;
+        }
+        .main .main-box .activity-con .activity-con-right {
+            background: rgba(207, 220, 239, 0.1);
+            width: 332px;
+        }
+        .main .main-box .activity-con .activity-con-right .con-title {
+            margin: 56px auto 36px 107px;
+            color: #fd7d00;
+            font-size: 36px;
+            font-weight: normal;
+        }
+        .main .main-box .activity-con .activity-con-right p {
+            font-size: 14px;
+            color: #999999;
+            margin-bottom: 23px;
+            text-align: right;
+            margin-right: 60px;
+        }
+        .main .main-box .activity-con .activity-con-right em {
+            display: block;
+            height: 1px;
+            width: 298px;
+            margin: 10px auto;
+            background: #779cd1;
+        }
+        .main .main-box .activity-con .activity-con-right a {
+            display: block;
+            width: 219px;
+            height: 56px;
+            margin-left: 69px;
+            color: #fff;
+            font-size: 24px;
+            line-height: 56px;
+            border-radius: 28px;
+            background: #779cd1;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            top: 20px;
+        }</style>
+        <div class="main-box">
+            <a class="title-link" href="../innovativeService/investServiceList.html">
+                <div class="main-title">投融资服务</div>
+                <div class="main-subtitle">Investment and financing service</div>
+            </a>
+
+            <div class="activity-con">
+                <img src="../images/TimesSquare.png" alt="投融资服务">
+                <div class="activity-con-right">
+                    <h3 class="con-title">十分之约</h3>
+                    <p>2017.04.20</p>
+                    <p>上海世博展览馆4号馆</p>
+                    <p>浦东新区国展路1099号</p>
+                    <em></em>
+                    <a href="../innovativeService/investServiceList.html">点击进入</a>
+                </div>
+            </div>
+        </div>
+        <style>.main .main-box .assessment-con {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 72px;
+        }
+        .main .main-box .assessment-con .assessment-box {
+            cursor: pointer;
+            width: 305px;
+            height: 468px;
+        }
+        .main .main-box .assessment-con .assessment-box div {
+            height: 218px;
+            box-shadow: 0px 2px 10px #eee;
+            padding: 0 25px;
+        }
+        .main .main-box .assessment-con .assessment-box div p {
+            text-align: center;
+            font-size: 18px;
+            color: #333333;
+            padding: 34px 0;
+        }
+        .main .main-box .assessment-con .assessment-box div span {
+            font-size: 16px;
+            color: #999999;
+            margin: 0 45px;
+            line-height: 1.5;
+        }
+        </style>
+        <div class="main-box">
+            <a class="title-link" href="http://train.sstir.cn/">
+                <div class="main-title">科技培训</div>
+                <div class="main-subtitle">Science and technology traning</div>
+            </a>
+            <a href="http://train.sstir.cn/"><img src="../images/science.png" alt="科技培训"></a>
+
+        </div>
+        <script>            hieknjs.kgLoader({
+            type: 0,
+            url: configService.RESTFUL_SERVICE_BASE_URL + 'transformation/list/supplier',
+            that: $('#content')[0],
+            postData: {},
+            urlData: {
+                supplierType: 11,
+                pageSize:3,
+                pageNo:1
+            },
+            success: function (data) {
+                if(data&&data.rsData&&data.rsData.length){
+                    var html='';
+                    for(var val of data.rsData){
+                        html+=`<a href="IPRDetails.html?id=${val.id}" class="assessment-box">
+                                        <div style="width: 305px;height: 250px;background: url(${val.logo})center no-repeat;background-size: 305px auto">
+
+                                        </div>
+                                        <!--<img style="width: 305px;height: 250px" src="${val.logo}" alt="LOGO">-->
+                            <div style="text-align:left;">
+                            <p>${val.name}</p>
+                            <span title="${val.brief}">${val.brief.length<30?val.brief:val.brief.substr(0,30)+'...'}</span>
+                            </div>
+                            </a>`
+                            }
+                    $('.assessment-con').html(html)
+                }
+
+            }
+        })</script>
+        <div class="main-box">
+            <a class="title-link" href="../innovativeService/IPRList.html">
+                <div class="main-title">知识产权评估服务</div>
+                <div class="main-subtitle">Assessment service</div>
+            </a>
+            <div class="assessment-con">
+                <div class="assessment-box">
+                    <img src="http://placehold.it/305x250" alt="">
+                    <div>
+                        <p>昂昂昂科技有限公司</p>
+                        <span>红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚......</span>
+                    </div>
+                </div>
+                <div class="assessment-box">
+                    <img src="http://placehold.it/305x250" alt="">
+                    <div>
+                        <p>昂昂昂科技有限公司</p>
+                        <span>红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚......</span>
+                    </div>
+                </div>
+                <div class="assessment-box">
+                    <img src="http://placehold.it/305x250" alt="">
+                    <div>
+                        <p>昂昂昂科技有限公司</p>
+                        <span>红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚红红火火恍恍惚惚......</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

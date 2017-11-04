@@ -78,7 +78,13 @@ gulp.task('replace', function () {
     gulp.src(`./innovativeService/*.html`)
         .pipe(cheerio({
             run: function ($, file) {
-                $('#content > div.header > div.header-part1 > div > ul > li:nth-child(6)').addClass('selected');
+                $('#content > div.header > div.header-part2 > ul > li:nth-child(1)').remove();
+                $('#content > div.header > div.header-part2 > ul').prepend(
+                `<li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li>`);
 
             }, parserOptions: {decodeEntities: false}
         }))
