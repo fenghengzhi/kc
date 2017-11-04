@@ -10,7 +10,7 @@ gulp.task('replace', function () {
         7: 'resourceSharing',
         9: 'popularSciencePlatform',
         13: 'innovativeService',
-        100:'technicalTransaction'
+        100: 'technicalTransaction'
     };
     // let indexmenu = `<li><a href="/haikou/首页.html">首页</a></li>
     //                 <li><a href="/haikou/项目简介.html">项目简介</a></li>
@@ -57,37 +57,36 @@ gulp.task('replace', function () {
     //     100:``
     // };
     //
-    for (let i in dirnames) {
-        let dirname = dirnames[i];
-        gulp.src(`./${dirname}/*.html`)
-            .pipe(cheerio({
-                run: function ($, file) {
-                    // $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
-                    // $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
-                    // if (submenu[i]) {
-                    //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
-                    // }
-                    $('#content > div.header > div.header-part1 > div > ul > li:nth-child(13)').remove();
-                }, parserOptions: {decodeEntities: false}
-            }))
-            .pipe(gulp.dest(`./${dirname}/`));
-    }
-    //
     // for (let i in dirnames) {
-    //
-    //     gulp.src(`./technicalTransaction/*.html`)
+    //     let dirname = dirnames[i];
+    //     gulp.src(`./${dirname}/*.html`)
     //         .pipe(cheerio({
     //             run: function ($, file) {
-    //                 $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
-    //                 $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(6)`).addClass('selected');
-    //                 $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(6)`).addClass('selected');
+    //                 // $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
+    //                 // $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
+    //                 // if (submenu[i]) {
+    //                 //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
+    //                 // }
+    //                 $('#content > div.header > div.header-part1 > div > ul > li:nth-child(13)').remove();
     //             }, parserOptions: {decodeEntities: false}
     //         }))
-    //         .pipe(gulp.dest(`./technicalTransaction/`));
+    //         .pipe(gulp.dest(`./${dirname}/`));
     // }
+    //
+
+
+    gulp.src(`./innovativeService/*.html`)
+        .pipe(cheerio({
+            run: function ($, file) {
+                $('#content > div.header > div.header-part1 > div > ul > li:nth-child(6)').addClass('selected');
+
+            }, parserOptions: {decodeEntities: false}
+        }))
+        .pipe(gulp.dest(`./innovativeService/`));
+
 
     // gulp.src(`./*/*.html`)
-    //     .pipe(replace(`<a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>`,`<a href="/haikou/首页.html"><img src="../images/logo.png" alt="LOGO"></a>`))
+    //     .pipe(replace(`<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>`,`<a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a>`))
     //
     //     .pipe(gulp.dest(`./`));
 
