@@ -67,34 +67,33 @@ gulp.task('replace', function () {
     //                 // if (submenu[i]) {
     //                 //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
     //                 // }
-    //                 $('#content > div.header > div.header-part1 > div > ul > li:nth-child(13)').remove();
+    //                 $('#content > div.header > div.header-part1 > div > ul > li:nth-child(7)').remove();
     //             }, parserOptions: {decodeEntities: false}
     //         }))
     //         .pipe(gulp.dest(`./${dirname}/`));
     // }
+
+
+
+    // gulp.src(`./technicalTransaction/*.html`)
+    //     .pipe(cheerio({
+    //         run: function ($, file) {
+    //             $('#content > div.header > div.header-part2 > ul').append(
+    //             `<li><a href="http://101.226.6.177:8089/kc/innovativeService/IPRList.html">知识产权评估</a></li>
+    //             <li><a href="http://101.226.6.177:8089/kc/innovativeService/investServiceList.html">投融资服务</a></li>
+    //             <li><a href="http://train.sstir.cn/">科技培训</a></li>
+    //             <li><a href="http://101.226.6.177:8089/haikou/question/index">答疑解难</a></li>`);
     //
+    //         }, parserOptions: {decodeEntities: false}
+    //     }))
+    //     .pipe(gulp.dest(`./technicalTransaction/`));
 
 
-    gulp.src(`./innovativeService/*.html`)
-        .pipe(cheerio({
-            run: function ($, file) {
-                $('#content > div.header > div.header-part2 > ul > li:nth-child(1)').remove();
-                $('#content > div.header > div.header-part2 > ul').prepend(
-                `<li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/technicalTransaction/index.html">技术交易市场</a></li>`);
+    gulp.src(`./resourceSharing/*.html`)
+        .pipe(replace(`<li><a href="/haikou/沪琼合作首页.html">沪琼资源共享</a></li>`,`<li class="selected"><a href="/haikou/沪琼合作首页.html">沪琼资源共享</a></li>`))
+        // .pipe(replace(`<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>`,`<a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a>`))
 
-            }, parserOptions: {decodeEntities: false}
-        }))
-        .pipe(gulp.dest(`./innovativeService/`));
-
-
-    // gulp.src(`./*/*.html`)
-    //     .pipe(replace(`<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>`,`<a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a>`))
-    //
-    //     .pipe(gulp.dest(`./`));
+        .pipe(gulp.dest(`./resourceSharing/`));
 
 
 });
