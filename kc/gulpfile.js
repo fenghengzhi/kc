@@ -57,20 +57,21 @@ gulp.task('replace', function () {
     //     100:``
     // };
     //
-    // for (let i in dirnames) {
-    //     let dirname = dirnames[i];
-    //     gulp.src(`./${dirname}/*.html`)
-    //         .pipe(cheerio({
-    //             run: function ($, file) {
-    //                 $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
-    //                 $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
-    //                 if (submenu[i]) {
-    //                     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
-    //                 }
-    //             }, parserOptions: {decodeEntities: false}
-    //         }))
-    //         .pipe(gulp.dest(`./${dirname}/`));
-    // }
+    for (let i in dirnames) {
+        let dirname = dirnames[i];
+        gulp.src(`./${dirname}/*.html`)
+            .pipe(cheerio({
+                run: function ($, file) {
+                    // $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
+                    // $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
+                    // if (submenu[i]) {
+                    //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
+                    // }
+                    $('#content > div.header > div.header-part1 > div > ul > li:nth-child(13)').remove();
+                }, parserOptions: {decodeEntities: false}
+            }))
+            .pipe(gulp.dest(`./${dirname}/`));
+    }
     //
     // for (let i in dirnames) {
     //
