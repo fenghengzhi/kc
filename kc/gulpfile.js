@@ -1,17 +1,17 @@
 'use strict';
 var gulp = require('gulp');    //载入gulp
 var cheerio = require('gulp-cheerio');
-var replace = require('gulp-replace')
+var replace = require('gulp-replace');
 gulp.task('replace', function () {
-    // let dirnames = {
-    //     4: 'policyMatch',
-    //     5: 'huqionghezuo',
-    //     6: 'outcomeTransformation',
-    //     7: 'resourceSharing',
-    //     9: 'popularSciencePlatform',
-    //     13: 'innovativeService',
-    //     100:'technicalTransaction'
-    // };
+    let dirnames = {
+        4: 'policyMatch',
+        5: 'huqionghezuo',
+        6: 'outcomeTransformation',
+        7: 'resourceSharing',
+        9: 'popularSciencePlatform',
+        13: 'innovativeService',
+        100:'technicalTransaction'
+    };
     // let indexmenu = `<li><a href="/haikou/首页.html">首页</a></li>
     //                 <li><a href="/haikou/项目简介.html">项目简介</a></li>
     //                 <li><a href="/haikou/院士谷.html">院士谷</a></li>
@@ -85,9 +85,10 @@ gulp.task('replace', function () {
     //         .pipe(gulp.dest(`./technicalTransaction/`));
     // }
 
-    gulp.src(`./*/*.html`)
-        .pipe(replace(`<a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>`,`<a href="/haikou/首页.html"><img src="../images/logo.png" alt="LOGO"></a>`))
+    // gulp.src(`./*/*.html`)
+    //     .pipe(replace(`<a href="http://101.226.6.177:8089/haikou/"><img src="../images/logo.png" alt="LOGO"></a>`,`<a href="/haikou/首页.html"><img src="../images/logo.png" alt="LOGO"></a>`))
+    //
+    //     .pipe(gulp.dest(`./`));
 
-        .pipe(gulp.dest(`./`));
 
 });

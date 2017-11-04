@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="/haikou/首页.html">首页</a></li>
                     <li><a href="/haikou/项目简介.html">项目简介</a></li>
-                    <li><a href="/haikou/院士谷.html">院士谷</a></li>
+                    <li><a href="/haikou/院士合作.html">院士合作</a></li>
                     <li><a href="/haikou/zffw.htm">政府服务</a></li>
                     <li><a href="/haikou/沪琼合作首页.html">沪琼合作</a></li>
                     <li class="selected"><a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a></li>
@@ -82,12 +82,13 @@
                 专利代理、成果转化、金融服务、法律服务、专业学会、人才培训、管理咨询等。
 
             </div>
-            <i style="cursor:pointer;font-style: normal;position:absolute;left:0;color:white;top:50%;transform:translateY(-50%) translateX(224px) scale(2); display: block;text-align: center;line-height: 32px;height:36px;width:36px; border: 1px solid white; border-radius: 50%; font-size: 18px; vertical-align: middle;"
-               onclick="$('#service-video')[0].webkitEnterFullscreen();$('#service-video')[0].play();">▶</i>
+            <i style="padding-left:2px;cursor:pointer;font-style: normal;position:absolute;left:540px;color:#fff;top:10%;transform:translateY(-50%) translateX(-125px) scale(1); display: block;text-align: center;line-height: 32px;height:36px;width:36px; border: 1px solid white; border-radius: 50%; font-size: 18px; vertical-align: middle;"
+               onclick="$('#service-video')[0].webkitRequestFullScreen();$('#service-video')[0].play();">▶</i>
         </div>
     </div>
 
-        <video hidden id="service-video" controls preload="auto" src="../resources/service/service.mp4"></video>
+        <video hidden id="service-video" controls preload="auto" src="../resources/service/service.mp4"
+               onwebkitfullscreenchange="if(!this.webkitDisplayingFullscreen){this.pause()}"></video>
 
     <div class="main clearfix">
 

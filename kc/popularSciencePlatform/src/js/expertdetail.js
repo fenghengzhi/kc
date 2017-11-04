@@ -62,7 +62,7 @@
                                 <p>荣誉头衔: <span> &nbsp;${d.honor}</span></p>
                                 <p>服务方式: <span> &nbsp;${d.serviceType}</span></p>
                             </div>
-                            <button class="hu-btn btn-primary btn-sm">咨询</button>
+                            <a class="hu-btn btn-primary btn-sm" href="ask.html">咨询</a>
                         </div>
                     </div>
                 </div>

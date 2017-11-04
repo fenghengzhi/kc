@@ -35,9 +35,10 @@
     <div class="header">
         <div class="header-part1">
             <div class="header-part1-con">
-                <ul><li><a href="/haikou/首页.html">首页</a></li>
+                <ul>
+                    <li><a href="/haikou/首页.html">首页</a></li>
                     <li><a href="/haikou/项目简介.html">项目简介</a></li>
-                    <li><a href="/haikou/院士谷.html">院士谷</a></li>
+                    <li><a href="/haikou/院士合作.html">院士合作</a></li>
                     <li><a href="/haikou/zffw.htm">政府服务</a></li>
                     <li><a href="/haikou/沪琼合作首页.html">沪琼合作</a></li>
                     <li><a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a></li>
@@ -47,7 +48,8 @@
                     <li><a href="/haikou/海口今日科创介绍.html">海口今日科创</a></li>
                     <li><a href="/haikou/领导版客户端介绍.html">领导版客户端</a></li>
                     <li><a href="/haikou/影视周开幕式.html">影视周开幕式</a></li>
-                    <li><a href="/kc/innovativeService/index.html">科创服务</a></li></ul>
+                    <li><a href="/kc/innovativeService/index.html">科创服务</a></li>
+                </ul>
                 <div class="login">
                     <span class="signin"><a href="###href053">登录</a></span>
                     <span class="register"><a href="###href054">注册</a></span>
@@ -58,11 +60,14 @@
             <div class="logo">
                 <a href="/haikou/首页.html"><img src="../images/logo.png" alt="LOGO"></a>
             </div>
-            <ul><li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">首页</a></li>
+            <ul>
+                <li class="selected"><a
+                        href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">首页</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/baselist.html">科普基地</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/expert.html">科普专家</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/speciallist.html">科普专项</a></li>
-                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/videolist.html">科普视频</a></li></ul>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/videolist.html">科普视频</a></li>
+            </ul>
         </div>
         <div class="header-part3">
             <p>海口科创大数据服务平台</p>
@@ -81,7 +86,9 @@
         <div class="top-left">
             <span>上海科技馆集群 :</span>
             <span onclick="popularhomeService.kejiguanshipin();">上海科技馆 <i>▶</i></span>
-            <video id="kejiguan-video" src="../resources/service/kjgsp.mp4" controls preload="auto" width="0" height="0" hidden></video>
+            <video id="kejiguan-video" src="../resources/service/kjgsp.mp4" controls preload="auto" width="0" height="0"
+                   onwebkitfullscreenchange="if(!this.webkitDisplayingFullscreen){this.pause()}"
+                   hidden></video>
             <span>上海自然博物馆</span>
             <span>上海天文馆</span>
             <span>全球各类博物馆排名第7</span>
@@ -103,16 +110,22 @@
         <div class="cent-left">
             <span>院士专家科普论坛,专家定期解答海<br>南省科技爱好者的提问。</span>
             <p onclick="popularhomeService.yuanshishipin();">褚君浩院士视频 <i>▶</i></p>
-            <video id="yuanshishipin-video" src="../resources/service/yssp.mp4" controls preload="auto" width="0" height="0" hidden></video>
+            <video id="yuanshishipin-video" src="../resources/service/yssp.mp4" controls preload="auto" width="0"
+                   onwebkitfullscreenchange="if(!this.webkitDisplayingFullscreen){this.pause()}"
+                   height="0" hidden></video>
         </div>
         <div class="cent-right">
             <span>2018年选拔<i>15名</i>海南青少年参加<br>上海院士讲座为主题的科技夏令营。</span>
-            <img src="../images/be82855b.png" alt="" style="position:absolute;width: 100%;bottom:0;transform:translateY(100%);left:0;">
+
+            <!--<img src="../images/be82855b.png" alt=""-->
+                 <!--style="position:absolute;width: 100%;bottom:0;transform:translateY(100%)scaleX(-1);left:0;">-->
         </div>
+        <a href="ask.html" class="hu-btn btn-primary btn-md" style="position: absolute; top: 1163px; left: 807px; z-index:1;">青少年问答</a>
+        <img src="../images/xialingying.png" alt="" style="position: absolute; top: 989px; left: 227px; font-size: 24px; color: #666666; text-align: left;">
 
     </div>
 
-    <div class="main" style="margin-top: 100px;">
+    <div class="main" style="">
         <div class="setting">
             <!--资源resource-->
 

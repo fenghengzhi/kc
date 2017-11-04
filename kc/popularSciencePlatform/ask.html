@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>青少年提问</title>
+
+    <link rel="icon" href="../images/logo.ico" />
+    <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../common/src/less/hieknui.css">
+    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="src/less/ask.css">
+
+    <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.hieknjs.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../lib/layer.js"></script>
+    <script type="text/javascript" src="../lib/hieknui.min.js"></script>
+    <script type="text/javascript" src="../lib/moment.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
+    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
+    <script type="text/javascript" src="../common/src/js/config.js"></script>
+    <script type="text/javascript" src="../common/src/js/ajax.js"></script>
+    <script type="text/javascript" src="../common/src/js/common.js"></script>
+    <script type="text/javascript" src="src/js/ask.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="header">
+        <div class="header-part1">
+            <div class="header-part1-con">
+                <ul>
+                    <li><a href="/haikou/首页.html">首页</a></li>
+                    <li><a href="/haikou/项目简介.html">项目简介</a></li>
+                    <li><a href="/haikou/院士合作.html">院士合作</a></li>
+                    <li><a href="/haikou/zffw.htm">政府服务</a></li>
+                    <li><a href="/haikou/沪琼合作首页.html">沪琼合作</a></li>
+                    <li><a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a></li>
+                    <li><a href="/haikou/科创资源共享首页.html">科创资源共享</a></li>
+                    <li><a href="/haikou/index.html">大数据开放平台</a></li>
+                    <li class="selected"><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
+                    <li><a href="/haikou/海口今日科创介绍.html">海口今日科创</a></li>
+                    <li><a href="/haikou/领导版客户端介绍.html">领导版客户端</a></li>
+                    <li><a href="/haikou/影视周开幕式.html">影视周开幕式</a></li>
+                    <li><a href="/kc/innovativeService/index.html">科创服务</a></li>
+                </ul>
+                <div class="login">
+                    <span class="signin"><a href="###href053">登录</a></span>
+                    <span class="register"><a href="###href054">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-part2">
+            <div class="logo">
+                <a href="http://101.226.6.177:8089/haikou/"><img src="http://101.226.6.177:8089/kc/images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul>
+                <li ><a
+                        href="http://101.226.6.177:8089/kc/popularSciencePlatform/popularhome.html">首页</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/baselist.html">科普基地</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/expert.html">科普专家</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/speciallist.html">科普专项</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/popularSciencePlatform/videolist.html">科普视频</a></li>
+            </ul>
+        </div>
+        <div class="header-part3">
+            <p class="title">科普基地</p>
+        </div>
+    </div>
+            <div class="main">
+        <div class="category">
+            <div class="category-one">专业技术类</div>
+            <div class="category-one">化工原料</div>
+        </div>
+       <div>
+        <div class="topmiddle">
+            <div class="introduct">
+                <span class="bigone">路标漆中使用黄色颜料</span>
+                <span class="smallone">路标漆中的黄色颜料除了中铬黄外,可以用有机颜料代替?</span>
+            </div>
+            <div class="btn">
+                <a onclick="return true;layer.open({ type: 2, title: '我要提问', maxmin: true, shadeClose: true, area : ['1192px' , '425px'], content: 'woyaotiwen.html' });" href="woyaotiwen.html" class="hu-btn btn-primary btn-sm">
+                    我要提问
+                </a>
+                <button onclick="xiehuida();" class="hu-btn btn-primary btn-sm answer">
+                    写回答
+                </button>
+                <script>
+                    function xiehuida() {
+                        layer.open({
+                            type: 1 //Page层类型
+                            ,area: ['500px', '300px']
+                            ,title: '写回答'
+                            ,shade: 0.6 //遮罩透明度
+                            ,maxmin: true //允许全屏最小化
+                            ,anim: 1 //0-6的动画形式，-1不开启
+                            ,content: `<div style="padding:50px;">
+                                            <div><textarea class="hu-textarea textarea-md" name="" id="neirong" style="margin: 0px; height: 116px; width: 399px;"></textarea></div>
+                                            <button class="hu-btn btn-primary btn-sm" onclick="tijiao();">提交</button>
+                                        </div>`
+                        });
+                    }
+                    function tijiao() {
+                        layer.closeAll();
+                        $('.content-left').append(
+                        `<div class="responder">
+                              <div class="pic-domain">
+                                  <img src="../images/index-expert.png" alt="回答者头像" width="60px" height="60px">
+                                  <div class="wrap">
+                                      <span class="answername">冯华</span>
+                                      <span class="answerdomain">化工领域专家</span>
+                                  </div>
+                              </div>
+                              <div class="answertimer">回答时间:${moment().format('YYYY-MM-DD HH:mm:ss')}</div>
+                              <div class="answer-domain">
+                                  ${$('#neirong').val()}
+                              </div>
+                          </div>`);
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="top-bottom">
+            <div class="time">
+                <img src="../images/time.svg">
+                <span class="specific-time">2017-10-10 10:17:39</span>
+            </div>
+        </div>
+     </div>
+      <div class="main-content">
+          <div class="content-left">
+             <div class="responder">
+                 <div class="pic-domain">
+                     <img src=../images/index-expert.png alt="回答者头像" width="60px" height="60px">
+                         <div class="wrap">
+                             <span class="answername">陈伟</span>
+                             <span class="answerdomain">化工领域专家</span>
+                         </div>
+                 </div>
+                 <div class="answertimer">回答时间:2017-10-12 10:26:10</div>
+                 <div class="answer-domain">
+                     路标漆最主要的特性是：
+                     抗高温、抗氧化、抗摩擦，
+                     请问你打算替代的有机物
+                     是否有这几个方面的特性，
+                     如果你是学化学的，这个
+                     就要进行创新了。
+                 </div>
+             </div>
+              <div class="responder">
+                  <div class="pic-domain">
+                      <img src="../images/index-expert.png" alt="回答者头像" width="60px" height="60px">
+                      <div class="wrap">
+                          <span class="answername">冯华</span>
+                          <span class="answerdomain">化工领域专家</span>
+                      </div>
+                  </div>
+                  <div class="answertimer">回答时间:2017-10-12 10:26:10</div>
+                  <div class="answer-domain">
+                      有机颜料黄种类很多,主要包括异吲哚啉酮颜料、苯并咪唑酮颜料、联苯胺黄颜料、偶氮酸性黄颜料、
+                      聚 乙烯酮偶氮颜料等[1] ,广泛应用于涂料、塑料、纺织、印 刷油墨等行业。通过改变有机颜料黄
+                      内部的分子结构,可以制备出颜色鲜艳、具有优异的耐热性能、耐气候牢度、耐溶剂性能的高档有机
+                      颜料,在高档汽车面漆、高级工程塑料、树脂及纤维制品等领域得到了较为广泛的应用。 异吲哚啉酮
+                      类有机颜料属于高档有机颜料,是近年来被使用和研究得最多的颜料之一,其色彩鲜艳、明亮、着色力
+                      强,具有优异的耐溶剂性、耐酸性、耐光性和 耐热性,品种繁多[2 ],包括颜料黄109、颜料黄110、 颜
+                      料黄139等。颜料黄109呈绿光黄色,主要用于油漆、油墨和塑料,不仅可以调制汽车漆,还可调制建筑漆、
+                      乳胶漆、塑料 、油墨等。颜料黄109调制的油漆具有 优异的耐再涂性和耐晒牢度,而颜料黄109调制的
+                      油墨不仅具有良好的耐热性,且耐消毒处理。颜料黄110 是一种红光黄色有机颜料,用于塑料中具有优异
+                      的耐晒 性、耐气候牢度、耐渗色性和耐溶剂性[ 4 ]。有机颜料黄中用途广泛的除了异吲哚啉酮类外,
+                      还有很多其它的有机黄色颜料,如苯并咪唑酮颜料、联苯胺黄系列有机颜料等,其中苯并咪唑酮颜料也是
+                      一 类高性能黄色颜料[5 ],包括颜料黄120、颜料黄180、 颜料黄181等。 联苯胺黄系列有机颜料是在20
+                      世纪30年代末、 40年代初投入市场的, 且发展极快,但由于联苯胺黄系列颜料在200~240曟时会分解, 其
+                      应用在一定程度上受到了限制。通过改进,生产出了联苯胺黄的第二代品种 ,包括C.I.颜料黄12、颜料黄114、 颜
+                      料黄106等, 具有更优异的着力、耐牢度及耐溶剂性能,广泛应用于油墨工业。
+                      随着研究的不断进展,性能优异的黄色有机颜料 层出不穷,如偶氮酸性黄颜料、聚乙烯酮偶氮颜料等。通过研究者
+                      对其不断的改性研究,其性能更是日趋完善
+                  </div>
+              </div>
+          </div>
+          <div class="content-right">
+              <div class="similar">
+                  <div class="similartop">
+                      关于提问者
+                  </div>
+                  <div class="similarcontain">
+                      <img src="../images/teen.png" alt="回答者头像">
+                      <div class="wraptop">
+                          <span class="questionname">Kellyluan</span>
+                          <span class="age">青少年</span>
+                      </div>
+                      <div class="dateMessage">
+                          <div class="nummessage">
+                              <span class="num">提问数</span>
+                              <span class="totalnum">11</span>
+                          </div>
+                          <div class="nummessage">
+                              <span class="num">回答者</span>
+                              <span class="totalnum">8</span>
+                          </div>
+                      </div>
+
+                   </div>
+                 </div>
+              <div class="similar">
+                  <div class="similartop ">
+                     相关问题
+                  </div>
+                  <div class="relationquestion">
+                      <span class="requestion">
+                          路标漆中使用黄色颜料
+                      </span>
+                      <span class="requestion">
+                          寻找一种材料
+                      </span>
+                      <span class="requestion">
+                          关于chetah
+                      </span>
+                      <span class="requestion">
+                          气相色谱法测量HMDI的溶液选择...
+                      </span>
+                      <span class="requestion">
+                          CAS1997387-43-5
+                      </span>
+                  </div>
+
+                 </div>
+          </div>
+          </div>
+      </div>
+
+
+    <div class="footer">
+        <div class="footer-top-bg">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <div class="footer-top-info1">
+                        <p class="footer-title">联系我们</p>
+                        <p>地址：西海岸长滨路东二街市政府新行政办公区18栋</p>
+                        <p>服务热线：0755 0898-68724653</p>
+                        <p>传真：0755 0898-68724653</p>
+                    </div>
+                    <div class="footer-top-info2">
+                        <div class="footer-rq">
+                            <div>
+                                <img src="http://101.226.6.177:8089/kc/images/rq1.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="http://101.226.6.177:8089/kc/images/rq2.jpg" alt="rq">
+                            </div>
+                            <div>
+                                <img src="http://101.226.6.177:8089/kc/images/rq3.jpg" alt="rq">
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="###href18">网站地图</a></li>
+                                <li><a href="###href19">常见问题</a></li>
+                                <li><a href="###href20">用户反馈</a></li>
+                                <li><a href="###href21">下载中心</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="###href22">平台介绍</a></li>
+                                <li><a href="###href23">法律声明</a></li>
+                                <li><a href="###href24">申请加盟</a></li>
+                                <li><a href="###href25">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-otherslinks">
+                    <div class="footer-otherslinks-title">
+                        <ul>
+                            <li class="selected">政府部门网站</li>
+                            <li>其他国家、省市级公共服务平台</li>
+                            <li>企业服务网站</li>
+                        </ul>
+                    </div>
+                    <div class="footer-otherslinks-line"></div>
+                    <div class="footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href026">海口市发展和改革委员会</a></li>
+                            <li><a href="###href027">海口市经济贸易和信息化委员会</a></li>
+                            <li><a href="###href028">海口市科技创新委员会</a></li>
+                            <li><a href="###href029">海口市财政委员会</a></li>
+                            <li><a href="###href030">海口市市场监督管理局（知识产权局）</a></li>
+                            <li><a href="###href031">海口市卫生和计划生育委员会</a></li>
+                            <li><a href="###href032">海口市投资推广署</a></li>
+                            <li><a href="###href033">海口市教育局</a></li>
+                            <li><a href="###href034">海口国家高技术产业创新中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href035">linkname01</a></li>
+                            <li><a href="###href036">linkname02</a></li>
+                            <li><a href="###href037">linkname03</a></li>
+                            <li><a href="###href038">linkname04</a></li>
+                            <li><a href="###href039">linkname05</a></li>
+                            <li><a href="###href040">linkname06</a></li>
+                            <li><a href="###href041">linkname07</a></li>
+                            <li><a href="###href042">linkname08</a></li>
+                            <li><a href="###href043">linkname09</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide footer-otherslinks-links">
+                        <ul>
+                            <li><a href="###href044">linkname10</a></li>
+                            <li><a href="###href045">linkname11</a></li>
+                            <li><a href="###href046">linkname12</a></li>
+                            <li><a href="###href047">linkname13</a></li>
+                            <li><a href="###href048">linkname14</a></li>
+                            <li><a href="###href049">linkname15</a></li>
+                            <li><a href="###href050">linkname16</a></li>
+                            <li><a href="###href051">linkname17</a></li>
+                            <li><a href="###href052">linkname18</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bg">
+            <div class="footer-bottom">
+                <span>&copy;&nbsp;海口市科学技术工业信息化局主办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琼ICP备140655535号-2</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

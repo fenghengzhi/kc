@@ -1,0 +1,62 @@
+$(function(){
+   	//帮助菜单	
+   $(".b_span7 a").hover(function(){
+	   $(this).css("background","#69abe7");
+	   },function(){
+		   $(this).css("background","#2f4151");
+		   });
+		   
+   $(".b_span8 a").hover(function(){
+	   $(this).css("background","#69abe7");
+	   $(".b_ul1").show();
+	   });
+   $(".b_help").mouseleave(function(){
+	   $(".b_ul1").hide();
+	   $(".b_span8 a").css("background","#2f4151");
+	   });
+	   
+	   
+   $("#top-new-c5").hover(function(){
+	   $("#top-new-c5 div").show();
+	   },function(){
+		 $("#top-new-c5 div").hide();
+		   });   
+ 
+
+	//首页搜索的切换效果
+	var $i_search = $(".i_s_t ul li")
+	$(".i_s_t ul li").click(function(){
+		$(this).addClass("i_s_current").siblings().removeClass("i_s_current");
+
+		});
+		
+		//为输入框添加默认字
+    
+    $(".i_s_t ul li").click(function(){
+		var $i_li = $(this).text();
+		$(".i_s_text1").text($i_li);
+		});
+	
+	$(".i_more").hover(function(){
+		$(".i_s_more").addClass("i_s_p_current");
+		$(".i_s_p").show();
+		},function(){
+			$(".i_s_more").removeClass("i_s_p_current");
+		    $(".i_s_p").hide();
+			});
+	 $(".i_s_p a").click(function(){
+		var $i_a = $(this).text();
+		$(".i_s_text1").text($i_a);
+		$(".i_s_p").hide();
+		$(".i_s_more").removeClass("i_s_p_current");
+		$(".i_s_t ul li").removeClass("i_s_current");
+		});
+	
+	
+	
+})
+
+
+	
+
+	

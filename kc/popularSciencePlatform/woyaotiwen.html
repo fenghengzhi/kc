@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://star.sstir.cn/ask.do -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="x-ua-compatible" content="ie=7"> 
+<title>我要提问——星问答——上海研发公共服务平台</title>
+
+<link href="./woyaotiwen_files/default.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="./woyaotiwen_files/prototype.js.download"></script>
+<script language="javascript">
+
+
+function show(o){
+ 	//重载验证码
+ 	var timenow = new Date().getTime();
+ 	o.src="/rand?d="+timenow;
+}
+
+function validate() {
+	if(jQuery("#ClassId").val()=="" || jQuery("#ClassId").val()==0) {
+    	alert("请选择行业分类");
+    	jQuery("#ClassLevel1").focus();
+    	return false;
+	}
+	if(jQuery("#title").val()=="") {
+  		alert("请输入问题标题");
+  		jQuery("#title").focus();
+  		return false;
+ 	}
+ 	if(jQuery("#content").val()=="") {
+    	alert("请输入问题内容");
+    	jQuery("#content").focus();
+    	return false;
+	}
+	if(jQuery("#check").val()=="") {
+    	alert("请输入验证码");
+    	jQuery("#check").focus();
+    	return false;
+	}
+	if(ss()==true){
+		/* jQuery('submit').style.display="none";
+		jQuery('submitTip').innerHTML="正在提交问题，请耐心等候……"; */
+		jQuery("#submit").attr("style","display:none");
+		jQuery("#submitTip").html("<font color=red size=5px>正在提交问题，请耐心等候……</font>");
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+function ss(){
+	if(document.getElementById("isReward").checked==true){
+		var str = document.getElementById("reward").value;
+		return confirm("你确定拿出"+str+"积分进行悬赏吗？一旦悬赏后将无法再修改悬赏的积分。");
+	}else{
+		return true;
+	}
+	
+}
+
+function showAlert(id) {
+	if(id==113){
+		document.getElementById("flalert").style.display = "";
+	}
+	else {
+		document.getElementById("flalert").style.display = "none";
+	}
+}
+
+function addFile() {
+	//document.getElementById("fileDiv").innerHTML += "<div><input type=\"file\" name=\"file\" /></div>"
+	var aa = "<div><input type=\"file\" name=\"file\" /></div>";
+	jQuery("#fileDiv").append(aa);
+}
+</script>
+</head>
+
+<body>
+
+
+<!-- 头部 -->
+<link href="./woyaotiwen_files/b_basic.css" rel="stylesheet" type="text/css">
+
+<script src="./woyaotiwen_files/jquery-1.6.min.js.download" type="text/javascript"></script>
+<script src="./woyaotiwen_files/jquery.cookie.js.download" type="text/javascript"></script>
+
+<script src="./woyaotiwen_files/top.js.download" type="text/javascript"></script>
+<script src="./woyaotiwen_files/tohours.min.js.download" type="text/javascript"></script>
+<script src="./woyaotiwen_files/search.js.download" type="text/javascript"></script>
+<script>
+function search(){
+	var keyword = jQuery("#serachText").val();
+	var type = jQuery("#selectText").html();
+	if(keyword){
+		location.href ="http://www.sstir.cn/search.do?query=" + encodeURIComponent(keyword) + "&channel=" + encodeURIComponent(type);
+	}
+}  
+
+function topLogin(){
+	location='http://star.sstir.cn/login.do';
+}
+function topLogout(){
+	
+	location='http://star.sstir.cn/logout.do';
+}
+</script>
+
+<div class="logo2017 jz">
+
+
+
+
+
+<script>
+function activeFrontNav(name) {
+	$("div[class='nav2017'] > ul > li:contains('" + name + "')").attr("class", "nav2017-hover");
+};
+function checkSearch() {
+	var aa = $("input[name='key']").val();
+	if(jQuery.trim(aa)=="") {
+		alert("请输入关键词");
+		$("#key").focus();
+		return false;
+	}
+}
+</script>
+<div class="bf9 jz">
+<script>var jq=jQuery.noConflict();//解决了prototype.js 和 jQuery冲突的问题 .*(先引用prototype.js,再引用jQuery)</script>
+<div class="layout">
+<form name="form" method="post" enctype="multipart/form-data" action="http://star.sstir.cn/questionAsk.do" onsubmit="return validate();">
+<div class="ywbd">
+  	<div class="tw">
+    	<div class="tw1">问题标题：</div>
+        <div class="tw2">
+        	<input name="title" type="text" class="wtbt" id="title" value="" size="80">
+			        	
+        </div>
+        <div class="tw1">问题描述：</div>
+        <div class="tw2">
+        	<textarea class="wtms" name="content" cols="61" rows="6" id="content"></textarea>
+        	
+
+        </div>
+
+        <script type="text/javascript">
+	            $('isReward').onchange = function () {
+	                $('reward').disabled=!$('reward').disabled;
+	            };
+	    </script>
+
+        <div class="tw4">
+          	<input type="submit" id="submit" class="anbg_zj" value="提交问题">
+          	<span id="submitTip"></span>
+        </div>
+  	</div>
+</div>
+</form>
+
+
+</div></div><div>
+
+<script>
+(function(){
+
+$(".head-r3").hover( 
+function () { 
+ $(".head-r3 div").show();
+}, 
+function () { 
+ $(".head-r3 div").hide();
+} 
+);
+
+
+})();
+
+</script>
+
+</div>
+
+</body></html>

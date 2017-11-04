@@ -9,7 +9,7 @@
     DemandListService.id = commonService.getSearchParm('id');
     
     function DemandListService() {
-        var DemandListService = {};
+        var DemandListService = {timer: []};
 
         $(function () {
             allclick();
@@ -19,6 +19,10 @@
         });
 
         function init() {
+            for(let timer of DemandListService.timer){
+                clearInterval(timer);
+            }
+            DemandListService.timer=[];
             getInfo();
         }
         
@@ -161,7 +165,7 @@
                 }
                 html += `<div id="page"></div>`;
                 $('.left .lists').html(html);
-                setInterval(function () {
+                DemandListService.timer.push(setInterval(function () {
                     for (var i=0;i<data.rsData.length;i++) {
                         // var EndTime = new Date('2017/09/20 00:00:00');
                         var NowTime = new Date();
@@ -176,7 +180,7 @@
                         $('.t_m').eq(i).text(m + "分");
                         $('.t_s').eq(i).text(s + "秒");
                     }
-                }, 1000);
+                }, 1000));
 
 
                 let total = Math.ceil(data.rsCount / 5);

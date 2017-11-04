@@ -1,0 +1,144 @@
+function openSelect() {
+	var triangle = document.getElementById("triangle");
+	var searchSelectList = document.getElementById("search-select-list");
+	if (triangle.className == "border-triangle") {
+		triangle.className = "border-triangle flipy";
+		searchSelectList.style.display = "block";
+	} else {
+		triangle.className = "border-triangle";
+		searchSelectList.style.display = "none";
+	}
+}
+
+function showTabContent(obj, id) {
+	$(obj).addClass("current").siblings().removeClass("current");
+	$("#" + id).show().siblings().hide();
+}
+
+$(function() {
+	$("#search-select-list>li>a").click(function() {
+		$("#selectText").text($(this).text());
+		$("#channel-hidden").val($(this).text());
+	});
+});
+
+$("#search-select-list").mouseleave(function() {
+	var triangle = document.getElementById("triangle");
+	var searchSelectList = document.getElementById("search-select-list");
+	triangle.className = "border-triangle";
+	searchSelectList.style.display = "none";
+});
+
+function search() {
+	if ($(".dataQuery").val()) {
+		location.href = "search.do?query=" + encodeURIComponent($(".dataQuery").val()) + "&channel=" 
+		+ $("#channel-hidden").val() + "&category1=" + $("#category1").val() + "&category2=" + $("#category2").val();
+	}
+	
+}
+
+function searchHot(obj) {
+	location.href = "search.do?query=" + encodeURIComponent($(obj).data("query")) + "&channel=&category1=&category2=";
+}
+
+$(".dataQuery").bind("keydown", function(e) {
+    var ev = document.all ? window.event : e;
+    if (13 == ev.keyCode) {
+    	e.preventDefault();
+    	search();
+	}
+});
+
+
+
+function slideMore_1(obj) {
+	$(obj).fadeOut(500);
+	var pageNo = Number($("#pageNo").val());
+	pageNo = pageNo + 1;
+	$("#pageNo").val(pageNo);
+	$("#pageSize").val(12);
+	formula.appendFadeIn();
+}
+
+
+
+function hidePlaceholder(obj) {
+	var value = obj.value;
+	if (!value) {
+		obj.placeholder = "";
+	}
+}	
+
+function showPlaceholder(obj) {
+	var value = obj.value;
+	if (!value) {
+		obj.placeholder = "请输入检索关键词";
+	}
+}
+
+function hidePlaceholder2(obj) {
+	var value = obj.value;
+	if (!value) {
+		obj.placeholder = "";
+		$(".s_key input").removeAttr('id','sskuang1');
+		$(".s_key input").attr('id','sskuang2');
+	}
+}	
+
+function showPlaceholder2(obj) {
+	var value = obj.value;
+	if (!value) {
+		obj.placeholder = "请输入寻找答案的关键字";
+		$(".s_key input").removeAttr('id','sskuang2');
+		$(".s_key input").attr('id','sskuang1');
+	}
+}
+
+var GLOBAL = GLOBAL || {};
+GLOBAL.Methods = GLOBAL.Methods || {};
+//事件绑定
+GLOBAL.Methods.eventUtil = {
+	addHandler: function(element, type, handler) {
+		if (element.addEventListener) {
+			element.addEventListener(type, handler, false);
+		} else if (element.attachEvent) {
+			element.attachEvent("on" + type, handler);
+		} else {
+			element["on" + type] = handler;
+		}
+	},
+	removeHandler: function() {
+		if (element.removeEventListener) {
+			element.removeEventListener(type, handler, false);
+		} else if (element.deathEvent) {
+			element.deathEvent("on" + type, handler);
+		} else {
+			element["on" + type] = null;
+		}
+	}
+};
+
+
+function showMoreCategory(obj) {
+	$(obj).closest("div").prev(".search_right").css("height", "auto");
+	$(obj).attr("onclick", "hideMoreCategory(this)");
+	$(obj).removeClass("gengduo").addClass("gengduo2");
+}
+
+function hideMoreCategory(obj) {
+	$(obj).closest("div").prev(".search_right").css("height", "35px");
+	$(obj).attr("onclick", "showMoreCategory(this)");
+	$(obj).removeClass("gengduo2").addClass("gengduo");
+}
+
+function initHeight() {
+	$(".search_right").each(function() {
+		var active = $(this).find("a.active").length;
+		var height = $(this).height();
+		if (height <= 35) {
+			$(this).next("div").find("a").remove();
+		} else if (active == 0) {
+			$(this).height("35px");
+		}
+	});
+}

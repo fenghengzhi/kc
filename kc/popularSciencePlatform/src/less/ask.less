@@ -1,0 +1,205 @@
+@import url(../../../common/src/less/define.less);
+
+body {
+  .common()
+}
+
+@url-prefix: "../";
+.header-part3 {
+  background: url("../../../images/popularSciencePlatform-banner.png") center no-repeat;
+}
+
+h2 {
+  .common-title()
+}
+.header-part2 {
+  ul {
+    li {
+      a {
+        padding: 0 7px;
+      }
+    }
+  }
+}
+.main {
+  .category {
+    margin-top: 25px;
+    .category-one {
+      width: 128px;
+      height: 29px;
+      font-size: 15px;
+      color: @primary;
+      background: #eef4fa;
+      display: inline-block;
+      text-align: center;
+      line-height: 29px;
+      margin-right: 15px;
+      border-radius: 15px;
+    }
+  }
+  .topmiddle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    .introduct {
+      .bigone {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 14px;
+      }
+      .smallone {
+        font-size: 15px;
+      }
+    }
+    .btn {
+      .question {
+        width: 97px;
+        height: 34px;
+        background: @primary;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 34px;
+        border-radius: 2px;
+        margin-right: 15px;
+        border-radius: 2px;
+        border: 1px solid @primary;
+      }
+      .answer {
+        background: #fff;
+        font-size: 14px;
+        color: @primary;
+      }
+    }
+  }
+  .top-bottom {
+    margin-top: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid @line02;
+    margin-bottom: 20px;
+    img {
+      display: inline-block;
+      margin-right: 3px;
+    }
+    .specific-time {
+      font-size: 14px;
+      color: #9fadc7;
+    }
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    .answername {
+      font-size: 16px;
+      display: inline-block;
+
+    }
+    .responder {
+      margin-bottom: 32px;
+      .wrap {
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top;
+        margin-top: 13px;
+        .answer-domain {
+          font-size: 14px;
+          display: block;
+        }
+        .answername {
+          font-size: 14px;
+          display: block;
+          margin-bottom: 9px;
+        }
+      }
+      .answertimer {
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
+      .answer-domain {
+        width: 664px;
+        line-height: 23px;
+        text-align: justify;
+      }
+    }
+
+    .content-right {
+      .similar {
+        margin-bottom: 20px;
+        width: 300px;
+        height: 265px;
+        border: 1px solid @line02;
+        .similartop {
+          box-sizing: border-box;
+          padding: 16px;
+          font-size: 16px;
+          color: #333333;
+          border-bottom: 1px solid @line02;
+        }
+
+        .similarcontain {
+          box-sizing: border-box;
+          padding: 20px;
+          img {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+          }
+          .wraptop {
+            display: inline-block;
+            margin-left: 20px;
+            vertical-align: top;
+            margin-top: 13px;
+          }
+          .questionname {
+            font-size: 20px;
+            color: #333333;
+            display: block;
+            margin-bottom: 6px;
+          }
+          .age {
+            font-size: 14px;
+            color: #666666;
+            display: block;
+          }
+          .dateMessage {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+            box-sizing: border-box;
+            border-top: 1px solid @line02;
+            padding: 24px 48px;
+            .nummessage {
+              .num {
+                font-size: 14px;
+                color: #333333;
+                display: block;
+                margin-bottom: 20px;
+              }
+              .totalnum {
+                font-size: 24px;
+                color: #666666;
+                display: block;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .relationquestion {
+          box-sizing: border-box;
+          padding-left: 16px;
+          .requestion {
+            display: block;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
