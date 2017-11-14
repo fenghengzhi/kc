@@ -74,8 +74,6 @@
                 success: function (data) {
                     //第一页
                     let d = data.rsData[0];
-                    patentDetailService.name = d.patent.title.original;
-                    patentDetailService.numApplication = d.patent.application_number;
                     try {
                         $('.patentBaseInfo').html(
                             `
@@ -231,7 +229,7 @@
                 ${(() => {
                                 var arr = d.patent.inventors;
                                 var html = '';
-                                var i = 0;
+                                var i=0;
                                 for (var val of arr) {
                                     html += '<li class="inventors9" id="' + val.id + '"><a href="#tab-six-' + val.id + '" class="link-one" >' + val.name.original + '</a></li>'
                                 }
@@ -311,7 +309,6 @@
         
         `);
 
-
                         $('#' + patentDetailService.inventors0.id).addClass('active');
                         $('#tab-six-' + patentDetailService.inventors0.id).addClass('active');
                         $('#tab-six-' + patentDetailService.applicants0.id).addClass('active');
@@ -322,177 +319,6 @@
                         // getPoepleOthersData(1, patentDetailService.applicants0.id, patentDetailService.applicants0.name.original);
                         $('.inventors9').eq(0).click();
                         $('.applicants9').eq(0).click();
-
-                        //相似专利
-                        hieknjs.kgLoader({
-                            type: 0,
-                            url: 'http://www.kechuang.cn/hk_patent_ws/api/patent/simliar',
-                            urlData: {
-                                title: patentDetailService.name,
-                                numApplication:patentDetailService.numApplication,
-                                pageNo: 1,
-                                pageSize: 6
-                            },
-                            success: function (data) {
-                                if (data && data.rsData && data.rsData.length) {
-                                    let HTML = '';
-                                    for (var val of data.rsData) {
-                                        HTML += `<div class="six">
-                                            <a href="patentDetail.html?id=${val.id}"><span>${val.patent.title.original}</span></a>
-                                            <ul>
-                                                <li class="list-one"></li>
-                                                <li class="list-one"></li>
-                                                <li class="list-one"></li>
-                                                <li class="list-one"></li>
-                                            </ul>
-                                            <div class="th-introd">
-                                                <ul>
-                                                    <li class="list-two">
-                                                        <p class="patten">申请人：</p>
-                                                        <span class="department" style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap">${(() => {
-
-                                            var arr = [];
-
-                                            for (var val2 of val.patent.applicants) {
-                                                arr.push(val2.name.original)
-                                            }
-                                            return arr.length > 1 ? arr.join(',') : arr[0];
-                                        })()}
-                                                        </span>
-                                                    </li>
-                                                    <li class="list-two">
-                                                        <p class="patten">发明人：</p>
-                                                        <span class="department" style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap">${(() => {
-
-                                            var arr = [];
-                                            for (var val3 of val.patent.inventors) {
-                                                arr.push(val3.name.original)
-                                            }
-                                            return arr.join(',');
-                                        })()}
-                                                        
-                                                    </span>
-                                                    </li>
-                                                    <li class="list-two">
-                                                        <p class="patten">专利类型：</p>
-                                                        <span class="department">${val.patent.type ? (['', '发明', '新型', '外观'][val.patent.type]) : ''}</span>
-                                                    </li>
-                    
-                                                </ul>
-                                            </div>
-                                        </div>`;
-
-
-                                    }
-                                    $('.patentBaseInfo').append(`<div class="creater-patent tabs-nav-container show-all">
-                                                                        <p class="for-not-change">相似专利</p>
-                                                                        <div class="cre-patent-rect hu-tab-content">
-                                                                            <div class="tab-pane  active" id="tab-six-2304946621267126874">
-                                                                                ${HTML}
-                                                                            </div> 
-                                                                        </div>
-                                                                    </div>`);
-                                } else {
-
-                                }
-                            }
-                        })
-
-                        //词云图
-                        hieknjs.kgLoader({
-                            type: 0,
-                            url: 'http://www.kechuang.cn/hk_patent_ws/api/patent/get/words',
-                            urlData: {
-                                id: patentDetailService.id
-                            },
-                            success: function (data) {
-                                if (data && data.rsData && data.rsData.length) {
-                                    $('.patentBaseInfo').append(`<div class="creater-patent tabs-nav-container show-all">
-                                                                        <p class="for-not-change">词云图</p>
-                                                                        <div class="cre-patent-rect hu-tab-content">
-                                                                            <div style="width: 100%;height: 300px" class="tab-pane  active" id="wordCould"></div> 
-                                                                        </div>
-                                                                    </div>`);
-
-                                    var chart = echarts.init(document.getElementById('wordCould'));
-
-                                    chart.setOption({
-                                        series: [{
-                                            type: 'wordCloud',
-
-                                            // The shape of the "cloud" to draw. Can be any polar equation represented as a
-                                            // callback function, or a keyword present. Available presents are circle (default),
-                                            // cardioid (apple or heart shape curve, the most known polar equation), diamond (
-                                            // alias of square), triangle-forward, triangle, (alias of triangle-upright, pentagon, and star.
-
-                                            shape: 'circle',
-
-                                            // A silhouette image which the white area will be excluded from drawing texts.
-                                            // The shape option will continue to apply as the shape of the cloud to grow.
-
-
-                                            // Folllowing left/top/width/height/right/bottom are used for positioning the word cloud
-                                            // Default to be put in the center and has 75% x 80% size.
-
-                                            left: 'center',
-                                            top: 'center',
-                                            width: '70%',
-                                            height: '80%',
-                                            right: null,
-                                            bottom: null,
-
-                                            // Text size range which the value in data will be mapped to.
-                                            // Default to have minimum 12px and maximum 60px size.
-
-                                            sizeRange: [12, 60],
-
-                                            // Text rotation range and step in degree. Text will be rotated randomly in range [-90, 90] by rotationStep 45
-
-                                            rotationRange: [-90, 90],
-                                            rotationStep: 45,
-
-                                            // size of the grid in pixels for marking the availability of the canvas
-                                            // the larger the grid size, the bigger the gap between words.
-
-                                            gridSize: 8,
-
-                                            // set to true to allow word being draw partly outside of the canvas.
-                                            // Allow word bigger than the size of the canvas to be drawn
-                                            drawOutOfBound: false,
-
-                                            // Global text style
-                                            textStyle: {
-                                                normal: {
-                                                    fontFamily: 'sans-serif',
-                                                    fontWeight: 'bold',
-                                                    // Color can be a callback function or a color string
-                                                    color: function () {
-                                                        // Random color
-                                                        return 'rgb(' + [
-                                                            Math.round(Math.random() * 160),
-                                                            Math.round(Math.random() * 160),
-                                                            Math.round(Math.random() * 160)
-                                                        ].join(',') + ')';
-                                                    }
-                                                },
-                                                emphasis: {
-                                                    shadowBlur: 10,
-                                                    shadowColor: '#333'
-                                                }
-                                            },
-
-                                            // Data is an array. Each array item must have name and value property.
-                                            data: data.rsData
-                                        }]
-                                    });
-
-                                } else {
-
-                                }
-                            }
-                        })
-
-
                     } catch (err) {
                         console.log(err)
                     }
@@ -510,7 +336,6 @@
                             legal_status: 0,
                             lapse_date: ''
                         } : 0;
-
                         var mainNameHTML = `
                                             <!--<div class="main-name">-->
                                                 <h3>${patent.title.original}</h3>
@@ -694,7 +519,7 @@
                                                                     <td>${d.patent.application_number}</td>
                                                                     <td>${d.patent.application_date}</td>
                                                                     <td>${d1.id}</td>
-                                                                    <td>${d.patent.title.original || d.patent.title.en}</td>
+                                                                    <td>${d.patent.title.original||d.patent.title.en}</td>
                                                                     <td>${(() => {
                                                         let arr = [];
                                                         for (let d1 of d.patent.applicants) {
@@ -780,7 +605,7 @@
                                                                     <td>${d.patent.application_number}</td>
                                                                     <td>${d.patent.application_date}</td>
                                                                     <td>${d1.id}</td>
-                                                                    <td>${d.patent.title.original || d.patent.title.en}</td>
+                                                                    <td>${d.patent.title.original||d.patent.title.en}</td>
                                                                     <td>${(() => {
                                                         let arr = [];
                                                         for (let d1 of d.patent.applicants) {
@@ -888,9 +713,9 @@
 
 
                         var HTML = '';
-                        var max = 0;
+                        var max=0;
                         for (var val of data.rsData) {
-                            if (max < 6) {
+                            if(max<6){
                                 HTML += `<div class="six">
                                             <a href="patentDetail.html?id=${val.id}"><span>${val.patent.title.original}</span></a>
                                             <ul>
@@ -939,13 +764,12 @@
                             max++;
 
                         }
-                        if (data.rsCount > 6) {
-                            HTML += `<div class="showmore">
+                        if(data.rsCount>6){
+                        HTML+=`<div class="showmore">
                 <span class="load">
                 <a href="patentSearchList.html?q=${kw}">点击查看更多>></a>
                 </span>
-                </div>`;
-                        }
+                </div>`;}
 
                         $('#tab-six-' + subid).html(HTML);
 

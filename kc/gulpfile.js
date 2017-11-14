@@ -4,11 +4,11 @@ var cheerio = require('gulp-cheerio');
 var replace = require('gulp-replace');
 gulp.task('replace', function () {
     let dirnames = {
-        4: 'policyMatch',
-        5: 'huqionghezuo',
+        // 4: 'policyMatch',
+        // 5: 'huqionghezuo',
         6: 'outcomeTransformation',
-        7: 'resourceSharing',
-        9: 'popularSciencePlatform',
+        // 7: 'resourceSharing',
+        // 9: 'popularSciencePlatform',
         13: 'innovativeService',
         100: 'technicalTransaction'
     };
@@ -57,22 +57,21 @@ gulp.task('replace', function () {
     //     100:``
     // };
     //
-    // for (let i in dirnames) {
-    //     let dirname = dirnames[i];
-    //     gulp.src(`./${dirname}/*.html`)
-    //         .pipe(cheerio({
-    //             run: function ($, file) {
-    //                 // $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
-    //                 // $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
-    //                 // if (submenu[i]) {
-    //                 //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
-    //                 // }
-    //                 $('#content > div.header > div.header-part1 > div > ul > li:nth-child(7)').remove();
-    //             }, parserOptions: {decodeEntities: false}
-    //         }))
-    //         .pipe(gulp.dest(`./${dirname}/`));
-    // }
-
+    for (let i in dirnames) {
+        let dirname = dirnames[i];
+        gulp.src(`./${dirname}/*.html`)
+            .pipe(cheerio({
+                run: function ($, file) {
+                    // $('#content > div.header > div.header-part1 > div > ul').html(indexmenu);
+                    // $(`#content > div.header > div.header-part1 > div > ul > li:nth-child(${i})`).addClass('selected');
+                    // if (submenu[i]) {
+                    //     $('#content > div.header > div.header-part2 > ul').html(submenu[i]);
+                    // }
+                    $('#content > div.header > div.header-part2 > ul > li:nth-child(6) > a').attr('href', 'http://www.suaee.com/f ');
+                }, parserOptions: {decodeEntities: false}
+            }))
+            .pipe(gulp.dest(`./${dirname}/`));
+    }
 
 
     // gulp.src(`./technicalTransaction/*.html`)
@@ -89,11 +88,11 @@ gulp.task('replace', function () {
     //     .pipe(gulp.dest(`./technicalTransaction/`));
 
 
-    gulp.src(`./resourceSharing/*.html`)
-        .pipe(replace(`<li><a href="/haikou/沪琼合作首页.html">沪琼资源共享</a></li>`,`<li class="selected"><a href="/haikou/沪琼合作首页.html">沪琼资源共享</a></li>`))
-        // .pipe(replace(`<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>`,`<a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a>`))
-
-        .pipe(gulp.dest(`./resourceSharing/`));
+    // gulp.src(`./*/*.html`)
+    //     .pipe(replace(`<li><a href="/haikou/科创资源共享首页.html">科创资源共享</a></li>`,``))
+    //     // .pipe(replace(`<a href="/kc/outcomeTransformation/rightSearch.html">科技成果转化</a>`,`<a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a>`))
+    //
+    //     .pipe(gulp.dest(`./`));
 
 
 });

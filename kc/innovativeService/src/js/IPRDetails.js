@@ -27,7 +27,7 @@
         function getData() {
             hieknjs.kgLoader({
                 type: 0,
-                url: configService.RESTFUL_SERVICE_BASE_URL + 'transformation/get/supplier',
+                url: configService.RESTFUL_SERVICE_BASE_URL + 'innovative/get/supplier',
                 that: $('.main')[0],
                 postData: {
                 },
@@ -40,7 +40,7 @@
                         var html=`<div class="main-part1">
                                     <div class="main-part1-header">全球知识产权</div>
                                     <div class="main-part1-con">
-                                        <!--<div class="con-left"><img src="http://img.kechuang.cn/u${data.memberId}.jpg?imageMogr2/thumbnail/1200x120&time=1504774799220" alt=""></div>-->
+                                        <div class="con-left"><img src="${data.logo}" alt=""></div>
                                         <div class="con-mid">
                                             <div class="title">${data.name}</div>
                                             <div class="lines">
@@ -53,8 +53,8 @@
                                             </div>
                                         </div>
                                         <div class="con-right">
-                                            <!--<a class="hu-btn btn-primary-outline">立即咨询</a>-->
-                                            <!--<a class="hu-btn btn-primary">申请服务</a>-->
+                                            <!--<a class="hu-btn btn-primary-outline" onclick="toastr.info('不能咨询')">立即咨询</a>-->
+                                            <!--<a class="hu-btn btn-primary" onclick="toastr.info('不能申请')">申请服务</a>-->
                                         </div>
                                     </div>
                                 </div>
