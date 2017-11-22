@@ -6,20 +6,60 @@ body {
 }
 
 .header-part3 {
-  background: url("../../../images/search-banner.png") no-repeat;
+  background: url("@{url-prefix}images/outcomeTransformation-banner.png") center no-repeat;
 }
 
 #content {
-
   .main {
     user-select: none;
-    background: url("../../../images/search-banner.png") no-repeat;
-    height: 562px;
+    background: url("../../../images/seasea.png") no-repeat;
+    height: 680px;
     //width: @main-width;
     width: 100%;
 
     margin: auto;
     position: relative;
+    .search-input {
+      border: 5px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      .search-btn {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @size: 19px;
+        font-size: @size;
+        color: #fff;
+        width: 50px;
+        border-radius: 0;
+        & > i {
+          width: @size;
+          height: @size;
+          font-size: 30px;;
+          line-height: 22px;
+          margin-right: 8px;
+        }
+      }
+    }
+    #demo-prompt {
+      .hiekn-search-prompt {
+        //display: block!important;
+        top: 50px;
+        width: 100%;
+        margin-left: 0;
+        z-index: 99;
+      }
+      border-radius: inherit;
+      height: 50px;
+      width: 945px;
+      input {
+        padding-left: 10px;
+        width: 888px;
+      }
+      svg {
+        display: none;
+      }
+    }
     canvas {
       position: absolute;
       top: 0;
@@ -33,6 +73,58 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 945px;
+      margin: auto;
+      .filterAll-box {
+        margin-bottom: 12px;
+        .filterAll {
+          display: flex;
+          justify-content: space-between;
+          .active {
+            span {
+              color: white !important;
+              height: 24px;
+              cursor: pointer;
+              background-color: #5f8bc9;
+              border-radius: 2px;
+            }
+          }
+          .hu-radio {
+            height: 26px;
+            cursor: pointer;
+            border-right: 1px solid #5f8bc9;
+            padding: 2px 0 0 0;
+            &:nth-last-child(1) {
+              border: none;
+            }
+            span {
+              background-image: none !important;
+              padding: 2px 16px;
+              margin: 0 4px;
+              height: 24px;
+              color: #5f8bc9;
+              font-size: 16px;
+              line-height: 17px;
+              &:hover {
+                background-color: #5f8bc9;
+                border-radius: 2px;
+                color: white !important;
+              }
+            }
+
+          }
+
+        }
+
+      }
+      .checks {
+        display: flex;
+        margin-top: 12px;
+        .hu-checkbox {
+          padding-right: 30px;
+          color: #5f8bc9;
+        }
+      }
       .shang {
         font-size: 25px;
         color: white;
@@ -42,11 +134,15 @@ body {
         .title {
           font-size: 32px;
           margin-bottom: 14px;
-          margin-top: 136px;
+          margin-top: 116px;
+          color: @primary;
+
         }
         .subtitle {
           font-size: 16px;
-          margin-bottom: 42px + 5px;
+          font-weight: normal;
+          margin-bottom: 20px + 5px;
+          color: @primary;
         }
       }
       .xia {
@@ -61,7 +157,7 @@ body {
         display: flex;
         outline: rgba(255, 255, 255, 0.5) 5px solid;
         height: 50px;
-        width: 595px;
+        width: 945px;
         & > input {
           flex-grow: 1;
           height: 50px;
@@ -86,7 +182,6 @@ body {
           }
         }
       }
-
     }
   }
   .main2 {
@@ -152,38 +247,53 @@ body {
   }
 }
 
-.earth-map {
-  margin: 55px auto;
-  .one {
-    display:flex;
-    //align-items: center;
-    .one-right{
-      margin-left: 80px;
-      p{
-        font-size: 30px;
-        color: @font02;
-        font-weight: bold;
-        margin: 38px 0;
-        i{
-          font-style: normal;
-          color: #ffa906;
-        }
-      }
+.con{
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  display: flex;
+  color: #5f8bc9;
+  .agriculture{
+    width: 280px;
+    height: 333px;
+    padding: 36px 0 0;
+    text-align: center;
+    flex-shrink: 0;
+    //box-shadow: 10px 10px 5px #eee;
+    //border: 1px solid white;
+    &:hover{
+      //border: 1px solid #eee;
+      box-shadow: 0 0 5px #aaa;
     }
-
+    h3{
+      margin: 36px 0 0;
+      font-size: 40px;
+    }
+    span{
+      font-size: 30px;
+      line-height: 50px;
+      margin-bottom: 60px;
+    }
   }
-  .one2{
-    .one-left{
-      margin:100px 0 0 80px;
-      p{
-        font-size: 30px;
-        color: @font02;
-        font-weight: bold;
-        margin: 38px 0;
-        i{
-          font-style: normal;
-          color: #ffa906;
-        }
+  .con-right{
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    .right-detail{
+      width: 180px;
+      height: 180px;
+      text-align: center;
+      padding-top: 25px;
+      border: 1px solid white;
+      &:hover{
+        box-shadow: 0 0 5px #aaa;
+      }
+      h3{
+        font-size: 24px;
+        line-height: 36px;
+      }
+      span{
+        font-size: 18px;
       }
     }
   }
@@ -202,3 +312,4 @@ body {
   left: 866px;
   cursor: pointer;
 }
+

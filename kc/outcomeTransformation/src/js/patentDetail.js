@@ -329,7 +329,7 @@
                             url: 'http://www.kechuang.cn/hk_patent_ws/api/patent/simliar',
                             urlData: {
                                 title: patentDetailService.name,
-                                numApplication:patentDetailService.numApplication,
+                                numApplication: patentDetailService.numApplication,
                                 pageNo: 1,
                                 pageSize: 6
                             },
@@ -521,8 +521,8 @@
                                                         <p>申请日 : <span>${JSON.stringify(patent.application_date).replace(/^(\d{4})(\d{2})(\d{2})$/, "$1年$2月$3日")}</span></p>
                                                     </div>
                                                     <div class="cent">
-                                                        <p>最早优先权日 :${patent.earliest_priority_date} </p>
-                                                        <p>最早公开日 :${patent.earliest_publication_date}</p>
+                                                        <p>最早优先权日 :${patent.earliest_priority_date ? JSON.stringify(patent.earliest_priority_date).replace(/^(\d{4})(\d{2})(\d{2})$/, "$1年$2月$3日") : ''} </p>
+                                                        <p>最早公开日 :${patent.earliest_publication_date ? JSON.stringify(patent.earliest_publication_date).replace(/^(\d{4})(\d{2})(\d{2})$/, "$1年$2月$3日") : ''}</p>
                                                     </div>
                                                     <div class="right">
                                                         <p>公开号 :${patent.publication_number}</p>

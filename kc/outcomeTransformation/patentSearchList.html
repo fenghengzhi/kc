@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>全球知识产权库</title>
-    
+
     <link rel="icon" href="../images/logo.ico">
     <!--<link rel="stylesheet" href="../lib/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
     <link rel="stylesheet" href="../lib/iconfont.css">
     <link rel="stylesheet" href="../common/src/less/hieknui.css">
-    <!--<link rel="stylesheet" href="../lib/hiekn-prompt.css">-->
+    <link rel="stylesheet" href="../lib/hiekn-prompt.css">
     <link rel="stylesheet" href="src/less/patentSearchList.css">
 
     <script type="text/javascript" src="../lib/browser-polyfill.js"></script>
@@ -21,7 +20,7 @@
     <script type="text/javascript" src="../lib/jquery.history.js"></script>
     <script type="text/javascript" src="../lib/uri.min.js"></script>
     <!--<script type="text/javascript" src="../lib/echarts.min.js"></script>-->
-    <!--<script type="text/javascript" src="../lib/hiekn-prompt.js"></script>-->
+    <script type="text/javascript" src="../lib/hiekn-prompt.js"></script>
     <!--<script type="text/javascript" src="../assets/zoomcharts/zoomcharts.js"></script>-->
     <script type="text/javascript" src="../common/src/js/config.js"></script>
     <script type="text/javascript" src="../common/src/js/ajax.js"></script>
@@ -33,19 +32,20 @@
     <div class="header">
         <div class="header-part1">
             <div class="header-part1-con">
-                <ul><li><a href="/haikou/首页.html">首页</a></li>
+                <ul>
+                    <li><a href="/haikou/首页.html">首页</a></li>
                     <li><a href="/haikou/项目简介.html">项目简介</a></li>
                     <li><a href="/haikou/院士合作.html">院士合作</a></li>
                     <li><a href="/haikou/zffw.htm">政府服务</a></li>
                     <li><a href="/haikou/沪琼合作首页.html">沪琼资源共享</a></li>
                     <li class="selected"><a href="/kc/outcomeTransformation/rightSearch.html">知识产权服务</a></li>
-                    
+
                     <li><a href="/haikou/index.html">大数据开放平台</a></li>
                     <li><a href="/kc/popularSciencePlatform/popularhome.html">科普平台</a></li>
                     <li><a href="/haikou/海口今日科创介绍.html">海口今日科创</a></li>
                     <li><a href="/haikou/领导版客户端介绍.html">领导版客户端</a></li>
                     <li><a href="/haikou/影视周开幕式.html">影视周开幕式</a></li>
-                    </ul>
+                </ul>
                 <div class="login">
                     <span class="signin"><a href="###href053">登录</a></span>
                     <span class="register"><a href="###href054">注册</a></span>
@@ -56,14 +56,16 @@
             <div class="logo">
                 <a href="/haikou/首页.html"><img src="../images/logo.png" alt="LOGO"></a>
             </div>
-            <ul><li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
-                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a></li>
+            <ul>
+                <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/index.html">首页</a></li>
+                <li class="selected"><a href="http://101.226.6.177:8089/kc/outcomeTransformation/rightSearch.html">全球知识产权库</a>
+                </li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/DemandList.html">成果转化开发平台</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/outcomeTransformation/ServiceList.html">第三方服务</a></li><li><a href="http://101.226.6.177:8089/haikou/基金.html">科创基金</a></li>
-                <li><a href="http://www.suaee.com/f ">技术交易市场</a></li><li><a href="http://101.226.6.177:8089/kc/innovativeService/IPRList.html">知识产权评估</a></li>
+                <li><a href="http://www.suaee.com/f ">技术交易市场</a></li>
+                <li><a href="http://101.226.6.177:8089/kc/innovativeService/IPRList.html">知识产权评估</a></li>
                 <li><a href="http://101.226.6.177:8089/kc/innovativeService/investServiceList.html">投融资服务</a></li>
-                
-                </ul>
+            </ul>
         </div>
         <div class="header-part3">
             <p class="title">全球知识产权库</p>
@@ -72,9 +74,11 @@
 
     <div class="main">
         <div class="main-topbg">
+
             <div class="main-search">
-                <input type="text" class="hu-input input-primary input-lg" placeholder="请输入关键字">
+                <div id="promptBox"></div>
                 <button class="hu-btn btn-primary btn-lg">搜索</button>
+
             </div>
             <div class="hot-word">
                 <ul>
@@ -88,28 +92,54 @@
                 </ul>
             </div>
             <div class="filter">
-                <div class="filter-line line1" name="type">
+                <div class="filter-line line1">
                     <div class="filter-con">
                         <div class="filter-name">专利类型</div>
-                        <ul>
-                            <li value="" class="selected">全部</li>
-                            <li value="1">发明专利</li>
-                            <li value="2">实用新型</li>
-                            <li value="3">外观设计</li>
-                        </ul>
+                        <label for="id1" class="hu-checkbox">
+                            <input type="checkbox" id="id1" name="type" checked="" value="1">
+                            <span>发明专利</span>
+                        </label>
+                        <label for="id2" class="hu-checkbox">
+                            <input type="checkbox" id="id2" name="type" checked="" value="2">
+                            <span>实用新型</span>
+                        </label>
+                        <label for="id3" class="hu-checkbox">
+                            <input type="checkbox" id="id3" name="type" checked="" value="3">
+                            <span>外观设计</span>
+                        </label>
                     </div>
                 </div>
-                <!--<div class="filter-line line2">-->
-                    <!--<div class="filter-con">-->
-                        <!--<div class="filter-name">法律状态</div>-->
-                        <!--<ul>-->
-                            <!--<li class="selected">全部</li>-->
-                            <!--<li>未授权</li>-->
-                            <!--<li>授权</li>-->
-                            <!--<li>已失效</li>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
+
+
+                <div class="filter-line line2">
+                    <div class="filter-con">
+                        <div class="filter-name">查询范围</div>
+                        <label for="phase0" class="hu-radio active">
+                            <input type="radio" id="phase0" name="scope" checked="" value="0">
+                            <span>全部</span>
+                        </label>
+                        <label for="phase1" class="hu-radio">
+                            <input type="radio"  id="phase1" name="scope" value="1">
+                            <span>关键词</span>
+                        </label>
+                        <label for="phase2" class="hu-radio">
+                            <input type="radio"  id="phase2" name="scope" value="2">
+                            <span>申请人</span>
+                        </label>
+                        <label for="phase3" class="hu-radio">
+                            <input type="radio" id="phase3" name="scope" value="3">
+                            <span>发明人</span>
+                        </label>
+                        <label for="phase4" class="hu-radio">
+                            <input type="radio"id="phase4" name="scope" value="4">
+                            <span>代理机构/代理人</span>
+                        </label>
+                        <label for="phase5" class="hu-radio">
+                            <input type="radio" id="phase5" name="scope" value="5">
+                            <span>专利号码</span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
 
@@ -117,382 +147,390 @@
 
 
         <div class="main-con">
-            <div class="main-left hu-card card-shadow">
-                <div class="hu-card-body">
-                    <!--<div class="main-left-box">-->
+            <div class="main-sort">
+                <div class="selected" id="relativity">相关度<i class="icon hufont ic-keyboard-arrow-up"></i></div>
+                <p>|</p>
+                <div id="application">申请日<i class="icon hufont ic-arrow-downward"></i></div>
+                <p>|</p>
+                <div id="public">公开日<i class="icon hufont ic-arrow-downward"></i></div>
+            </div>
+
+            <div class="patentCount">本次共搜索出 <span>0</span> 条相关专利</div>
+
+            <div class="main-content">
+                <div class="main-left hu-card card-shadow">
+                    <div class="hu-card-body">
+                        <!--<div class="main-left-box">-->
                         <!--<a href="patentBaseInfo.html" class="left-box-title">一种大数据使用权交易系统与方法</a>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请号：</p>-->
-                            <!--<span class="box-item-value">CN201610670879.X</span>-->
+                        <!--<p class="box-item-key">申请号：</p>-->
+                        <!--<span class="box-item-value">CN201610670879.X</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请人：</p>-->
-                            <!--<span class="box-item-value">鼎天智(北京)大数据科技有限公司</span>-->
+                        <!--<p class="box-item-key">申请人：</p>-->
+                        <!--<span class="box-item-value">鼎天智(北京)大数据科技有限公司</span>-->
                         <!--</div>-->
                         <!--<br>-->
 
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">发明人：</p>-->
-                            <!--<span class="box-item-value">陈树铭 叶望</span>-->
+                        <!--<p class="box-item-key">发明人：</p>-->
+                        <!--<span class="box-item-value">陈树铭 叶望</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利权人</p>-->
-                            <!--<span class="box-item-value">鼎天智(北京)大数据科技有限公司</span>-->
+                        <!--<p class="box-item-key">专利权人</p>-->
+                        <!--<span class="box-item-value">鼎天智(北京)大数据科技有限公司</span>-->
                         <!--</div>-->
                         <!--<br>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利摘要：</p>-->
-                            <!--<span class="box-item-value">本发明公开了一种大数据使用权交易系统与方法，该系统包括产业链生态大数据模型模块、大数据生态链应用模块、大数据生态链接口模块、交易撮合模块、大数据生态链价值模型模块以及大数据交易平台模块。该方法包括选取目标产业链完成大数据交易系统的构建等六步骤。该大数据使用权交易方法按照产业生态体系大数据模型来直接实现大数据应用，实现在大数据交易过程中的使用权交易，在交易中直接完成大数据价值应用。</span>-->
+                        <!--<p class="box-item-key">专利摘要：</p>-->
+                        <!--<span class="box-item-value">本发明公开了一种大数据使用权交易系统与方法，该系统包括产业链生态大数据模型模块、大数据生态链应用模块、大数据生态链接口模块、交易撮合模块、大数据生态链价值模型模块以及大数据交易平台模块。该方法包括选取目标产业链完成大数据交易系统的构建等六步骤。该大数据使用权交易方法按照产业生态体系大数据模型来直接实现大数据应用，实现在大数据交易过程中的使用权交易，在交易中直接完成大数据价值应用。</span>-->
                         <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="main-left-box">-->
+                        <!--</div>-->
+                        <!--<div class="main-left-box">-->
                         <!--<p class="left-box-title">衣物用户大数据干扰采集方法</p>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请号：</p>-->
-                            <!--<span class="box-item-value">CN201710354405.9</span>-->
+                        <!--<p class="box-item-key">申请号：</p>-->
+                        <!--<span class="box-item-value">CN201710354405.9</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请人：</p>-->
-                            <!--<span class="box-item-value">海南亚元防伪技术研究所(普通合伙)</span>-->
+                        <!--<p class="box-item-key">申请人：</p>-->
+                        <!--<span class="box-item-value">海南亚元防伪技术研究所(普通合伙)</span>-->
                         <!--</div>-->
                         <!--<br>-->
 
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">发明人：</p>-->
-                            <!--<span class="box-item-value">陈柏霖</span>-->
+                        <!--<p class="box-item-key">发明人：</p>-->
+                        <!--<span class="box-item-value">陈柏霖</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利权人</p>-->
-                            <!--<span class="box-item-value">海南亚元防伪技术研究所(普通合伙)</span>-->
+                        <!--<p class="box-item-key">专利权人</p>-->
+                        <!--<span class="box-item-value">海南亚元防伪技术研究所(普通合伙)</span>-->
                         <!--</div>-->
                         <!--<br>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利摘要：</p>-->
-                            <!--<span class="box-item-value">本发明提供了一种衣物用户大数据干扰采集方法，将密码锁设置在衣物上，将开锁密码存储在网络上的数据库中；用智能手机扫描二维码、可登录大数据采集系统，从数据库中调取开锁密码、打开并取下密码锁、去除干扰后再使用衣物。本发明中的大数据采集系统，可将扫码者的用户信息及衣物信息，采集存储到数据库中，低成本、高效率地获取衣物用户大数据。</span>-->
+                        <!--<p class="box-item-key">专利摘要：</p>-->
+                        <!--<span class="box-item-value">本发明提供了一种衣物用户大数据干扰采集方法，将密码锁设置在衣物上，将开锁密码存储在网络上的数据库中；用智能手机扫描二维码、可登录大数据采集系统，从数据库中调取开锁密码、打开并取下密码锁、去除干扰后再使用衣物。本发明中的大数据采集系统，可将扫码者的用户信息及衣物信息，采集存储到数据库中，低成本、高效率地获取衣物用户大数据。</span>-->
                         <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="main-left-box">-->
+                        <!--</div>-->
+                        <!--<div class="main-left-box">-->
                         <!--<p class="left-box-title">一种大数据并行计算装置</p>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请号：</p>-->
-                            <!--<span class="box-item-value">CN201621446083.8</span>-->
+                        <!--<p class="box-item-key">申请号：</p>-->
+                        <!--<span class="box-item-value">CN201621446083.8</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请人：</p>-->
-                            <!--<span class="box-item-value">海南大学</span>-->
+                        <!--<p class="box-item-key">申请人：</p>-->
+                        <!--<span class="box-item-value">海南大学</span>-->
                         <!--</div>-->
                         <!--<br>-->
 
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">发明人：</p>-->
-                            <!--<span class="box-item-value">李修来 陈明锐 罗逸涵 陆浪 张博涵 刘子恒</span>-->
+                        <!--<p class="box-item-key">发明人：</p>-->
+                        <!--<span class="box-item-value">李修来 陈明锐 罗逸涵 陆浪 张博涵 刘子恒</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利权人</p>-->
-                            <!--<span class="box-item-value">海南大学</span>-->
+                        <!--<p class="box-item-key">专利权人</p>-->
+                        <!--<span class="box-item-value">海南大学</span>-->
                         <!--</div>-->
                         <!--<br>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利摘要：</p>-->
-                            <!--<span class="box-item-value">本实用新型公开了一种大数据并行计算装置，包括PR7010B刀片服务器，所述PR7010B刀片服务器通过网线分别与千兆以太网络交换机和INFINIBAND交换机连接，所述千兆以太网络交换机和INFINIBAND交换机均分为三路，所述千兆以太网络交换机和INFINIBAND交换机均分别与计算节点、存储节点和登录管理节点通过网线连接，所述计算节点内由高密度节点和SMP胖节点组成，所述SMP胖节点上设有SRIO外部数据交换接口，所述存储节点内并行排列磁盘阵列，所述登录管理节点分别与Windows客户端、MAC客户端和LINEX客户端。本实用新型计算网络采用高带宽、低延迟的QDR INFINIBAND网络，为并行程序提供无阻塞的通信高速通道，并配置一套或两套千兆网络，用于集群管理和监控，千兆网络也可作为备用计算网络，提高系统的高可用性。</span>-->
+                        <!--<p class="box-item-key">专利摘要：</p>-->
+                        <!--<span class="box-item-value">本实用新型公开了一种大数据并行计算装置，包括PR7010B刀片服务器，所述PR7010B刀片服务器通过网线分别与千兆以太网络交换机和INFINIBAND交换机连接，所述千兆以太网络交换机和INFINIBAND交换机均分为三路，所述千兆以太网络交换机和INFINIBAND交换机均分别与计算节点、存储节点和登录管理节点通过网线连接，所述计算节点内由高密度节点和SMP胖节点组成，所述SMP胖节点上设有SRIO外部数据交换接口，所述存储节点内并行排列磁盘阵列，所述登录管理节点分别与Windows客户端、MAC客户端和LINEX客户端。本实用新型计算网络采用高带宽、低延迟的QDR INFINIBAND网络，为并行程序提供无阻塞的通信高速通道，并配置一套或两套千兆网络，用于集群管理和监控，千兆网络也可作为备用计算网络，提高系统的高可用性。</span>-->
                         <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="main-left-box">-->
+                        <!--</div>-->
+                        <!--<div class="main-left-box">-->
                         <!--<p class="left-box-title">一种基于大数据架构的人脸识别监控系统</p>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请号：</p>-->
-                            <!--<span class="box-item-value">CN201620807864.9</span>-->
+                        <!--<p class="box-item-key">申请号：</p>-->
+                        <!--<span class="box-item-value">CN201620807864.9</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">申请人：</p>-->
-                            <!--<span class="box-item-value">海南思蓝网络科技有限公司</span>-->
+                        <!--<p class="box-item-key">申请人：</p>-->
+                        <!--<span class="box-item-value">海南思蓝网络科技有限公司</span>-->
                         <!--</div>-->
                         <!--<br>-->
 
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">发明人：</p>-->
-                            <!--<span class="box-item-value">丁宇轩</span>-->
+                        <!--<p class="box-item-key">发明人：</p>-->
+                        <!--<span class="box-item-value">丁宇轩</span>-->
                         <!--</div>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利权人</p>-->
-                            <!--<span class="box-item-value">海南思蓝网络科技有限公司</span>-->
+                        <!--<p class="box-item-key">专利权人</p>-->
+                        <!--<span class="box-item-value">海南思蓝网络科技有限公司</span>-->
                         <!--</div>-->
                         <!--<br>-->
                         <!--<div class="left-box-item">-->
-                            <!--<p class="box-item-key">专利摘要：</p>-->
-                            <!--<span class="box-item-value">本实用新型公开了一种基于大数据架构的人脸识别监控系统，包括若干数据采集系统，所述数据采集系统分别电性连接有网络摄像头管理系统和不同类型的摄像头，所述网络摄像头管理系统分别电性连接有数据消息系统和存储系统，所述数据消息系统电性连接有数据处理系统，所述数据处理系统分别电性连接有存储系统和管理系统客户端，所述数据采集系统包括FFmpeg、警报装置、管理系统、数据库和一些便捷的API，所述FFmpeg通过API电性连接管理系统，所述管理系统分别电性连接警报装置、数据库和网络摄像头管理系统。本实用新型具有识别速度快，精度高的特点。</span>-->
+                        <!--<p class="box-item-key">专利摘要：</p>-->
+                        <!--<span class="box-item-value">本实用新型公开了一种基于大数据架构的人脸识别监控系统，包括若干数据采集系统，所述数据采集系统分别电性连接有网络摄像头管理系统和不同类型的摄像头，所述网络摄像头管理系统分别电性连接有数据消息系统和存储系统，所述数据消息系统电性连接有数据处理系统，所述数据处理系统分别电性连接有存储系统和管理系统客户端，所述数据采集系统包括FFmpeg、警报装置、管理系统、数据库和一些便捷的API，所述FFmpeg通过API电性连接管理系统，所述管理系统分别电性连接警报装置、数据库和网络摄像头管理系统。本实用新型具有识别速度快，精度高的特点。</span>-->
                         <!--</div>-->
-                    <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div id="page"></div>
                 </div>
-                <div id="page"></div>
+
+                <!--<div class="main-right">-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title">-->
+                                <!--<p>专利权人</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con hide">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>海南大学</span>-->
+                                    <!--</label>-->
+                                    <!--<p>16</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId223" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
+                                        <!--<span>海南亚元防伪技术研究所(普通合伙)</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId224" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
+                                        <!--<span>海南亚元防伪技术研究所</span>-->
+                                    <!--</label>-->
+                                    <!--<p>2</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId225" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
+                                        <!--<span>海南凯迪网络资讯股份有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>2</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>海南电力技术研究院</span>-->
+                                    <!--</label>-->
+                                    <!--<p>2</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>海南百合数据通讯工程有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>海南云馆网络科技有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>海南美好防伪技术开发有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>海南华人智慧科技有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>武汉三相电力科技有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>南京四方亿能电力自动化有限公司</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title open">-->
+                                <!--<p>发明人</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next rotate"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>陈明发</span>-->
+                                    <!--</label>-->
+                                    <!--<p>7</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId223" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
+                                        <!--<span>段玉聪</span>-->
+                                    <!--</label>-->
+                                    <!--<p>6</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId224" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
+                                        <!--<span>杜文才</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId225" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
+                                        <!--<span>李京兵</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>陈柏霖</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title">-->
+                                <!--<p>专利权人所在地区</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con hide">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>中国</span>-->
+                                    <!--</label>-->
+                                    <!--<p>42</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title">-->
+                                <!--<p>专利所属国家/地区</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con hide">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>中国</span>-->
+                                    <!--</label>-->
+                                    <!--<p>42</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title">-->
+                                <!--<p>申请日</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con hide">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>2017</span>-->
+                                    <!--</label>-->
+                                    <!--<p>15</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId223" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
+                                        <!--<span>2016</span>-->
+                                    <!--</label>-->
+                                    <!--<p>8</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId224" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
+                                        <!--<span>2015</span>-->
+                                    <!--</label>-->
+                                    <!--<p>6</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId225" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
+                                        <!--<span>2014</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>2013</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main-right-box hu-card card-shadow">-->
+                        <!--<div class="hu-card-body">-->
+                            <!--<div class="right-box-title">-->
+                                <!--<p>首次公开日</p>-->
+                                <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
+                            <!--</div>-->
+                            <!--<div class="rigth-box-con hide">-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId2222" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
+                                        <!--<span>2017</span>-->
+                                    <!--</label>-->
+                                    <!--<p>21</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId223" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
+                                        <!--<span>2014</span>-->
+                                    <!--</label>-->
+                                    <!--<p>8</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId224" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
+                                        <!--<span>2015</span>-->
+                                    <!--</label>-->
+                                    <!--<p>5</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId225" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
+                                        <!--<span>2016</span>-->
+                                    <!--</label>-->
+                                    <!--<p>4</p>-->
+                                <!--</div>-->
+                                <!--<div class="right-box-item">-->
+                                    <!--<label for="formId226" class="hu-checkbox">-->
+                                        <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
+                                        <!--<span>2000</span>-->
+                                    <!--</label>-->
+                                    <!--<p>1</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
             </div>
 
-            <div class="main-right">
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title">-->
-                            <!--<p>专利权人</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con hide">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>海南大学</span>-->
-                                <!--</label>-->
-                                <!--<p>16</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId223" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
-                                    <!--<span>海南亚元防伪技术研究所(普通合伙)</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId224" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
-                                    <!--<span>海南亚元防伪技术研究所</span>-->
-                                <!--</label>-->
-                                <!--<p>2</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId225" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
-                                    <!--<span>海南凯迪网络资讯股份有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>2</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>海南电力技术研究院</span>-->
-                                <!--</label>-->
-                                <!--<p>2</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>海南百合数据通讯工程有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>海南云馆网络科技有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>海南美好防伪技术开发有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>海南华人智慧科技有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>武汉三相电力科技有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>南京四方亿能电力自动化有限公司</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title open">-->
-                            <!--<p>发明人</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next rotate"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>陈明发</span>-->
-                                <!--</label>-->
-                                <!--<p>7</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId223" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
-                                    <!--<span>段玉聪</span>-->
-                                <!--</label>-->
-                                <!--<p>6</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId224" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
-                                    <!--<span>杜文才</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId225" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
-                                    <!--<span>李京兵</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>陈柏霖</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title">-->
-                            <!--<p>专利权人所在地区</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con hide">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>中国</span>-->
-                                <!--</label>-->
-                                <!--<p>42</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title">-->
-                            <!--<p>专利所属国家/地区</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con hide">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>中国</span>-->
-                                <!--</label>-->
-                                <!--<p>42</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title">-->
-                            <!--<p>申请日</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con hide">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>2017</span>-->
-                                <!--</label>-->
-                                <!--<p>15</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId223" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
-                                    <!--<span>2016</span>-->
-                                <!--</label>-->
-                                <!--<p>8</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId224" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
-                                    <!--<span>2015</span>-->
-                                <!--</label>-->
-                                <!--<p>6</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId225" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
-                                    <!--<span>2014</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>2013</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="main-right-box hu-card card-shadow">-->
-                    <!--<div class="hu-card-body">-->
-                        <!--<div class="right-box-title">-->
-                            <!--<p>首次公开日</p>-->
-                            <!--<span>更多<i class="icon hufont ic-navigate-next"></i></span>-->
-                        <!--</div>-->
-                        <!--<div class="rigth-box-con hide">-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId2222" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId2222" name="checkbox1" value="1">-->
-                                    <!--<span>2017</span>-->
-                                <!--</label>-->
-                                <!--<p>21</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId223" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId223" name="checkbox1" value="1">-->
-                                    <!--<span>2014</span>-->
-                                <!--</label>-->
-                                <!--<p>8</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId224" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId224" name="checkbox1" value="1">-->
-                                    <!--<span>2015</span>-->
-                                <!--</label>-->
-                                <!--<p>5</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId225" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId225" name="checkbox1" value="1">-->
-                                    <!--<span>2016</span>-->
-                                <!--</label>-->
-                                <!--<p>4</p>-->
-                            <!--</div>-->
-                            <!--<div class="right-box-item">-->
-                                <!--<label for="formId226" class="hu-checkbox">-->
-                                    <!--<input type="checkbox" id="formId226" name="checkbox1" value="1">-->
-                                    <!--<span>2000</span>-->
-                                <!--</label>-->
-                                <!--<p>1</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
 
-            </div>
         </div>
-
-
-
-
-
-
 
 
     </div>
@@ -510,13 +548,13 @@
                     <div class="footer-top-info2">
                         <div class="footer-rq">
                             <div>
-                                <img src="../images/rq1.jpg" alt="rq">
+                                <img src="http://101.226.6.177:8089/kc/images/rq1.jpg" alt="rq">
                             </div>
                             <div>
-                                <img src="../images/rq2.jpg" alt="rq">
+                                <img src="http://101.226.6.177:8089/kc/images/rq2.jpg" alt="rq">
                             </div>
                             <div>
-                                <img src="../images/rq3.jpg" alt="rq">
+                                <img src="http://101.226.6.177:8089/kc/images/rq3.jpg" alt="rq">
                             </div>
                         </div>
                         <div class="footer-links">
